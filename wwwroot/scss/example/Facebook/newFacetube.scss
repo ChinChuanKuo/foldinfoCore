@@ -1,0 +1,25 @@
+@import "../OutSide/outside";
+
+@media (max-width: 1099.95px) {
+  .ftmainlayout {
+    left: 32px;
+  }
+
+  .facetubenavigation {
+    left: 0;
+  }
+}
+
+@media (min-width: 1100px) {
+  .ftmainlayout {
+    left: 320px;
+  }
+
+  .facetubenavigation {
+    left: 320px;
+  }
+}
+
+.ftmainlayout {
+  right: 10px;
+}

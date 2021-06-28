@@ -1,0 +1,35 @@
+@media (max-width: 900.95px) {
+  .fbmainlayout {
+    left: 32px;
+    right: 32px;
+  }
+
+  .facebooknavigation {
+    left: 0;
+    right: 0;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1099.95px) {
+  .fbmainlayout {
+    left: 32px;
+    right: 320px;
+  }
+
+  .facebooknavigation {
+    left: 0;
+    right: 320px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .fbmainlayout {
+    left: 320px;
+    right: 320px;
+  }
+
+  .facebooknavigation {
+    left: 320px;
+    right: 320px;
+  }
+}

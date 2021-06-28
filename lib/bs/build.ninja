@@ -1,0 +1,836 @@
+g_pkg_flg = -bs-package-name btsCore -bs-ns BtsCore
+src_root_dir = /Users/chinchuankuo/Documents/core/foldinfoCore
+bsc = /Users/chinchuankuo/Documents/core/foldinfoCore/node_modules/bs-platform/darwin/bsc.exe
+bsdep = /Users/chinchuankuo/Documents/core/foldinfoCore/node_modules/bs-platform/darwin/bsb_helper.exe
+warnings = 
+bsc_flags = -bs-super-errors
+ppx_flags = -ppx /Users/chinchuankuo/Documents/core/foldinfoCore/node_modules/@baransu/graphql_ppx_re/ppx
+g_dpkg_incls = 
+g_ns = -bs-ns BtsCore
+bsb_dir_group = 0
+g_lib_incls = -I . -I wwwroot/js/locales -I wwwroot/js/material-ui/core/Paper -I wwwroot/js/material-ui/core/Tabs -I wwwroot/js/material-ui/core/PasteBoard -I wwwroot/js/material-ui/core/AppBar -I wwwroot/js/material-ui/core/ExpansionPanel -I wwwroot/js/material-ui/core/Drawer -I wwwroot/js/material-ui/core/IconStyle -I wwwroot/js/material-ui/core/Animate -I wwwroot/js/material-ui/core/Tooltip -I wwwroot/js/material-ui/core/Iframe -I wwwroot/js/material-ui/core/Card -I wwwroot/js/material-ui/core/BarChart -I wwwroot/js/material-ui/core/Progress -I wwwroot/js/material-ui/core/List_ -I wwwroot/js/material-ui/core/Snackbar -I wwwroot/js/material-ui/core/ListSecondary -I wwwroot/js/material-ui/core/Chip -I wwwroot/js/material-ui/core/Navigation -I wwwroot/js/material-ui/core/TextField -I wwwroot/js/material-ui/core/Slider -I wwwroot/js/material-ui/core/MenuItem -I wwwroot/js/material-ui/core/PieChart -I wwwroot/js/material-ui/core/ListItem -I wwwroot/js/material-ui/core/Dialog -I wwwroot/js/material-ui/core/Button -I wwwroot/js/material-ui/core/Table -I wwwroot/js/material-ui/core/Divider -I wwwroot/js/material-ui/core/Menu -I wwwroot/js/material-ui/core/Avatar -I wwwroot/js/material-ui/core/Typography -I wwwroot/js/material-ui/core/Switch -I wwwroot/js/material-ui/core/IconButton -I wwwroot/js/material-ui/core/Select -I wwwroot/js/material-ui/core/Breadcrumb -I wwwroot/js/material-ui/core/UploadBoard -I wwwroot/js/material-ui/core/Grid -I wwwroot/js/material-ui/core/Badge -I wwwroot/js/material-ui/icon -I wwwroot/js/example/Tables -I wwwroot/js/example/Shape -I wwwroot/js/example/Forms -I wwwroot/js/example/TextFields -I wwwroot/js/example/Progress -I wwwroot/js/example/Snackbar -I wwwroot/js/example/Selects -I wwwroot/js/example/Chart -I wwwroot/js/example/ListSecondary -I wwwroot/js/example/Medias -I wwwroot/js/example/ToolBar -I wwwroot/js/example/Uploads -I wwwroot/js/example/Cameras -I wwwroot/js/example/Youtube -I wwwroot/js/example/Expansion -I wwwroot/js/example/Facebook -I wwwroot/js/example/Boards -I wwwroot/js/example/Dialogs -I wwwroot/js/example/BottomNavigation -I wwwroot/js/example/Account/Oauth -I wwwroot/js/example/Account/Signup -I wwwroot/js/example/Account/Code -I wwwroot/js/example/Account/Forget -I wwwroot/js/example/Account/Login -I wwwroot/js/example/Account/Resend -I wwwroot/js/example/Account -I wwwroot/js/example/Instagram -I wwwroot/js/example/ScrollBar -I wwwroot/js/example/Splits -I wwwroot/js/features -I wwwroot/js/controls -I wwwroot/js/styles/Together -I wwwroot/js/styles/OutSide -I wwwroot/js/setting -I wwwroot/js/modules -I wwwroot/js/pages/CreateR -I wwwroot/js/pages/Home -I wwwroot/js/pages/CreateI -I wwwroot/js/pages/CreateF -I wwwroot/js/pages/MailistI -I wwwroot/js/pages/Oauth -I wwwroot/js/pages/MailistR -I wwwroot/js/pages/MailistF -I wwwroot/js/pages/Signup -I wwwroot/js/pages/Code -I wwwroot/js/pages/SignlistF -I wwwroot/js/pages/SignlistR -I wwwroot/js/pages/Inside -I wwwroot/js/pages/Product -I wwwroot/js/pages/SignlistI -I wwwroot/js/pages/Signlist -I wwwroot/js/pages/ModifyF -I wwwroot/js/pages/ModifyR -I wwwroot/js/pages/Bookmarks -I wwwroot/js/pages/CreateP -I wwwroot/js/pages/ModifyI -I wwwroot/js/pages/IsoFile -I wwwroot/js/pages/Forget -I wwwroot/js/pages/Icon -I wwwroot/js/pages/Login -I wwwroot/js/pages/Resend -I wwwroot/js/pages/SendistF -I wwwroot/js/operates -I wwwroot/js -I /Users/chinchuankuo/Documents/core/foldinfoCore/node_modules/reason-react/lib/ocaml -I /Users/chinchuankuo/Documents/core/foldinfoCore/node_modules/reason-apollo/lib/ocaml -I /Users/chinchuankuo/Documents/core/foldinfoCore/node_modules/bs-axios/lib/ocaml -I /Users/chinchuankuo/Documents/core/foldinfoCore/node_modules/bs-react-intl/lib/ocaml
+rule build_ast_from_re
+  command = $bsc  $warnings -color always -bs-jsx 3 $ppx_flags $bsc_flags -o $out -bs-syntax-only -bs-binary-ast $in
+  description = [34mBuilding[39m [2m${out}[22m
+build  wwwroot/js/App.reast : build_ast_from_re $src_root_dir/wwwroot/js/App.re
+rule build_deps
+  command = $bsdep -hash 6efe8ed5f46fc0aaeaa6e6ff8f1c49c5 $g_ns -g $bsb_dir_group $in
+  restat = 1
+  description = [34mBuilding[39m [2m${out}[22m
+build  wwwroot/js/App.d : build_deps wwwroot/js/App.reast
+rule ml_cmj_cmi
+  command = $bsc $g_pkg_flg -color always -bs-suffix $g_lib_incls $warnings $bsc_flags -o $out $in
+  dyndep = $in_e.d
+  restat = 1
+  description = [34mBuilding[39m [2m${out}[22m
+build  wwwroot/js/App-BtsCore.cmj |  wwwroot/js/App-BtsCore.cmi $src_root_dir/wwwroot/js/App.bs.js : ml_cmj_cmi wwwroot/js/App.reast ||  wwwroot/js/App.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js
+build  wwwroot/js/Index.reast : build_ast_from_re $src_root_dir/wwwroot/js/Index.re
+build  wwwroot/js/Index.d : build_deps wwwroot/js/Index.reast
+build  wwwroot/js/Index-BtsCore.cmj |  wwwroot/js/Index-BtsCore.cmi $src_root_dir/wwwroot/js/Index.bs.js : ml_cmj_cmi wwwroot/js/Index.reast ||  wwwroot/js/Index.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js
+build  wwwroot/js/Route.reast : build_ast_from_re $src_root_dir/wwwroot/js/Route.re
+build  wwwroot/js/Route.d : build_deps wwwroot/js/Route.reast
+build  wwwroot/js/Route-BtsCore.cmj |  wwwroot/js/Route-BtsCore.cmi $src_root_dir/wwwroot/js/Route.bs.js : ml_cmj_cmi wwwroot/js/Route.reast ||  wwwroot/js/Route.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js
+build  wwwroot/js/operates/Action.reast : build_ast_from_re $src_root_dir/wwwroot/js/operates/Action.re
+build  wwwroot/js/operates/Action.d : build_deps wwwroot/js/operates/Action.reast
+build  wwwroot/js/operates/Action-BtsCore.cmj |  wwwroot/js/operates/Action-BtsCore.cmi $src_root_dir/wwwroot/js/operates/Action.bs.js : ml_cmj_cmi wwwroot/js/operates/Action.reast ||  wwwroot/js/operates/Action.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/operates
+build  wwwroot/js/operates/FormData.reast : build_ast_from_re $src_root_dir/wwwroot/js/operates/FormData.re
+build  wwwroot/js/operates/FormData.d : build_deps wwwroot/js/operates/FormData.reast
+build  wwwroot/js/operates/FormData-BtsCore.cmj |  wwwroot/js/operates/FormData-BtsCore.cmi $src_root_dir/wwwroot/js/operates/FormData.bs.js : ml_cmj_cmi wwwroot/js/operates/FormData.reast ||  wwwroot/js/operates/FormData.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/operates
+build  wwwroot/js/pages/SendistF/SendistF.reast : build_ast_from_re $src_root_dir/wwwroot/js/pages/SendistF/SendistF.re
+build  wwwroot/js/pages/SendistF/SendistF.d : build_deps wwwroot/js/pages/SendistF/SendistF.reast
+build  wwwroot/js/pages/SendistF/SendistF-BtsCore.cmj |  wwwroot/js/pages/SendistF/SendistF-BtsCore.cmi $src_root_dir/wwwroot/js/pages/SendistF/SendistF.bs.js : ml_cmj_cmi wwwroot/js/pages/SendistF/SendistF.reast ||  wwwroot/js/pages/SendistF/SendistF.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/pages/SendistF
+build  wwwroot/js/pages/Resend/Resend.reast : build_ast_from_re $src_root_dir/wwwroot/js/pages/Resend/Resend.re
+build  wwwroot/js/pages/Resend/Resend.d : build_deps wwwroot/js/pages/Resend/Resend.reast
+build  wwwroot/js/pages/Resend/Resend-BtsCore.cmj |  wwwroot/js/pages/Resend/Resend-BtsCore.cmi $src_root_dir/wwwroot/js/pages/Resend/Resend.bs.js : ml_cmj_cmi wwwroot/js/pages/Resend/Resend.reast ||  wwwroot/js/pages/Resend/Resend.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/pages/Resend
+build  wwwroot/js/pages/Login/Login.reast : build_ast_from_re $src_root_dir/wwwroot/js/pages/Login/Login.re
+build  wwwroot/js/pages/Login/Login.d : build_deps wwwroot/js/pages/Login/Login.reast
+build  wwwroot/js/pages/Login/Login-BtsCore.cmj |  wwwroot/js/pages/Login/Login-BtsCore.cmi $src_root_dir/wwwroot/js/pages/Login/Login.bs.js : ml_cmj_cmi wwwroot/js/pages/Login/Login.reast ||  wwwroot/js/pages/Login/Login.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/pages/Login
+build  wwwroot/js/pages/Icon/Icon.reast : build_ast_from_re $src_root_dir/wwwroot/js/pages/Icon/Icon.re
+build  wwwroot/js/pages/Icon/Icon.d : build_deps wwwroot/js/pages/Icon/Icon.reast
+build  wwwroot/js/pages/Icon/Icon-BtsCore.cmj |  wwwroot/js/pages/Icon/Icon-BtsCore.cmi $src_root_dir/wwwroot/js/pages/Icon/Icon.bs.js : ml_cmj_cmi wwwroot/js/pages/Icon/Icon.reast ||  wwwroot/js/pages/Icon/Icon.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/pages/Icon
+build  wwwroot/js/pages/Forget/Forget.reast : build_ast_from_re $src_root_dir/wwwroot/js/pages/Forget/Forget.re
+build  wwwroot/js/pages/Forget/Forget.d : build_deps wwwroot/js/pages/Forget/Forget.reast
+build  wwwroot/js/pages/Forget/Forget-BtsCore.cmj |  wwwroot/js/pages/Forget/Forget-BtsCore.cmi $src_root_dir/wwwroot/js/pages/Forget/Forget.bs.js : ml_cmj_cmi wwwroot/js/pages/Forget/Forget.reast ||  wwwroot/js/pages/Forget/Forget.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/pages/Forget
+build  wwwroot/js/pages/IsoFile/IsoFile.reast : build_ast_from_re $src_root_dir/wwwroot/js/pages/IsoFile/IsoFile.re
+build  wwwroot/js/pages/IsoFile/IsoFile.d : build_deps wwwroot/js/pages/IsoFile/IsoFile.reast
+build  wwwroot/js/pages/IsoFile/IsoFile-BtsCore.cmj |  wwwroot/js/pages/IsoFile/IsoFile-BtsCore.cmi $src_root_dir/wwwroot/js/pages/IsoFile/IsoFile.bs.js : ml_cmj_cmi wwwroot/js/pages/IsoFile/IsoFile.reast ||  wwwroot/js/pages/IsoFile/IsoFile.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/pages/IsoFile
+build  wwwroot/js/pages/ModifyI/ModifyI.reast : build_ast_from_re $src_root_dir/wwwroot/js/pages/ModifyI/ModifyI.re
+build  wwwroot/js/pages/ModifyI/ModifyI.d : build_deps wwwroot/js/pages/ModifyI/ModifyI.reast
+build  wwwroot/js/pages/ModifyI/ModifyI-BtsCore.cmj |  wwwroot/js/pages/ModifyI/ModifyI-BtsCore.cmi $src_root_dir/wwwroot/js/pages/ModifyI/ModifyI.bs.js : ml_cmj_cmi wwwroot/js/pages/ModifyI/ModifyI.reast ||  wwwroot/js/pages/ModifyI/ModifyI.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/pages/ModifyI
+build  wwwroot/js/pages/CreateP/CreateP.reast : build_ast_from_re $src_root_dir/wwwroot/js/pages/CreateP/CreateP.re
+build  wwwroot/js/pages/CreateP/CreateP.d : build_deps wwwroot/js/pages/CreateP/CreateP.reast
+build  wwwroot/js/pages/CreateP/CreateP-BtsCore.cmj |  wwwroot/js/pages/CreateP/CreateP-BtsCore.cmi $src_root_dir/wwwroot/js/pages/CreateP/CreateP.bs.js : ml_cmj_cmi wwwroot/js/pages/CreateP/CreateP.reast ||  wwwroot/js/pages/CreateP/CreateP.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/pages/CreateP
+build  wwwroot/js/pages/Bookmarks/Bookmarks.reast : build_ast_from_re $src_root_dir/wwwroot/js/pages/Bookmarks/Bookmarks.re
+build  wwwroot/js/pages/Bookmarks/Bookmarks.d : build_deps wwwroot/js/pages/Bookmarks/Bookmarks.reast
+build  wwwroot/js/pages/Bookmarks/Bookmarks-BtsCore.cmj |  wwwroot/js/pages/Bookmarks/Bookmarks-BtsCore.cmi $src_root_dir/wwwroot/js/pages/Bookmarks/Bookmarks.bs.js : ml_cmj_cmi wwwroot/js/pages/Bookmarks/Bookmarks.reast ||  wwwroot/js/pages/Bookmarks/Bookmarks.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/pages/Bookmarks
+build  wwwroot/js/pages/ModifyR/ModifyR.reast : build_ast_from_re $src_root_dir/wwwroot/js/pages/ModifyR/ModifyR.re
+build  wwwroot/js/pages/ModifyR/ModifyR.d : build_deps wwwroot/js/pages/ModifyR/ModifyR.reast
+build  wwwroot/js/pages/ModifyR/ModifyR-BtsCore.cmj |  wwwroot/js/pages/ModifyR/ModifyR-BtsCore.cmi $src_root_dir/wwwroot/js/pages/ModifyR/ModifyR.bs.js : ml_cmj_cmi wwwroot/js/pages/ModifyR/ModifyR.reast ||  wwwroot/js/pages/ModifyR/ModifyR.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/pages/ModifyR
+build  wwwroot/js/pages/ModifyF/ModifyF.reast : build_ast_from_re $src_root_dir/wwwroot/js/pages/ModifyF/ModifyF.re
+build  wwwroot/js/pages/ModifyF/ModifyF.d : build_deps wwwroot/js/pages/ModifyF/ModifyF.reast
+build  wwwroot/js/pages/ModifyF/ModifyF-BtsCore.cmj |  wwwroot/js/pages/ModifyF/ModifyF-BtsCore.cmi $src_root_dir/wwwroot/js/pages/ModifyF/ModifyF.bs.js : ml_cmj_cmi wwwroot/js/pages/ModifyF/ModifyF.reast ||  wwwroot/js/pages/ModifyF/ModifyF.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/pages/ModifyF
+build  wwwroot/js/pages/Signlist/Signlist.reast : build_ast_from_re $src_root_dir/wwwroot/js/pages/Signlist/Signlist.re
+build  wwwroot/js/pages/Signlist/Signlist.d : build_deps wwwroot/js/pages/Signlist/Signlist.reast
+build  wwwroot/js/pages/Signlist/Signlist-BtsCore.cmj |  wwwroot/js/pages/Signlist/Signlist-BtsCore.cmi $src_root_dir/wwwroot/js/pages/Signlist/Signlist.bs.js : ml_cmj_cmi wwwroot/js/pages/Signlist/Signlist.reast ||  wwwroot/js/pages/Signlist/Signlist.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/pages/Signlist
+build  wwwroot/js/pages/SignlistI/SignlistI.reast : build_ast_from_re $src_root_dir/wwwroot/js/pages/SignlistI/SignlistI.re
+build  wwwroot/js/pages/SignlistI/SignlistI.d : build_deps wwwroot/js/pages/SignlistI/SignlistI.reast
+build  wwwroot/js/pages/SignlistI/SignlistI-BtsCore.cmj |  wwwroot/js/pages/SignlistI/SignlistI-BtsCore.cmi $src_root_dir/wwwroot/js/pages/SignlistI/SignlistI.bs.js : ml_cmj_cmi wwwroot/js/pages/SignlistI/SignlistI.reast ||  wwwroot/js/pages/SignlistI/SignlistI.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/pages/SignlistI
+build  wwwroot/js/pages/Product/Product.reast : build_ast_from_re $src_root_dir/wwwroot/js/pages/Product/Product.re
+build  wwwroot/js/pages/Product/Product.d : build_deps wwwroot/js/pages/Product/Product.reast
+build  wwwroot/js/pages/Product/Product-BtsCore.cmj |  wwwroot/js/pages/Product/Product-BtsCore.cmi $src_root_dir/wwwroot/js/pages/Product/Product.bs.js : ml_cmj_cmi wwwroot/js/pages/Product/Product.reast ||  wwwroot/js/pages/Product/Product.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/pages/Product
+build  wwwroot/js/pages/Inside/Inside.reast : build_ast_from_re $src_root_dir/wwwroot/js/pages/Inside/Inside.re
+build  wwwroot/js/pages/Inside/Inside.d : build_deps wwwroot/js/pages/Inside/Inside.reast
+build  wwwroot/js/pages/Inside/Inside-BtsCore.cmj |  wwwroot/js/pages/Inside/Inside-BtsCore.cmi $src_root_dir/wwwroot/js/pages/Inside/Inside.bs.js : ml_cmj_cmi wwwroot/js/pages/Inside/Inside.reast ||  wwwroot/js/pages/Inside/Inside.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/pages/Inside
+build  wwwroot/js/pages/SignlistR/SignlistR.reast : build_ast_from_re $src_root_dir/wwwroot/js/pages/SignlistR/SignlistR.re
+build  wwwroot/js/pages/SignlistR/SignlistR.d : build_deps wwwroot/js/pages/SignlistR/SignlistR.reast
+build  wwwroot/js/pages/SignlistR/SignlistR-BtsCore.cmj |  wwwroot/js/pages/SignlistR/SignlistR-BtsCore.cmi $src_root_dir/wwwroot/js/pages/SignlistR/SignlistR.bs.js : ml_cmj_cmi wwwroot/js/pages/SignlistR/SignlistR.reast ||  wwwroot/js/pages/SignlistR/SignlistR.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/pages/SignlistR
+build  wwwroot/js/pages/SignlistF/SignlistF.reast : build_ast_from_re $src_root_dir/wwwroot/js/pages/SignlistF/SignlistF.re
+build  wwwroot/js/pages/SignlistF/SignlistF.d : build_deps wwwroot/js/pages/SignlistF/SignlistF.reast
+build  wwwroot/js/pages/SignlistF/SignlistF-BtsCore.cmj |  wwwroot/js/pages/SignlistF/SignlistF-BtsCore.cmi $src_root_dir/wwwroot/js/pages/SignlistF/SignlistF.bs.js : ml_cmj_cmi wwwroot/js/pages/SignlistF/SignlistF.reast ||  wwwroot/js/pages/SignlistF/SignlistF.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/pages/SignlistF
+build  wwwroot/js/pages/Code/Code.reast : build_ast_from_re $src_root_dir/wwwroot/js/pages/Code/Code.re
+build  wwwroot/js/pages/Code/Code.d : build_deps wwwroot/js/pages/Code/Code.reast
+build  wwwroot/js/pages/Code/Code-BtsCore.cmj |  wwwroot/js/pages/Code/Code-BtsCore.cmi $src_root_dir/wwwroot/js/pages/Code/Code.bs.js : ml_cmj_cmi wwwroot/js/pages/Code/Code.reast ||  wwwroot/js/pages/Code/Code.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/pages/Code
+build  wwwroot/js/pages/Signup/Signup.reast : build_ast_from_re $src_root_dir/wwwroot/js/pages/Signup/Signup.re
+build  wwwroot/js/pages/Signup/Signup.d : build_deps wwwroot/js/pages/Signup/Signup.reast
+build  wwwroot/js/pages/Signup/Signup-BtsCore.cmj |  wwwroot/js/pages/Signup/Signup-BtsCore.cmi $src_root_dir/wwwroot/js/pages/Signup/Signup.bs.js : ml_cmj_cmi wwwroot/js/pages/Signup/Signup.reast ||  wwwroot/js/pages/Signup/Signup.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/pages/Signup
+build  wwwroot/js/pages/MailistF/MailistF.reast : build_ast_from_re $src_root_dir/wwwroot/js/pages/MailistF/MailistF.re
+build  wwwroot/js/pages/MailistF/MailistF.d : build_deps wwwroot/js/pages/MailistF/MailistF.reast
+build  wwwroot/js/pages/MailistF/MailistF-BtsCore.cmj |  wwwroot/js/pages/MailistF/MailistF-BtsCore.cmi $src_root_dir/wwwroot/js/pages/MailistF/MailistF.bs.js : ml_cmj_cmi wwwroot/js/pages/MailistF/MailistF.reast ||  wwwroot/js/pages/MailistF/MailistF.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/pages/MailistF
+build  wwwroot/js/pages/MailistR/MailistR.reast : build_ast_from_re $src_root_dir/wwwroot/js/pages/MailistR/MailistR.re
+build  wwwroot/js/pages/MailistR/MailistR.d : build_deps wwwroot/js/pages/MailistR/MailistR.reast
+build  wwwroot/js/pages/MailistR/MailistR-BtsCore.cmj |  wwwroot/js/pages/MailistR/MailistR-BtsCore.cmi $src_root_dir/wwwroot/js/pages/MailistR/MailistR.bs.js : ml_cmj_cmi wwwroot/js/pages/MailistR/MailistR.reast ||  wwwroot/js/pages/MailistR/MailistR.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/pages/MailistR
+build  wwwroot/js/pages/Oauth/Oauth.reast : build_ast_from_re $src_root_dir/wwwroot/js/pages/Oauth/Oauth.re
+build  wwwroot/js/pages/Oauth/Oauth.d : build_deps wwwroot/js/pages/Oauth/Oauth.reast
+build  wwwroot/js/pages/Oauth/Oauth-BtsCore.cmj |  wwwroot/js/pages/Oauth/Oauth-BtsCore.cmi $src_root_dir/wwwroot/js/pages/Oauth/Oauth.bs.js : ml_cmj_cmi wwwroot/js/pages/Oauth/Oauth.reast ||  wwwroot/js/pages/Oauth/Oauth.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/pages/Oauth
+build  wwwroot/js/pages/MailistI/MailistI.reast : build_ast_from_re $src_root_dir/wwwroot/js/pages/MailistI/MailistI.re
+build  wwwroot/js/pages/MailistI/MailistI.d : build_deps wwwroot/js/pages/MailistI/MailistI.reast
+build  wwwroot/js/pages/MailistI/MailistI-BtsCore.cmj |  wwwroot/js/pages/MailistI/MailistI-BtsCore.cmi $src_root_dir/wwwroot/js/pages/MailistI/MailistI.bs.js : ml_cmj_cmi wwwroot/js/pages/MailistI/MailistI.reast ||  wwwroot/js/pages/MailistI/MailistI.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/pages/MailistI
+build  wwwroot/js/pages/CreateF/CreateF.reast : build_ast_from_re $src_root_dir/wwwroot/js/pages/CreateF/CreateF.re
+build  wwwroot/js/pages/CreateF/CreateF.d : build_deps wwwroot/js/pages/CreateF/CreateF.reast
+build  wwwroot/js/pages/CreateF/CreateF-BtsCore.cmj |  wwwroot/js/pages/CreateF/CreateF-BtsCore.cmi $src_root_dir/wwwroot/js/pages/CreateF/CreateF.bs.js : ml_cmj_cmi wwwroot/js/pages/CreateF/CreateF.reast ||  wwwroot/js/pages/CreateF/CreateF.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/pages/CreateF
+build  wwwroot/js/pages/CreateI/CreateI.reast : build_ast_from_re $src_root_dir/wwwroot/js/pages/CreateI/CreateI.re
+build  wwwroot/js/pages/CreateI/CreateI.d : build_deps wwwroot/js/pages/CreateI/CreateI.reast
+build  wwwroot/js/pages/CreateI/CreateI-BtsCore.cmj |  wwwroot/js/pages/CreateI/CreateI-BtsCore.cmi $src_root_dir/wwwroot/js/pages/CreateI/CreateI.bs.js : ml_cmj_cmi wwwroot/js/pages/CreateI/CreateI.reast ||  wwwroot/js/pages/CreateI/CreateI.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/pages/CreateI
+build  wwwroot/js/pages/Home/Home.reast : build_ast_from_re $src_root_dir/wwwroot/js/pages/Home/Home.re
+build  wwwroot/js/pages/Home/Home.d : build_deps wwwroot/js/pages/Home/Home.reast
+build  wwwroot/js/pages/Home/Home-BtsCore.cmj |  wwwroot/js/pages/Home/Home-BtsCore.cmi $src_root_dir/wwwroot/js/pages/Home/Home.bs.js : ml_cmj_cmi wwwroot/js/pages/Home/Home.reast ||  wwwroot/js/pages/Home/Home.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/pages/Home
+build  wwwroot/js/pages/Home/TableRows.reast : build_ast_from_re $src_root_dir/wwwroot/js/pages/Home/TableRows.re
+build  wwwroot/js/pages/Home/TableRows.d : build_deps wwwroot/js/pages/Home/TableRows.reast
+build  wwwroot/js/pages/Home/TableRows-BtsCore.cmj |  wwwroot/js/pages/Home/TableRows-BtsCore.cmi $src_root_dir/wwwroot/js/pages/Home/TableRows.bs.js : ml_cmj_cmi wwwroot/js/pages/Home/TableRows.reast ||  wwwroot/js/pages/Home/TableRows.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/pages/Home
+build  wwwroot/js/pages/CreateR/CreateR.reast : build_ast_from_re $src_root_dir/wwwroot/js/pages/CreateR/CreateR.re
+build  wwwroot/js/pages/CreateR/CreateR.d : build_deps wwwroot/js/pages/CreateR/CreateR.reast
+build  wwwroot/js/pages/CreateR/CreateR-BtsCore.cmj |  wwwroot/js/pages/CreateR/CreateR-BtsCore.cmi $src_root_dir/wwwroot/js/pages/CreateR/CreateR.bs.js : ml_cmj_cmi wwwroot/js/pages/CreateR/CreateR.reast ||  wwwroot/js/pages/CreateR/CreateR.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/pages/CreateR
+build  wwwroot/js/modules/Math.reast : build_ast_from_re $src_root_dir/wwwroot/js/modules/Math.re
+build  wwwroot/js/modules/Math.d : build_deps wwwroot/js/modules/Math.reast
+build  wwwroot/js/modules/Math-BtsCore.cmj |  wwwroot/js/modules/Math-BtsCore.cmi $src_root_dir/wwwroot/js/modules/Math.bs.js : ml_cmj_cmi wwwroot/js/modules/Math.reast ||  wwwroot/js/modules/Math.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/modules
+build  wwwroot/js/modules/Window.reast : build_ast_from_re $src_root_dir/wwwroot/js/modules/Window.re
+build  wwwroot/js/modules/Window.d : build_deps wwwroot/js/modules/Window.reast
+build  wwwroot/js/modules/Window-BtsCore.cmj |  wwwroot/js/modules/Window-BtsCore.cmi $src_root_dir/wwwroot/js/modules/Window.bs.js : ml_cmj_cmi wwwroot/js/modules/Window.reast ||  wwwroot/js/modules/Window.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/modules
+build  wwwroot/js/modules/Storage.reast : build_ast_from_re $src_root_dir/wwwroot/js/modules/Storage.re
+build  wwwroot/js/modules/Storage.d : build_deps wwwroot/js/modules/Storage.reast
+build  wwwroot/js/modules/Storage-BtsCore.cmj |  wwwroot/js/modules/Storage-BtsCore.cmi $src_root_dir/wwwroot/js/modules/Storage.bs.js : ml_cmj_cmi wwwroot/js/modules/Storage.reast ||  wwwroot/js/modules/Storage.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/modules
+build  wwwroot/js/modules/Document.reast : build_ast_from_re $src_root_dir/wwwroot/js/modules/Document.re
+build  wwwroot/js/modules/Document.d : build_deps wwwroot/js/modules/Document.reast
+build  wwwroot/js/modules/Document-BtsCore.cmj |  wwwroot/js/modules/Document-BtsCore.cmi $src_root_dir/wwwroot/js/modules/Document.bs.js : ml_cmj_cmi wwwroot/js/modules/Document.reast ||  wwwroot/js/modules/Document.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/modules
+build  wwwroot/js/modules/Navigator.reast : build_ast_from_re $src_root_dir/wwwroot/js/modules/Navigator.re
+build  wwwroot/js/modules/Navigator.d : build_deps wwwroot/js/modules/Navigator.reast
+build  wwwroot/js/modules/Navigator-BtsCore.cmj |  wwwroot/js/modules/Navigator-BtsCore.cmi $src_root_dir/wwwroot/js/modules/Navigator.bs.js : ml_cmj_cmi wwwroot/js/modules/Navigator.reast ||  wwwroot/js/modules/Navigator.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/modules
+build  wwwroot/js/modules/Notifications.reast : build_ast_from_re $src_root_dir/wwwroot/js/modules/Notifications.re
+build  wwwroot/js/modules/Notifications.d : build_deps wwwroot/js/modules/Notifications.reast
+build  wwwroot/js/modules/Notifications-BtsCore.cmj |  wwwroot/js/modules/Notifications-BtsCore.cmi $src_root_dir/wwwroot/js/modules/Notifications.bs.js : ml_cmj_cmi wwwroot/js/modules/Notifications.reast ||  wwwroot/js/modules/Notifications.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/modules
+build  wwwroot/js/setting/Basic.reast : build_ast_from_re $src_root_dir/wwwroot/js/setting/Basic.re
+build  wwwroot/js/setting/Basic.d : build_deps wwwroot/js/setting/Basic.reast
+build  wwwroot/js/setting/Basic-BtsCore.cmj |  wwwroot/js/setting/Basic-BtsCore.cmi $src_root_dir/wwwroot/js/setting/Basic.bs.js : ml_cmj_cmi wwwroot/js/setting/Basic.reast ||  wwwroot/js/setting/Basic.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/setting
+build  wwwroot/js/setting/Setting.reast : build_ast_from_re $src_root_dir/wwwroot/js/setting/Setting.re
+build  wwwroot/js/setting/Setting.d : build_deps wwwroot/js/setting/Setting.reast
+build  wwwroot/js/setting/Setting-BtsCore.cmj |  wwwroot/js/setting/Setting-BtsCore.cmi $src_root_dir/wwwroot/js/setting/Setting.bs.js : ml_cmj_cmi wwwroot/js/setting/Setting.reast ||  wwwroot/js/setting/Setting.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/setting
+build  wwwroot/js/styles/OutSide/OutSide.reast : build_ast_from_re $src_root_dir/wwwroot/js/styles/OutSide/OutSide.re
+build  wwwroot/js/styles/OutSide/OutSide.d : build_deps wwwroot/js/styles/OutSide/OutSide.reast
+build  wwwroot/js/styles/OutSide/OutSide-BtsCore.cmj |  wwwroot/js/styles/OutSide/OutSide-BtsCore.cmi $src_root_dir/wwwroot/js/styles/OutSide/OutSide.bs.js : ml_cmj_cmi wwwroot/js/styles/OutSide/OutSide.reast ||  wwwroot/js/styles/OutSide/OutSide.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/styles/OutSide
+build  wwwroot/js/styles/Together/Together.reast : build_ast_from_re $src_root_dir/wwwroot/js/styles/Together/Together.re
+build  wwwroot/js/styles/Together/Together.d : build_deps wwwroot/js/styles/Together/Together.reast
+build  wwwroot/js/styles/Together/Together-BtsCore.cmj |  wwwroot/js/styles/Together/Together-BtsCore.cmi $src_root_dir/wwwroot/js/styles/Together/Together.bs.js : ml_cmj_cmi wwwroot/js/styles/Together/Together.reast ||  wwwroot/js/styles/Together/Together.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/styles/Together
+build  wwwroot/js/controls/BoardColor.reast : build_ast_from_re $src_root_dir/wwwroot/js/controls/BoardColor.re
+build  wwwroot/js/controls/BoardColor.d : build_deps wwwroot/js/controls/BoardColor.reast
+build  wwwroot/js/controls/BoardColor-BtsCore.cmj |  wwwroot/js/controls/BoardColor-BtsCore.cmi $src_root_dir/wwwroot/js/controls/BoardColor.bs.js : ml_cmj_cmi wwwroot/js/controls/BoardColor.reast ||  wwwroot/js/controls/BoardColor.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/controls
+build  wwwroot/js/controls/AnswerColor.reast : build_ast_from_re $src_root_dir/wwwroot/js/controls/AnswerColor.re
+build  wwwroot/js/controls/AnswerColor.d : build_deps wwwroot/js/controls/AnswerColor.reast
+build  wwwroot/js/controls/AnswerColor-BtsCore.cmj |  wwwroot/js/controls/AnswerColor-BtsCore.cmi $src_root_dir/wwwroot/js/controls/AnswerColor.bs.js : ml_cmj_cmi wwwroot/js/controls/AnswerColor.reast ||  wwwroot/js/controls/AnswerColor.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/controls
+build  wwwroot/js/controls/SwitchColor.reast : build_ast_from_re $src_root_dir/wwwroot/js/controls/SwitchColor.re
+build  wwwroot/js/controls/SwitchColor.d : build_deps wwwroot/js/controls/SwitchColor.reast
+build  wwwroot/js/controls/SwitchColor-BtsCore.cmj |  wwwroot/js/controls/SwitchColor-BtsCore.cmi $src_root_dir/wwwroot/js/controls/SwitchColor.bs.js : ml_cmj_cmi wwwroot/js/controls/SwitchColor.reast ||  wwwroot/js/controls/SwitchColor.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/controls
+build  wwwroot/js/controls/ObjectFormat.reast : build_ast_from_re $src_root_dir/wwwroot/js/controls/ObjectFormat.re
+build  wwwroot/js/controls/ObjectFormat.d : build_deps wwwroot/js/controls/ObjectFormat.reast
+build  wwwroot/js/controls/ObjectFormat-BtsCore.cmj |  wwwroot/js/controls/ObjectFormat-BtsCore.cmi $src_root_dir/wwwroot/js/controls/ObjectFormat.bs.js : ml_cmj_cmi wwwroot/js/controls/ObjectFormat.reast ||  wwwroot/js/controls/ObjectFormat.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/controls
+build  wwwroot/js/controls/IconAnimation.reast : build_ast_from_re $src_root_dir/wwwroot/js/controls/IconAnimation.re
+build  wwwroot/js/controls/IconAnimation.d : build_deps wwwroot/js/controls/IconAnimation.reast
+build  wwwroot/js/controls/IconAnimation-BtsCore.cmj |  wwwroot/js/controls/IconAnimation-BtsCore.cmi $src_root_dir/wwwroot/js/controls/IconAnimation.bs.js : ml_cmj_cmi wwwroot/js/controls/IconAnimation.reast ||  wwwroot/js/controls/IconAnimation.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/controls
+build  wwwroot/js/controls/SelectPosition.reast : build_ast_from_re $src_root_dir/wwwroot/js/controls/SelectPosition.re
+build  wwwroot/js/controls/SelectPosition.d : build_deps wwwroot/js/controls/SelectPosition.reast
+build  wwwroot/js/controls/SelectPosition-BtsCore.cmj |  wwwroot/js/controls/SelectPosition-BtsCore.cmi $src_root_dir/wwwroot/js/controls/SelectPosition.bs.js : ml_cmj_cmi wwwroot/js/controls/SelectPosition.reast ||  wwwroot/js/controls/SelectPosition.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/controls
+build  wwwroot/js/features/Data.reast : build_ast_from_re $src_root_dir/wwwroot/js/features/Data.re
+build  wwwroot/js/features/Data.d : build_deps wwwroot/js/features/Data.reast
+build  wwwroot/js/features/Data-BtsCore.cmj |  wwwroot/js/features/Data-BtsCore.cmi $src_root_dir/wwwroot/js/features/Data.bs.js : ml_cmj_cmi wwwroot/js/features/Data.reast ||  wwwroot/js/features/Data.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/features
+build  wwwroot/js/features/Path.reast : build_ast_from_re $src_root_dir/wwwroot/js/features/Path.re
+build  wwwroot/js/features/Path.d : build_deps wwwroot/js/features/Path.reast
+build  wwwroot/js/features/Path-BtsCore.cmj |  wwwroot/js/features/Path-BtsCore.cmi $src_root_dir/wwwroot/js/features/Path.bs.js : ml_cmj_cmi wwwroot/js/features/Path.reast ||  wwwroot/js/features/Path.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/features
+build  wwwroot/js/features/Items.reast : build_ast_from_re $src_root_dir/wwwroot/js/features/Items.re
+build  wwwroot/js/features/Items.d : build_deps wwwroot/js/features/Items.reast
+build  wwwroot/js/features/Items-BtsCore.cmj |  wwwroot/js/features/Items-BtsCore.cmi $src_root_dir/wwwroot/js/features/Items.bs.js : ml_cmj_cmi wwwroot/js/features/Items.reast ||  wwwroot/js/features/Items.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/features
+build  wwwroot/js/features/Status.reast : build_ast_from_re $src_root_dir/wwwroot/js/features/Status.re
+build  wwwroot/js/features/Status.d : build_deps wwwroot/js/features/Status.reast
+build  wwwroot/js/features/Status-BtsCore.cmj |  wwwroot/js/features/Status-BtsCore.cmi $src_root_dir/wwwroot/js/features/Status.bs.js : ml_cmj_cmi wwwroot/js/features/Status.reast ||  wwwroot/js/features/Status.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/features
+build  wwwroot/js/features/Axiosapi.reast : build_ast_from_re $src_root_dir/wwwroot/js/features/Axiosapi.re
+build  wwwroot/js/features/Axiosapi.d : build_deps wwwroot/js/features/Axiosapi.reast
+build  wwwroot/js/features/Axiosapi-BtsCore.cmj |  wwwroot/js/features/Axiosapi-BtsCore.cmi $src_root_dir/wwwroot/js/features/Axiosapi.bs.js : ml_cmj_cmi wwwroot/js/features/Axiosapi.reast ||  wwwroot/js/features/Axiosapi.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/features
+build  wwwroot/js/example/Splits/SplitBoard.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Splits/SplitBoard.re
+build  wwwroot/js/example/Splits/SplitBoard.d : build_deps wwwroot/js/example/Splits/SplitBoard.reast
+build  wwwroot/js/example/Splits/SplitBoard-BtsCore.cmj |  wwwroot/js/example/Splits/SplitBoard-BtsCore.cmi $src_root_dir/wwwroot/js/example/Splits/SplitBoard.bs.js : ml_cmj_cmi wwwroot/js/example/Splits/SplitBoard.reast ||  wwwroot/js/example/Splits/SplitBoard.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Splits
+build  wwwroot/js/example/Splits/SplitHeader.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Splits/SplitHeader.re
+build  wwwroot/js/example/Splits/SplitHeader.d : build_deps wwwroot/js/example/Splits/SplitHeader.reast
+build  wwwroot/js/example/Splits/SplitHeader-BtsCore.cmj |  wwwroot/js/example/Splits/SplitHeader-BtsCore.cmi $src_root_dir/wwwroot/js/example/Splits/SplitHeader.bs.js : ml_cmj_cmi wwwroot/js/example/Splits/SplitHeader.reast ||  wwwroot/js/example/Splits/SplitHeader.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Splits
+build  wwwroot/js/example/ScrollBar/BottomScroll.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/ScrollBar/BottomScroll.re
+build  wwwroot/js/example/ScrollBar/BottomScroll.d : build_deps wwwroot/js/example/ScrollBar/BottomScroll.reast
+build  wwwroot/js/example/ScrollBar/BottomScroll-BtsCore.cmj |  wwwroot/js/example/ScrollBar/BottomScroll-BtsCore.cmi $src_root_dir/wwwroot/js/example/ScrollBar/BottomScroll.bs.js : ml_cmj_cmi wwwroot/js/example/ScrollBar/BottomScroll.reast ||  wwwroot/js/example/ScrollBar/BottomScroll.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/ScrollBar
+build  wwwroot/js/example/Instagram/NewGramUser.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Instagram/NewGramUser.re
+build  wwwroot/js/example/Instagram/NewGramUser.d : build_deps wwwroot/js/example/Instagram/NewGramUser.reast
+build  wwwroot/js/example/Instagram/NewGramUser-BtsCore.cmj |  wwwroot/js/example/Instagram/NewGramUser-BtsCore.cmi $src_root_dir/wwwroot/js/example/Instagram/NewGramUser.bs.js : ml_cmj_cmi wwwroot/js/example/Instagram/NewGramUser.reast ||  wwwroot/js/example/Instagram/NewGramUser.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Instagram
+build  wwwroot/js/example/Instagram/NewGramBadge.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Instagram/NewGramBadge.re
+build  wwwroot/js/example/Instagram/NewGramBadge.d : build_deps wwwroot/js/example/Instagram/NewGramBadge.reast
+build  wwwroot/js/example/Instagram/NewGramBadge-BtsCore.cmj |  wwwroot/js/example/Instagram/NewGramBadge-BtsCore.cmi $src_root_dir/wwwroot/js/example/Instagram/NewGramBadge.bs.js : ml_cmj_cmi wwwroot/js/example/Instagram/NewGramBadge.reast ||  wwwroot/js/example/Instagram/NewGramBadge.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Instagram
+build  wwwroot/js/example/Instagram/NewGramBoard.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Instagram/NewGramBoard.re
+build  wwwroot/js/example/Instagram/NewGramBoard.d : build_deps wwwroot/js/example/Instagram/NewGramBoard.reast
+build  wwwroot/js/example/Instagram/NewGramBoard-BtsCore.cmj |  wwwroot/js/example/Instagram/NewGramBoard-BtsCore.cmi $src_root_dir/wwwroot/js/example/Instagram/NewGramBoard.bs.js : ml_cmj_cmi wwwroot/js/example/Instagram/NewGramBoard.reast ||  wwwroot/js/example/Instagram/NewGramBoard.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Instagram
+build  wwwroot/js/example/Instagram/NewInstagram.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Instagram/NewInstagram.re
+build  wwwroot/js/example/Instagram/NewInstagram.d : build_deps wwwroot/js/example/Instagram/NewInstagram.reast
+build  wwwroot/js/example/Instagram/NewInstagram-BtsCore.cmj |  wwwroot/js/example/Instagram/NewInstagram-BtsCore.cmi $src_root_dir/wwwroot/js/example/Instagram/NewInstagram.bs.js : ml_cmj_cmi wwwroot/js/example/Instagram/NewInstagram.reast ||  wwwroot/js/example/Instagram/NewInstagram.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Instagram
+build  wwwroot/js/example/Account/AccountBoard.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Account/AccountBoard.re
+build  wwwroot/js/example/Account/AccountBoard.d : build_deps wwwroot/js/example/Account/AccountBoard.reast
+build  wwwroot/js/example/Account/AccountBoard-BtsCore.cmj |  wwwroot/js/example/Account/AccountBoard-BtsCore.cmi $src_root_dir/wwwroot/js/example/Account/AccountBoard.bs.js : ml_cmj_cmi wwwroot/js/example/Account/AccountBoard.reast ||  wwwroot/js/example/Account/AccountBoard.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Account
+build  wwwroot/js/example/Account/Resend/YoutubeResend.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Account/Resend/YoutubeResend.re
+build  wwwroot/js/example/Account/Resend/YoutubeResend.d : build_deps wwwroot/js/example/Account/Resend/YoutubeResend.reast
+build  wwwroot/js/example/Account/Resend/YoutubeResend-BtsCore.cmj |  wwwroot/js/example/Account/Resend/YoutubeResend-BtsCore.cmi $src_root_dir/wwwroot/js/example/Account/Resend/YoutubeResend.bs.js : ml_cmj_cmi wwwroot/js/example/Account/Resend/YoutubeResend.reast ||  wwwroot/js/example/Account/Resend/YoutubeResend.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Account/Resend
+build  wwwroot/js/example/Account/Login/YoutubeLogin.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Account/Login/YoutubeLogin.re
+build  wwwroot/js/example/Account/Login/YoutubeLogin.d : build_deps wwwroot/js/example/Account/Login/YoutubeLogin.reast
+build  wwwroot/js/example/Account/Login/YoutubeLogin-BtsCore.cmj |  wwwroot/js/example/Account/Login/YoutubeLogin-BtsCore.cmi $src_root_dir/wwwroot/js/example/Account/Login/YoutubeLogin.bs.js : ml_cmj_cmi wwwroot/js/example/Account/Login/YoutubeLogin.reast ||  wwwroot/js/example/Account/Login/YoutubeLogin.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Account/Login
+build  wwwroot/js/example/Account/Forget/YoutubeForget.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Account/Forget/YoutubeForget.re
+build  wwwroot/js/example/Account/Forget/YoutubeForget.d : build_deps wwwroot/js/example/Account/Forget/YoutubeForget.reast
+build  wwwroot/js/example/Account/Forget/YoutubeForget-BtsCore.cmj |  wwwroot/js/example/Account/Forget/YoutubeForget-BtsCore.cmi $src_root_dir/wwwroot/js/example/Account/Forget/YoutubeForget.bs.js : ml_cmj_cmi wwwroot/js/example/Account/Forget/YoutubeForget.reast ||  wwwroot/js/example/Account/Forget/YoutubeForget.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Account/Forget
+build  wwwroot/js/example/Account/Code/YoutubeCode.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Account/Code/YoutubeCode.re
+build  wwwroot/js/example/Account/Code/YoutubeCode.d : build_deps wwwroot/js/example/Account/Code/YoutubeCode.reast
+build  wwwroot/js/example/Account/Code/YoutubeCode-BtsCore.cmj |  wwwroot/js/example/Account/Code/YoutubeCode-BtsCore.cmi $src_root_dir/wwwroot/js/example/Account/Code/YoutubeCode.bs.js : ml_cmj_cmi wwwroot/js/example/Account/Code/YoutubeCode.reast ||  wwwroot/js/example/Account/Code/YoutubeCode.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Account/Code
+build  wwwroot/js/example/Account/Signup/YoutubeSignup.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Account/Signup/YoutubeSignup.re
+build  wwwroot/js/example/Account/Signup/YoutubeSignup.d : build_deps wwwroot/js/example/Account/Signup/YoutubeSignup.reast
+build  wwwroot/js/example/Account/Signup/YoutubeSignup-BtsCore.cmj |  wwwroot/js/example/Account/Signup/YoutubeSignup-BtsCore.cmi $src_root_dir/wwwroot/js/example/Account/Signup/YoutubeSignup.bs.js : ml_cmj_cmi wwwroot/js/example/Account/Signup/YoutubeSignup.reast ||  wwwroot/js/example/Account/Signup/YoutubeSignup.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Account/Signup
+build  wwwroot/js/example/Account/Oauth/YoutubeOauth.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Account/Oauth/YoutubeOauth.re
+build  wwwroot/js/example/Account/Oauth/YoutubeOauth.d : build_deps wwwroot/js/example/Account/Oauth/YoutubeOauth.reast
+build  wwwroot/js/example/Account/Oauth/YoutubeOauth-BtsCore.cmj |  wwwroot/js/example/Account/Oauth/YoutubeOauth-BtsCore.cmi $src_root_dir/wwwroot/js/example/Account/Oauth/YoutubeOauth.bs.js : ml_cmj_cmi wwwroot/js/example/Account/Oauth/YoutubeOauth.reast ||  wwwroot/js/example/Account/Oauth/YoutubeOauth.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Account/Oauth
+build  wwwroot/js/example/BottomNavigation/IconNavigation.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/BottomNavigation/IconNavigation.re
+build  wwwroot/js/example/BottomNavigation/IconNavigation.d : build_deps wwwroot/js/example/BottomNavigation/IconNavigation.reast
+build  wwwroot/js/example/BottomNavigation/IconNavigation-BtsCore.cmj |  wwwroot/js/example/BottomNavigation/IconNavigation-BtsCore.cmi $src_root_dir/wwwroot/js/example/BottomNavigation/IconNavigation.bs.js : ml_cmj_cmi wwwroot/js/example/BottomNavigation/IconNavigation.reast ||  wwwroot/js/example/BottomNavigation/IconNavigation.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/BottomNavigation
+build  wwwroot/js/example/BottomNavigation/InputNavigation.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/BottomNavigation/InputNavigation.re
+build  wwwroot/js/example/BottomNavigation/InputNavigation.d : build_deps wwwroot/js/example/BottomNavigation/InputNavigation.reast
+build  wwwroot/js/example/BottomNavigation/InputNavigation-BtsCore.cmj |  wwwroot/js/example/BottomNavigation/InputNavigation-BtsCore.cmi $src_root_dir/wwwroot/js/example/BottomNavigation/InputNavigation.bs.js : ml_cmj_cmi wwwroot/js/example/BottomNavigation/InputNavigation.reast ||  wwwroot/js/example/BottomNavigation/InputNavigation.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/BottomNavigation
+build  wwwroot/js/example/BottomNavigation/BottomNavigation.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/BottomNavigation/BottomNavigation.re
+build  wwwroot/js/example/BottomNavigation/BottomNavigation.d : build_deps wwwroot/js/example/BottomNavigation/BottomNavigation.reast
+build  wwwroot/js/example/BottomNavigation/BottomNavigation-BtsCore.cmj |  wwwroot/js/example/BottomNavigation/BottomNavigation-BtsCore.cmi $src_root_dir/wwwroot/js/example/BottomNavigation/BottomNavigation.bs.js : ml_cmj_cmi wwwroot/js/example/BottomNavigation/BottomNavigation.reast ||  wwwroot/js/example/BottomNavigation/BottomNavigation.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/BottomNavigation
+build  wwwroot/js/example/Dialogs/Dialogs.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Dialogs/Dialogs.re
+build  wwwroot/js/example/Dialogs/Dialogs.d : build_deps wwwroot/js/example/Dialogs/Dialogs.reast
+build  wwwroot/js/example/Dialogs/Dialogs-BtsCore.cmj |  wwwroot/js/example/Dialogs/Dialogs-BtsCore.cmi $src_root_dir/wwwroot/js/example/Dialogs/Dialogs.bs.js : ml_cmj_cmi wwwroot/js/example/Dialogs/Dialogs.reast ||  wwwroot/js/example/Dialogs/Dialogs.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Dialogs
+build  wwwroot/js/example/Boards/BackgroundBoard.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Boards/BackgroundBoard.re
+build  wwwroot/js/example/Boards/BackgroundBoard.d : build_deps wwwroot/js/example/Boards/BackgroundBoard.reast
+build  wwwroot/js/example/Boards/BackgroundBoard-BtsCore.cmj |  wwwroot/js/example/Boards/BackgroundBoard-BtsCore.cmi $src_root_dir/wwwroot/js/example/Boards/BackgroundBoard.bs.js : ml_cmj_cmi wwwroot/js/example/Boards/BackgroundBoard.reast ||  wwwroot/js/example/Boards/BackgroundBoard.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Boards
+build  wwwroot/js/example/Boards/CardOrPaperBoard.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Boards/CardOrPaperBoard.re
+build  wwwroot/js/example/Boards/CardOrPaperBoard.d : build_deps wwwroot/js/example/Boards/CardOrPaperBoard.reast
+build  wwwroot/js/example/Boards/CardOrPaperBoard-BtsCore.cmj |  wwwroot/js/example/Boards/CardOrPaperBoard-BtsCore.cmi $src_root_dir/wwwroot/js/example/Boards/CardOrPaperBoard.bs.js : ml_cmj_cmi wwwroot/js/example/Boards/CardOrPaperBoard.reast ||  wwwroot/js/example/Boards/CardOrPaperBoard.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Boards
+build  wwwroot/js/example/Facebook/NewBookUser.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Facebook/NewBookUser.re
+build  wwwroot/js/example/Facebook/NewBookUser.d : build_deps wwwroot/js/example/Facebook/NewBookUser.reast
+build  wwwroot/js/example/Facebook/NewBookUser-BtsCore.cmj |  wwwroot/js/example/Facebook/NewBookUser-BtsCore.cmi $src_root_dir/wwwroot/js/example/Facebook/NewBookUser.bs.js : ml_cmj_cmi wwwroot/js/example/Facebook/NewBookUser.reast ||  wwwroot/js/example/Facebook/NewBookUser.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Facebook
+build  wwwroot/js/example/Facebook/NewFacebook.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Facebook/NewFacebook.re
+build  wwwroot/js/example/Facebook/NewFacebook.d : build_deps wwwroot/js/example/Facebook/NewFacebook.reast
+build  wwwroot/js/example/Facebook/NewFacebook-BtsCore.cmj |  wwwroot/js/example/Facebook/NewFacebook-BtsCore.cmi $src_root_dir/wwwroot/js/example/Facebook/NewFacebook.bs.js : ml_cmj_cmi wwwroot/js/example/Facebook/NewFacebook.reast ||  wwwroot/js/example/Facebook/NewFacebook.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Facebook
+build  wwwroot/js/example/Facebook/NewFacetube.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Facebook/NewFacetube.re
+build  wwwroot/js/example/Facebook/NewFacetube.d : build_deps wwwroot/js/example/Facebook/NewFacetube.reast
+build  wwwroot/js/example/Facebook/NewFacetube-BtsCore.cmj |  wwwroot/js/example/Facebook/NewFacetube-BtsCore.cmi $src_root_dir/wwwroot/js/example/Facebook/NewFacetube.bs.js : ml_cmj_cmi wwwroot/js/example/Facebook/NewFacetube.reast ||  wwwroot/js/example/Facebook/NewFacetube.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Facebook
+build  wwwroot/js/example/Facebook/NewBookBadge.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Facebook/NewBookBadge.re
+build  wwwroot/js/example/Facebook/NewBookBadge.d : build_deps wwwroot/js/example/Facebook/NewBookBadge.reast
+build  wwwroot/js/example/Facebook/NewBookBadge-BtsCore.cmj |  wwwroot/js/example/Facebook/NewBookBadge-BtsCore.cmi $src_root_dir/wwwroot/js/example/Facebook/NewBookBadge.bs.js : ml_cmj_cmi wwwroot/js/example/Facebook/NewBookBadge.reast ||  wwwroot/js/example/Facebook/NewBookBadge.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Facebook
+build  wwwroot/js/example/Facebook/NewBookBoard.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Facebook/NewBookBoard.re
+build  wwwroot/js/example/Facebook/NewBookBoard.d : build_deps wwwroot/js/example/Facebook/NewBookBoard.reast
+build  wwwroot/js/example/Facebook/NewBookBoard-BtsCore.cmj |  wwwroot/js/example/Facebook/NewBookBoard-BtsCore.cmi $src_root_dir/wwwroot/js/example/Facebook/NewBookBoard.bs.js : ml_cmj_cmi wwwroot/js/example/Facebook/NewBookBoard.reast ||  wwwroot/js/example/Facebook/NewBookBoard.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Facebook
+build  wwwroot/js/example/Facebook/NewBookCreate.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Facebook/NewBookCreate.re
+build  wwwroot/js/example/Facebook/NewBookCreate.d : build_deps wwwroot/js/example/Facebook/NewBookCreate.reast
+build  wwwroot/js/example/Facebook/NewBookCreate-BtsCore.cmj |  wwwroot/js/example/Facebook/NewBookCreate-BtsCore.cmi $src_root_dir/wwwroot/js/example/Facebook/NewBookCreate.bs.js : ml_cmj_cmi wwwroot/js/example/Facebook/NewBookCreate.reast ||  wwwroot/js/example/Facebook/NewBookCreate.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Facebook
+build  wwwroot/js/example/Facebook/NewBookRecord.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Facebook/NewBookRecord.re
+build  wwwroot/js/example/Facebook/NewBookRecord.d : build_deps wwwroot/js/example/Facebook/NewBookRecord.reast
+build  wwwroot/js/example/Facebook/NewBookRecord-BtsCore.cmj |  wwwroot/js/example/Facebook/NewBookRecord-BtsCore.cmi $src_root_dir/wwwroot/js/example/Facebook/NewBookRecord.bs.js : ml_cmj_cmi wwwroot/js/example/Facebook/NewBookRecord.reast ||  wwwroot/js/example/Facebook/NewBookRecord.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Facebook
+build  wwwroot/js/example/Expansion/Expansion.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Expansion/Expansion.re
+build  wwwroot/js/example/Expansion/Expansion.d : build_deps wwwroot/js/example/Expansion/Expansion.reast
+build  wwwroot/js/example/Expansion/Expansion-BtsCore.cmj |  wwwroot/js/example/Expansion/Expansion-BtsCore.cmi $src_root_dir/wwwroot/js/example/Expansion/Expansion.bs.js : ml_cmj_cmi wwwroot/js/example/Expansion/Expansion.reast ||  wwwroot/js/example/Expansion/Expansion.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Expansion
+build  wwwroot/js/example/Youtube/Gmail.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Youtube/Gmail.re
+build  wwwroot/js/example/Youtube/Gmail.d : build_deps wwwroot/js/example/Youtube/Gmail.reast
+build  wwwroot/js/example/Youtube/Gmail-BtsCore.cmj |  wwwroot/js/example/Youtube/Gmail-BtsCore.cmi $src_root_dir/wwwroot/js/example/Youtube/Gmail.bs.js : ml_cmj_cmi wwwroot/js/example/Youtube/Gmail.reast ||  wwwroot/js/example/Youtube/Gmail.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Youtube
+build  wwwroot/js/example/Youtube/YouFace.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Youtube/YouFace.re
+build  wwwroot/js/example/Youtube/YouFace.d : build_deps wwwroot/js/example/Youtube/YouFace.reast
+build  wwwroot/js/example/Youtube/YouFace-BtsCore.cmj |  wwwroot/js/example/Youtube/YouFace-BtsCore.cmi $src_root_dir/wwwroot/js/example/Youtube/YouFace.bs.js : ml_cmj_cmi wwwroot/js/example/Youtube/YouFace.reast ||  wwwroot/js/example/Youtube/YouFace.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Youtube
+build  wwwroot/js/example/Youtube/Youtube.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Youtube/Youtube.re
+build  wwwroot/js/example/Youtube/Youtube.d : build_deps wwwroot/js/example/Youtube/Youtube.reast
+build  wwwroot/js/example/Youtube/Youtube-BtsCore.cmj |  wwwroot/js/example/Youtube/Youtube-BtsCore.cmi $src_root_dir/wwwroot/js/example/Youtube/Youtube.bs.js : ml_cmj_cmi wwwroot/js/example/Youtube/Youtube.reast ||  wwwroot/js/example/Youtube/Youtube.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Youtube
+build  wwwroot/js/example/Youtube/NewYouFace.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Youtube/NewYouFace.re
+build  wwwroot/js/example/Youtube/NewYouFace.d : build_deps wwwroot/js/example/Youtube/NewYouFace.reast
+build  wwwroot/js/example/Youtube/NewYouFace-BtsCore.cmj |  wwwroot/js/example/Youtube/NewYouFace-BtsCore.cmi $src_root_dir/wwwroot/js/example/Youtube/NewYouFace.bs.js : ml_cmj_cmi wwwroot/js/example/Youtube/NewYouFace.reast ||  wwwroot/js/example/Youtube/NewYouFace.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Youtube
+build  wwwroot/js/example/Youtube/NewYouUser.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Youtube/NewYouUser.re
+build  wwwroot/js/example/Youtube/NewYouUser.d : build_deps wwwroot/js/example/Youtube/NewYouUser.reast
+build  wwwroot/js/example/Youtube/NewYouUser-BtsCore.cmj |  wwwroot/js/example/Youtube/NewYouUser-BtsCore.cmi $src_root_dir/wwwroot/js/example/Youtube/NewYouUser.bs.js : ml_cmj_cmi wwwroot/js/example/Youtube/NewYouUser.reast ||  wwwroot/js/example/Youtube/NewYouUser.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Youtube
+build  wwwroot/js/example/Youtube/NewYoutube.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Youtube/NewYoutube.re
+build  wwwroot/js/example/Youtube/NewYoutube.d : build_deps wwwroot/js/example/Youtube/NewYoutube.reast
+build  wwwroot/js/example/Youtube/NewYoutube-BtsCore.cmj |  wwwroot/js/example/Youtube/NewYoutube-BtsCore.cmi $src_root_dir/wwwroot/js/example/Youtube/NewYoutube.bs.js : ml_cmj_cmi wwwroot/js/example/Youtube/NewYoutube.reast ||  wwwroot/js/example/Youtube/NewYoutube.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Youtube
+build  wwwroot/js/example/Youtube/NewYouBadge.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Youtube/NewYouBadge.re
+build  wwwroot/js/example/Youtube/NewYouBadge.d : build_deps wwwroot/js/example/Youtube/NewYouBadge.reast
+build  wwwroot/js/example/Youtube/NewYouBadge-BtsCore.cmj |  wwwroot/js/example/Youtube/NewYouBadge-BtsCore.cmi $src_root_dir/wwwroot/js/example/Youtube/NewYouBadge.bs.js : ml_cmj_cmi wwwroot/js/example/Youtube/NewYouBadge.reast ||  wwwroot/js/example/Youtube/NewYouBadge.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Youtube
+build  wwwroot/js/example/Youtube/YoutubeBoard.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Youtube/YoutubeBoard.re
+build  wwwroot/js/example/Youtube/YoutubeBoard.d : build_deps wwwroot/js/example/Youtube/YoutubeBoard.reast
+build  wwwroot/js/example/Youtube/YoutubeBoard-BtsCore.cmj |  wwwroot/js/example/Youtube/YoutubeBoard-BtsCore.cmi $src_root_dir/wwwroot/js/example/Youtube/YoutubeBoard.bs.js : ml_cmj_cmi wwwroot/js/example/Youtube/YoutubeBoard.reast ||  wwwroot/js/example/Youtube/YoutubeBoard.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Youtube
+build  wwwroot/js/example/Cameras/Camera.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Cameras/Camera.re
+build  wwwroot/js/example/Cameras/Camera.d : build_deps wwwroot/js/example/Cameras/Camera.reast
+build  wwwroot/js/example/Cameras/Camera-BtsCore.cmj |  wwwroot/js/example/Cameras/Camera-BtsCore.cmi $src_root_dir/wwwroot/js/example/Cameras/Camera.bs.js : ml_cmj_cmi wwwroot/js/example/Cameras/Camera.reast ||  wwwroot/js/example/Cameras/Camera.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Cameras
+build  wwwroot/js/example/Cameras/Recorder.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Cameras/Recorder.re
+build  wwwroot/js/example/Cameras/Recorder.d : build_deps wwwroot/js/example/Cameras/Recorder.reast
+build  wwwroot/js/example/Cameras/Recorder-BtsCore.cmj |  wwwroot/js/example/Cameras/Recorder-BtsCore.cmi $src_root_dir/wwwroot/js/example/Cameras/Recorder.bs.js : ml_cmj_cmi wwwroot/js/example/Cameras/Recorder.reast ||  wwwroot/js/example/Cameras/Recorder.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Cameras
+build  wwwroot/js/example/Cameras/UserMedia.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Cameras/UserMedia.re
+build  wwwroot/js/example/Cameras/UserMedia.d : build_deps wwwroot/js/example/Cameras/UserMedia.reast
+build  wwwroot/js/example/Cameras/UserMedia-BtsCore.cmj |  wwwroot/js/example/Cameras/UserMedia-BtsCore.cmi $src_root_dir/wwwroot/js/example/Cameras/UserMedia.bs.js : ml_cmj_cmi wwwroot/js/example/Cameras/UserMedia.reast ||  wwwroot/js/example/Cameras/UserMedia.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Cameras
+build  wwwroot/js/example/Uploads/Uploads.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Uploads/Uploads.re
+build  wwwroot/js/example/Uploads/Uploads.d : build_deps wwwroot/js/example/Uploads/Uploads.reast
+build  wwwroot/js/example/Uploads/Uploads-BtsCore.cmj |  wwwroot/js/example/Uploads/Uploads-BtsCore.cmi $src_root_dir/wwwroot/js/example/Uploads/Uploads.bs.js : ml_cmj_cmi wwwroot/js/example/Uploads/Uploads.reast ||  wwwroot/js/example/Uploads/Uploads.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Uploads
+build  wwwroot/js/example/Uploads/ImageUpload.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Uploads/ImageUpload.re
+build  wwwroot/js/example/Uploads/ImageUpload.d : build_deps wwwroot/js/example/Uploads/ImageUpload.reast
+build  wwwroot/js/example/Uploads/ImageUpload-BtsCore.cmj |  wwwroot/js/example/Uploads/ImageUpload-BtsCore.cmi $src_root_dir/wwwroot/js/example/Uploads/ImageUpload.bs.js : ml_cmj_cmi wwwroot/js/example/Uploads/ImageUpload.reast ||  wwwroot/js/example/Uploads/ImageUpload.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Uploads
+build  wwwroot/js/example/Uploads/OtherUpload.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Uploads/OtherUpload.re
+build  wwwroot/js/example/Uploads/OtherUpload.d : build_deps wwwroot/js/example/Uploads/OtherUpload.reast
+build  wwwroot/js/example/Uploads/OtherUpload-BtsCore.cmj |  wwwroot/js/example/Uploads/OtherUpload-BtsCore.cmi $src_root_dir/wwwroot/js/example/Uploads/OtherUpload.bs.js : ml_cmj_cmi wwwroot/js/example/Uploads/OtherUpload.reast ||  wwwroot/js/example/Uploads/OtherUpload.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Uploads
+build  wwwroot/js/example/Uploads/GeneralUpload.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Uploads/GeneralUpload.re
+build  wwwroot/js/example/Uploads/GeneralUpload.d : build_deps wwwroot/js/example/Uploads/GeneralUpload.reast
+build  wwwroot/js/example/Uploads/GeneralUpload-BtsCore.cmj |  wwwroot/js/example/Uploads/GeneralUpload-BtsCore.cmi $src_root_dir/wwwroot/js/example/Uploads/GeneralUpload.bs.js : ml_cmj_cmi wwwroot/js/example/Uploads/GeneralUpload.reast ||  wwwroot/js/example/Uploads/GeneralUpload.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Uploads
+build  wwwroot/js/example/Uploads/CollectionUpload.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Uploads/CollectionUpload.re
+build  wwwroot/js/example/Uploads/CollectionUpload.d : build_deps wwwroot/js/example/Uploads/CollectionUpload.reast
+build  wwwroot/js/example/Uploads/CollectionUpload-BtsCore.cmj |  wwwroot/js/example/Uploads/CollectionUpload-BtsCore.cmi $src_root_dir/wwwroot/js/example/Uploads/CollectionUpload.bs.js : ml_cmj_cmi wwwroot/js/example/Uploads/CollectionUpload.reast ||  wwwroot/js/example/Uploads/CollectionUpload.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Uploads
+build  wwwroot/js/example/ToolBar/ToolBar.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/ToolBar/ToolBar.re
+build  wwwroot/js/example/ToolBar/ToolBar.d : build_deps wwwroot/js/example/ToolBar/ToolBar.reast
+build  wwwroot/js/example/ToolBar/ToolBar-BtsCore.cmj |  wwwroot/js/example/ToolBar/ToolBar-BtsCore.cmi $src_root_dir/wwwroot/js/example/ToolBar/ToolBar.bs.js : ml_cmj_cmi wwwroot/js/example/ToolBar/ToolBar.reast ||  wwwroot/js/example/ToolBar/ToolBar.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/ToolBar
+build  wwwroot/js/example/Medias/Image.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Medias/Image.re
+build  wwwroot/js/example/Medias/Image.d : build_deps wwwroot/js/example/Medias/Image.reast
+build  wwwroot/js/example/Medias/Image-BtsCore.cmj |  wwwroot/js/example/Medias/Image-BtsCore.cmi $src_root_dir/wwwroot/js/example/Medias/Image.bs.js : ml_cmj_cmi wwwroot/js/example/Medias/Image.reast ||  wwwroot/js/example/Medias/Image.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Medias
+build  wwwroot/js/example/Medias/Media.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Medias/Media.re
+build  wwwroot/js/example/Medias/Media.d : build_deps wwwroot/js/example/Medias/Media.reast
+build  wwwroot/js/example/Medias/Media-BtsCore.cmj |  wwwroot/js/example/Medias/Media-BtsCore.cmi $src_root_dir/wwwroot/js/example/Medias/Media.bs.js : ml_cmj_cmi wwwroot/js/example/Medias/Media.reast ||  wwwroot/js/example/Medias/Media.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Medias
+build  wwwroot/js/example/Medias/MediaBoard.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Medias/MediaBoard.re
+build  wwwroot/js/example/Medias/MediaBoard.d : build_deps wwwroot/js/example/Medias/MediaBoard.reast
+build  wwwroot/js/example/Medias/MediaBoard-BtsCore.cmj |  wwwroot/js/example/Medias/MediaBoard-BtsCore.cmi $src_root_dir/wwwroot/js/example/Medias/MediaBoard.bs.js : ml_cmj_cmi wwwroot/js/example/Medias/MediaBoard.reast ||  wwwroot/js/example/Medias/MediaBoard.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Medias
+build  wwwroot/js/example/Medias/MediaImage.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Medias/MediaImage.re
+build  wwwroot/js/example/Medias/MediaImage.d : build_deps wwwroot/js/example/Medias/MediaImage.reast
+build  wwwroot/js/example/Medias/MediaImage-BtsCore.cmj |  wwwroot/js/example/Medias/MediaImage-BtsCore.cmi $src_root_dir/wwwroot/js/example/Medias/MediaImage.bs.js : ml_cmj_cmi wwwroot/js/example/Medias/MediaImage.reast ||  wwwroot/js/example/Medias/MediaImage.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Medias
+build  wwwroot/js/example/ListSecondary/Text.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/ListSecondary/Text.re
+build  wwwroot/js/example/ListSecondary/Text.d : build_deps wwwroot/js/example/ListSecondary/Text.reast
+build  wwwroot/js/example/ListSecondary/Text-BtsCore.cmj |  wwwroot/js/example/ListSecondary/Text-BtsCore.cmi $src_root_dir/wwwroot/js/example/ListSecondary/Text.bs.js : ml_cmj_cmi wwwroot/js/example/ListSecondary/Text.reast ||  wwwroot/js/example/ListSecondary/Text.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/ListSecondary
+build  wwwroot/js/example/ListSecondary/IconText.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/ListSecondary/IconText.re
+build  wwwroot/js/example/ListSecondary/IconText.d : build_deps wwwroot/js/example/ListSecondary/IconText.reast
+build  wwwroot/js/example/ListSecondary/IconText-BtsCore.cmj |  wwwroot/js/example/ListSecondary/IconText-BtsCore.cmi $src_root_dir/wwwroot/js/example/ListSecondary/IconText.bs.js : ml_cmj_cmi wwwroot/js/example/ListSecondary/IconText.reast ||  wwwroot/js/example/ListSecondary/IconText.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/ListSecondary
+build  wwwroot/js/example/Chart/BarChart.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Chart/BarChart.re
+build  wwwroot/js/example/Chart/BarChart.d : build_deps wwwroot/js/example/Chart/BarChart.reast
+build  wwwroot/js/example/Chart/BarChart-BtsCore.cmj |  wwwroot/js/example/Chart/BarChart-BtsCore.cmi $src_root_dir/wwwroot/js/example/Chart/BarChart.bs.js : ml_cmj_cmi wwwroot/js/example/Chart/BarChart.reast ||  wwwroot/js/example/Chart/BarChart.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Chart
+build  wwwroot/js/example/Chart/PieChart.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Chart/PieChart.re
+build  wwwroot/js/example/Chart/PieChart.d : build_deps wwwroot/js/example/Chart/PieChart.reast
+build  wwwroot/js/example/Chart/PieChart-BtsCore.cmj |  wwwroot/js/example/Chart/PieChart-BtsCore.cmi $src_root_dir/wwwroot/js/example/Chart/PieChart.bs.js : ml_cmj_cmi wwwroot/js/example/Chart/PieChart.reast ||  wwwroot/js/example/Chart/PieChart.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Chart
+build  wwwroot/js/example/Selects/SelectOption.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Selects/SelectOption.re
+build  wwwroot/js/example/Selects/SelectOption.d : build_deps wwwroot/js/example/Selects/SelectOption.reast
+build  wwwroot/js/example/Selects/SelectOption-BtsCore.cmj |  wwwroot/js/example/Selects/SelectOption-BtsCore.cmi $src_root_dir/wwwroot/js/example/Selects/SelectOption.bs.js : ml_cmj_cmi wwwroot/js/example/Selects/SelectOption.reast ||  wwwroot/js/example/Selects/SelectOption.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Selects
+build  wwwroot/js/example/Selects/SelectOptgroup.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Selects/SelectOptgroup.re
+build  wwwroot/js/example/Selects/SelectOptgroup.d : build_deps wwwroot/js/example/Selects/SelectOptgroup.reast
+build  wwwroot/js/example/Selects/SelectOptgroup-BtsCore.cmj |  wwwroot/js/example/Selects/SelectOptgroup-BtsCore.cmi $src_root_dir/wwwroot/js/example/Selects/SelectOptgroup.bs.js : ml_cmj_cmi wwwroot/js/example/Selects/SelectOptgroup.reast ||  wwwroot/js/example/Selects/SelectOptgroup.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Selects
+build  wwwroot/js/example/Selects/SelectIconOption.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Selects/SelectIconOption.re
+build  wwwroot/js/example/Selects/SelectIconOption.d : build_deps wwwroot/js/example/Selects/SelectIconOption.reast
+build  wwwroot/js/example/Selects/SelectIconOption-BtsCore.cmj |  wwwroot/js/example/Selects/SelectIconOption-BtsCore.cmi $src_root_dir/wwwroot/js/example/Selects/SelectIconOption.bs.js : ml_cmj_cmi wwwroot/js/example/Selects/SelectIconOption.reast ||  wwwroot/js/example/Selects/SelectIconOption.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Selects
+build  wwwroot/js/example/Snackbar/Snackbar.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Snackbar/Snackbar.re
+build  wwwroot/js/example/Snackbar/Snackbar.d : build_deps wwwroot/js/example/Snackbar/Snackbar.reast
+build  wwwroot/js/example/Snackbar/Snackbar-BtsCore.cmj |  wwwroot/js/example/Snackbar/Snackbar-BtsCore.cmi $src_root_dir/wwwroot/js/example/Snackbar/Snackbar.bs.js : ml_cmj_cmi wwwroot/js/example/Snackbar/Snackbar.reast ||  wwwroot/js/example/Snackbar/Snackbar.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Snackbar
+build  wwwroot/js/example/Progress/Progress.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Progress/Progress.re
+build  wwwroot/js/example/Progress/Progress.d : build_deps wwwroot/js/example/Progress/Progress.reast
+build  wwwroot/js/example/Progress/Progress-BtsCore.cmj |  wwwroot/js/example/Progress/Progress-BtsCore.cmi $src_root_dir/wwwroot/js/example/Progress/Progress.bs.js : ml_cmj_cmi wwwroot/js/example/Progress/Progress.reast ||  wwwroot/js/example/Progress/Progress.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Progress
+build  wwwroot/js/example/TextFields/TextFields.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/TextFields/TextFields.re
+build  wwwroot/js/example/TextFields/TextFields.d : build_deps wwwroot/js/example/TextFields/TextFields.reast
+build  wwwroot/js/example/TextFields/TextFields-BtsCore.cmj |  wwwroot/js/example/TextFields/TextFields-BtsCore.cmi $src_root_dir/wwwroot/js/example/TextFields/TextFields.bs.js : ml_cmj_cmi wwwroot/js/example/TextFields/TextFields.reast ||  wwwroot/js/example/TextFields/TextFields.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/TextFields
+build  wwwroot/js/example/Forms/IconForm.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Forms/IconForm.re
+build  wwwroot/js/example/Forms/IconForm.d : build_deps wwwroot/js/example/Forms/IconForm.reast
+build  wwwroot/js/example/Forms/IconForm-BtsCore.cmj |  wwwroot/js/example/Forms/IconForm-BtsCore.cmi $src_root_dir/wwwroot/js/example/Forms/IconForm.bs.js : ml_cmj_cmi wwwroot/js/example/Forms/IconForm.reast ||  wwwroot/js/example/Forms/IconForm.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Forms
+build  wwwroot/js/example/Shape/Triangle.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Shape/Triangle.re
+build  wwwroot/js/example/Shape/Triangle.d : build_deps wwwroot/js/example/Shape/Triangle.reast
+build  wwwroot/js/example/Shape/Triangle-BtsCore.cmj |  wwwroot/js/example/Shape/Triangle-BtsCore.cmi $src_root_dir/wwwroot/js/example/Shape/Triangle.bs.js : ml_cmj_cmi wwwroot/js/example/Shape/Triangle.reast ||  wwwroot/js/example/Shape/Triangle.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Shape
+build  wwwroot/js/example/Tables/Tables.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Tables/Tables.re
+build  wwwroot/js/example/Tables/Tables.d : build_deps wwwroot/js/example/Tables/Tables.reast
+build  wwwroot/js/example/Tables/Tables-BtsCore.cmj |  wwwroot/js/example/Tables/Tables-BtsCore.cmi $src_root_dir/wwwroot/js/example/Tables/Tables.bs.js : ml_cmj_cmi wwwroot/js/example/Tables/Tables.reast ||  wwwroot/js/example/Tables/Tables.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Tables
+build  wwwroot/js/example/Tables/TableSelects.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Tables/TableSelects.re
+build  wwwroot/js/example/Tables/TableSelects.d : build_deps wwwroot/js/example/Tables/TableSelects.reast
+build  wwwroot/js/example/Tables/TableSelects-BtsCore.cmj |  wwwroot/js/example/Tables/TableSelects-BtsCore.cmi $src_root_dir/wwwroot/js/example/Tables/TableSelects.bs.js : ml_cmj_cmi wwwroot/js/example/Tables/TableSelects.reast ||  wwwroot/js/example/Tables/TableSelects.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Tables
+build  wwwroot/js/example/Tables/YoutubeTables.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Tables/YoutubeTables.re
+build  wwwroot/js/example/Tables/YoutubeTables.d : build_deps wwwroot/js/example/Tables/YoutubeTables.reast
+build  wwwroot/js/example/Tables/YoutubeTables-BtsCore.cmj |  wwwroot/js/example/Tables/YoutubeTables-BtsCore.cmi $src_root_dir/wwwroot/js/example/Tables/YoutubeTables.bs.js : ml_cmj_cmi wwwroot/js/example/Tables/YoutubeTables.reast ||  wwwroot/js/example/Tables/YoutubeTables.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Tables
+build  wwwroot/js/example/Tables/ExpansionTables.reast : build_ast_from_re $src_root_dir/wwwroot/js/example/Tables/ExpansionTables.re
+build  wwwroot/js/example/Tables/ExpansionTables.d : build_deps wwwroot/js/example/Tables/ExpansionTables.reast
+build  wwwroot/js/example/Tables/ExpansionTables-BtsCore.cmj |  wwwroot/js/example/Tables/ExpansionTables-BtsCore.cmi $src_root_dir/wwwroot/js/example/Tables/ExpansionTables.bs.js : ml_cmj_cmi wwwroot/js/example/Tables/ExpansionTables.reast ||  wwwroot/js/example/Tables/ExpansionTables.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/example/Tables
+build  wwwroot/js/material-ui/icon/Icons.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/icon/Icons.re
+build  wwwroot/js/material-ui/icon/Icons.d : build_deps wwwroot/js/material-ui/icon/Icons.reast
+build  wwwroot/js/material-ui/icon/Icons-BtsCore.cmj |  wwwroot/js/material-ui/icon/Icons-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/icon/Icons.bs.js : ml_cmj_cmi wwwroot/js/material-ui/icon/Icons.reast ||  wwwroot/js/material-ui/icon/Icons.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/icon
+build  wwwroot/js/material-ui/core/Badge/Badge.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/Badge/Badge.re
+build  wwwroot/js/material-ui/core/Badge/Badge.d : build_deps wwwroot/js/material-ui/core/Badge/Badge.reast
+build  wwwroot/js/material-ui/core/Badge/Badge-BtsCore.cmj |  wwwroot/js/material-ui/core/Badge/Badge-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/Badge/Badge.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/Badge/Badge.reast ||  wwwroot/js/material-ui/core/Badge/Badge.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/Badge
+build  wwwroot/js/material-ui/core/Grid/GridItem.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/Grid/GridItem.re
+build  wwwroot/js/material-ui/core/Grid/GridItem.d : build_deps wwwroot/js/material-ui/core/Grid/GridItem.reast
+build  wwwroot/js/material-ui/core/Grid/GridItem-BtsCore.cmj |  wwwroot/js/material-ui/core/Grid/GridItem-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/Grid/GridItem.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/Grid/GridItem.reast ||  wwwroot/js/material-ui/core/Grid/GridItem.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/Grid
+build  wwwroot/js/material-ui/core/Grid/GridContainer.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/Grid/GridContainer.re
+build  wwwroot/js/material-ui/core/Grid/GridContainer.d : build_deps wwwroot/js/material-ui/core/Grid/GridContainer.reast
+build  wwwroot/js/material-ui/core/Grid/GridContainer-BtsCore.cmj |  wwwroot/js/material-ui/core/Grid/GridContainer-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/Grid/GridContainer.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/Grid/GridContainer.reast ||  wwwroot/js/material-ui/core/Grid/GridContainer.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/Grid
+build  wwwroot/js/material-ui/core/UploadBoard/UploadSVG.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/UploadBoard/UploadSVG.re
+build  wwwroot/js/material-ui/core/UploadBoard/UploadSVG.d : build_deps wwwroot/js/material-ui/core/UploadBoard/UploadSVG.reast
+build  wwwroot/js/material-ui/core/UploadBoard/UploadSVG-BtsCore.cmj |  wwwroot/js/material-ui/core/UploadBoard/UploadSVG-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/UploadBoard/UploadSVG.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/UploadBoard/UploadSVG.reast ||  wwwroot/js/material-ui/core/UploadBoard/UploadSVG.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/UploadBoard
+build  wwwroot/js/material-ui/core/UploadBoard/UploadBoard.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/UploadBoard/UploadBoard.re
+build  wwwroot/js/material-ui/core/UploadBoard/UploadBoard.d : build_deps wwwroot/js/material-ui/core/UploadBoard/UploadBoard.reast
+build  wwwroot/js/material-ui/core/UploadBoard/UploadBoard-BtsCore.cmj |  wwwroot/js/material-ui/core/UploadBoard/UploadBoard-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/UploadBoard/UploadBoard.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/UploadBoard/UploadBoard.reast ||  wwwroot/js/material-ui/core/UploadBoard/UploadBoard.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/UploadBoard
+build  wwwroot/js/material-ui/core/UploadBoard/UploadInformation.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/UploadBoard/UploadInformation.re
+build  wwwroot/js/material-ui/core/UploadBoard/UploadInformation.d : build_deps wwwroot/js/material-ui/core/UploadBoard/UploadInformation.reast
+build  wwwroot/js/material-ui/core/UploadBoard/UploadInformation-BtsCore.cmj |  wwwroot/js/material-ui/core/UploadBoard/UploadInformation-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/UploadBoard/UploadInformation.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/UploadBoard/UploadInformation.reast ||  wwwroot/js/material-ui/core/UploadBoard/UploadInformation.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/UploadBoard
+build  wwwroot/js/material-ui/core/Breadcrumb/Breadcrumb.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/Breadcrumb/Breadcrumb.re
+build  wwwroot/js/material-ui/core/Breadcrumb/Breadcrumb.d : build_deps wwwroot/js/material-ui/core/Breadcrumb/Breadcrumb.reast
+build  wwwroot/js/material-ui/core/Breadcrumb/Breadcrumb-BtsCore.cmj |  wwwroot/js/material-ui/core/Breadcrumb/Breadcrumb-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/Breadcrumb/Breadcrumb.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/Breadcrumb/Breadcrumb.reast ||  wwwroot/js/material-ui/core/Breadcrumb/Breadcrumb.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/Breadcrumb
+build  wwwroot/js/material-ui/core/Breadcrumb/MuiBreadcrumb.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/Breadcrumb/MuiBreadcrumb.re
+build  wwwroot/js/material-ui/core/Breadcrumb/MuiBreadcrumb.d : build_deps wwwroot/js/material-ui/core/Breadcrumb/MuiBreadcrumb.reast
+build  wwwroot/js/material-ui/core/Breadcrumb/MuiBreadcrumb-BtsCore.cmj |  wwwroot/js/material-ui/core/Breadcrumb/MuiBreadcrumb-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/Breadcrumb/MuiBreadcrumb.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/Breadcrumb/MuiBreadcrumb.reast ||  wwwroot/js/material-ui/core/Breadcrumb/MuiBreadcrumb.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/Breadcrumb
+build  wwwroot/js/material-ui/core/Breadcrumb/BreadcrumbLine.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/Breadcrumb/BreadcrumbLine.re
+build  wwwroot/js/material-ui/core/Breadcrumb/BreadcrumbLine.d : build_deps wwwroot/js/material-ui/core/Breadcrumb/BreadcrumbLine.reast
+build  wwwroot/js/material-ui/core/Breadcrumb/BreadcrumbLine-BtsCore.cmj |  wwwroot/js/material-ui/core/Breadcrumb/BreadcrumbLine-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/Breadcrumb/BreadcrumbLine.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/Breadcrumb/BreadcrumbLine.reast ||  wwwroot/js/material-ui/core/Breadcrumb/BreadcrumbLine.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/Breadcrumb
+build  wwwroot/js/material-ui/core/Select/SelectOutline.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/Select/SelectOutline.re
+build  wwwroot/js/material-ui/core/Select/SelectOutline.d : build_deps wwwroot/js/material-ui/core/Select/SelectOutline.reast
+build  wwwroot/js/material-ui/core/Select/SelectOutline-BtsCore.cmj |  wwwroot/js/material-ui/core/Select/SelectOutline-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/Select/SelectOutline.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/Select/SelectOutline.reast ||  wwwroot/js/material-ui/core/Select/SelectOutline.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/Select
+build  wwwroot/js/material-ui/core/Select/SelectStandard.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/Select/SelectStandard.re
+build  wwwroot/js/material-ui/core/Select/SelectStandard.d : build_deps wwwroot/js/material-ui/core/Select/SelectStandard.reast
+build  wwwroot/js/material-ui/core/Select/SelectStandard-BtsCore.cmj |  wwwroot/js/material-ui/core/Select/SelectStandard-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/Select/SelectStandard.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/Select/SelectStandard.reast ||  wwwroot/js/material-ui/core/Select/SelectStandard.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/Select
+build  wwwroot/js/material-ui/core/IconButton/IconButton.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/IconButton/IconButton.re
+build  wwwroot/js/material-ui/core/IconButton/IconButton.d : build_deps wwwroot/js/material-ui/core/IconButton/IconButton.reast
+build  wwwroot/js/material-ui/core/IconButton/IconButton-BtsCore.cmj |  wwwroot/js/material-ui/core/IconButton/IconButton-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/IconButton/IconButton.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/IconButton/IconButton.reast ||  wwwroot/js/material-ui/core/IconButton/IconButton.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/IconButton
+build  wwwroot/js/material-ui/core/Switch/Switch.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/Switch/Switch.re
+build  wwwroot/js/material-ui/core/Switch/Switch.d : build_deps wwwroot/js/material-ui/core/Switch/Switch.reast
+build  wwwroot/js/material-ui/core/Switch/Switch-BtsCore.cmj |  wwwroot/js/material-ui/core/Switch/Switch-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/Switch/Switch.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/Switch/Switch.reast ||  wwwroot/js/material-ui/core/Switch/Switch.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/Switch
+build  wwwroot/js/material-ui/core/Typography/Typography.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/Typography/Typography.re
+build  wwwroot/js/material-ui/core/Typography/Typography.d : build_deps wwwroot/js/material-ui/core/Typography/Typography.reast
+build  wwwroot/js/material-ui/core/Typography/Typography-BtsCore.cmj |  wwwroot/js/material-ui/core/Typography/Typography-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/Typography/Typography.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/Typography/Typography.reast ||  wwwroot/js/material-ui/core/Typography/Typography.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/Typography
+build  wwwroot/js/material-ui/core/Avatar/Avatar.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/Avatar/Avatar.re
+build  wwwroot/js/material-ui/core/Avatar/Avatar.d : build_deps wwwroot/js/material-ui/core/Avatar/Avatar.reast
+build  wwwroot/js/material-ui/core/Avatar/Avatar-BtsCore.cmj |  wwwroot/js/material-ui/core/Avatar/Avatar-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/Avatar/Avatar.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/Avatar/Avatar.reast ||  wwwroot/js/material-ui/core/Avatar/Avatar.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/Avatar
+build  wwwroot/js/material-ui/core/Menu/Menu.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/Menu/Menu.re
+build  wwwroot/js/material-ui/core/Menu/Menu.d : build_deps wwwroot/js/material-ui/core/Menu/Menu.reast
+build  wwwroot/js/material-ui/core/Menu/Menu-BtsCore.cmj |  wwwroot/js/material-ui/core/Menu/Menu-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/Menu/Menu.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/Menu/Menu.reast ||  wwwroot/js/material-ui/core/Menu/Menu.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/Menu
+build  wwwroot/js/material-ui/core/Menu/SelectMenu.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/Menu/SelectMenu.re
+build  wwwroot/js/material-ui/core/Menu/SelectMenu.d : build_deps wwwroot/js/material-ui/core/Menu/SelectMenu.reast
+build  wwwroot/js/material-ui/core/Menu/SelectMenu-BtsCore.cmj |  wwwroot/js/material-ui/core/Menu/SelectMenu-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/Menu/SelectMenu.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/Menu/SelectMenu.reast ||  wwwroot/js/material-ui/core/Menu/SelectMenu.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/Menu
+build  wwwroot/js/material-ui/core/Divider/Divider.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/Divider/Divider.re
+build  wwwroot/js/material-ui/core/Divider/Divider.d : build_deps wwwroot/js/material-ui/core/Divider/Divider.reast
+build  wwwroot/js/material-ui/core/Divider/Divider-BtsCore.cmj |  wwwroot/js/material-ui/core/Divider/Divider-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/Divider/Divider.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/Divider/Divider.reast ||  wwwroot/js/material-ui/core/Divider/Divider.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/Divider
+build  wwwroot/js/material-ui/core/Table/Table.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/Table/Table.re
+build  wwwroot/js/material-ui/core/Table/Table.d : build_deps wwwroot/js/material-ui/core/Table/Table.reast
+build  wwwroot/js/material-ui/core/Table/Table-BtsCore.cmj |  wwwroot/js/material-ui/core/Table/Table-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/Table/Table.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/Table/Table.reast ||  wwwroot/js/material-ui/core/Table/Table.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/Table
+build  wwwroot/js/material-ui/core/Table/TableRow.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/Table/TableRow.re
+build  wwwroot/js/material-ui/core/Table/TableRow.d : build_deps wwwroot/js/material-ui/core/Table/TableRow.reast
+build  wwwroot/js/material-ui/core/Table/TableRow-BtsCore.cmj |  wwwroot/js/material-ui/core/Table/TableRow-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/Table/TableRow.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/Table/TableRow.reast ||  wwwroot/js/material-ui/core/Table/TableRow.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/Table
+build  wwwroot/js/material-ui/core/Table/TableBody.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/Table/TableBody.re
+build  wwwroot/js/material-ui/core/Table/TableBody.d : build_deps wwwroot/js/material-ui/core/Table/TableBody.reast
+build  wwwroot/js/material-ui/core/Table/TableBody-BtsCore.cmj |  wwwroot/js/material-ui/core/Table/TableBody-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/Table/TableBody.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/Table/TableBody.reast ||  wwwroot/js/material-ui/core/Table/TableBody.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/Table
+build  wwwroot/js/material-ui/core/Table/TableCell.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/Table/TableCell.re
+build  wwwroot/js/material-ui/core/Table/TableCell.d : build_deps wwwroot/js/material-ui/core/Table/TableCell.reast
+build  wwwroot/js/material-ui/core/Table/TableCell-BtsCore.cmj |  wwwroot/js/material-ui/core/Table/TableCell-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/Table/TableCell.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/Table/TableCell.reast ||  wwwroot/js/material-ui/core/Table/TableCell.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/Table
+build  wwwroot/js/material-ui/core/Table/TableHead.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/Table/TableHead.re
+build  wwwroot/js/material-ui/core/Table/TableHead.d : build_deps wwwroot/js/material-ui/core/Table/TableHead.reast
+build  wwwroot/js/material-ui/core/Table/TableHead-BtsCore.cmj |  wwwroot/js/material-ui/core/Table/TableHead-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/Table/TableHead.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/Table/TableHead.reast ||  wwwroot/js/material-ui/core/Table/TableHead.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/Table
+build  wwwroot/js/material-ui/core/Button/Button.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/Button/Button.re
+build  wwwroot/js/material-ui/core/Button/Button.d : build_deps wwwroot/js/material-ui/core/Button/Button.reast
+build  wwwroot/js/material-ui/core/Button/Button-BtsCore.cmj |  wwwroot/js/material-ui/core/Button/Button-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/Button/Button.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/Button/Button.reast ||  wwwroot/js/material-ui/core/Button/Button.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/Button
+build  wwwroot/js/material-ui/core/Button/CircleButton.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/Button/CircleButton.re
+build  wwwroot/js/material-ui/core/Button/CircleButton.d : build_deps wwwroot/js/material-ui/core/Button/CircleButton.reast
+build  wwwroot/js/material-ui/core/Button/CircleButton-BtsCore.cmj |  wwwroot/js/material-ui/core/Button/CircleButton-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/Button/CircleButton.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/Button/CircleButton.reast ||  wwwroot/js/material-ui/core/Button/CircleButton.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/Button
+build  wwwroot/js/material-ui/core/Dialog/Dialog.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/Dialog/Dialog.re
+build  wwwroot/js/material-ui/core/Dialog/Dialog.d : build_deps wwwroot/js/material-ui/core/Dialog/Dialog.reast
+build  wwwroot/js/material-ui/core/Dialog/Dialog-BtsCore.cmj |  wwwroot/js/material-ui/core/Dialog/Dialog-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/Dialog/Dialog.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/Dialog/Dialog.reast ||  wwwroot/js/material-ui/core/Dialog/Dialog.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/Dialog
+build  wwwroot/js/material-ui/core/Dialog/DialogFull.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/Dialog/DialogFull.re
+build  wwwroot/js/material-ui/core/Dialog/DialogFull.d : build_deps wwwroot/js/material-ui/core/Dialog/DialogFull.reast
+build  wwwroot/js/material-ui/core/Dialog/DialogFull-BtsCore.cmj |  wwwroot/js/material-ui/core/Dialog/DialogFull-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/Dialog/DialogFull.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/Dialog/DialogFull.reast ||  wwwroot/js/material-ui/core/Dialog/DialogFull.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/Dialog
+build  wwwroot/js/material-ui/core/Dialog/DialogTitle.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/Dialog/DialogTitle.re
+build  wwwroot/js/material-ui/core/Dialog/DialogTitle.d : build_deps wwwroot/js/material-ui/core/Dialog/DialogTitle.reast
+build  wwwroot/js/material-ui/core/Dialog/DialogTitle-BtsCore.cmj |  wwwroot/js/material-ui/core/Dialog/DialogTitle-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/Dialog/DialogTitle.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/Dialog/DialogTitle.reast ||  wwwroot/js/material-ui/core/Dialog/DialogTitle.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/Dialog
+build  wwwroot/js/material-ui/core/Dialog/DialogActions.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/Dialog/DialogActions.re
+build  wwwroot/js/material-ui/core/Dialog/DialogActions.d : build_deps wwwroot/js/material-ui/core/Dialog/DialogActions.reast
+build  wwwroot/js/material-ui/core/Dialog/DialogActions-BtsCore.cmj |  wwwroot/js/material-ui/core/Dialog/DialogActions-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/Dialog/DialogActions.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/Dialog/DialogActions.reast ||  wwwroot/js/material-ui/core/Dialog/DialogActions.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/Dialog
+build  wwwroot/js/material-ui/core/Dialog/DialogContent.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/Dialog/DialogContent.re
+build  wwwroot/js/material-ui/core/Dialog/DialogContent.d : build_deps wwwroot/js/material-ui/core/Dialog/DialogContent.reast
+build  wwwroot/js/material-ui/core/Dialog/DialogContent-BtsCore.cmj |  wwwroot/js/material-ui/core/Dialog/DialogContent-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/Dialog/DialogContent.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/Dialog/DialogContent.reast ||  wwwroot/js/material-ui/core/Dialog/DialogContent.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/Dialog
+build  wwwroot/js/material-ui/core/Dialog/DialogContentText.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/Dialog/DialogContentText.re
+build  wwwroot/js/material-ui/core/Dialog/DialogContentText.d : build_deps wwwroot/js/material-ui/core/Dialog/DialogContentText.reast
+build  wwwroot/js/material-ui/core/Dialog/DialogContentText-BtsCore.cmj |  wwwroot/js/material-ui/core/Dialog/DialogContentText-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/Dialog/DialogContentText.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/Dialog/DialogContentText.reast ||  wwwroot/js/material-ui/core/Dialog/DialogContentText.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/Dialog
+build  wwwroot/js/material-ui/core/Dialog/DialogAnimationRight.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/Dialog/DialogAnimationRight.re
+build  wwwroot/js/material-ui/core/Dialog/DialogAnimationRight.d : build_deps wwwroot/js/material-ui/core/Dialog/DialogAnimationRight.reast
+build  wwwroot/js/material-ui/core/Dialog/DialogAnimationRight-BtsCore.cmj |  wwwroot/js/material-ui/core/Dialog/DialogAnimationRight-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/Dialog/DialogAnimationRight.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/Dialog/DialogAnimationRight.reast ||  wwwroot/js/material-ui/core/Dialog/DialogAnimationRight.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/Dialog
+build  wwwroot/js/material-ui/core/Dialog/DialogAnimationBottom.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/Dialog/DialogAnimationBottom.re
+build  wwwroot/js/material-ui/core/Dialog/DialogAnimationBottom.d : build_deps wwwroot/js/material-ui/core/Dialog/DialogAnimationBottom.reast
+build  wwwroot/js/material-ui/core/Dialog/DialogAnimationBottom-BtsCore.cmj |  wwwroot/js/material-ui/core/Dialog/DialogAnimationBottom-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/Dialog/DialogAnimationBottom.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/Dialog/DialogAnimationBottom.reast ||  wwwroot/js/material-ui/core/Dialog/DialogAnimationBottom.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/Dialog
+build  wwwroot/js/material-ui/core/ListItem/ListIcon.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/ListItem/ListIcon.re
+build  wwwroot/js/material-ui/core/ListItem/ListIcon.d : build_deps wwwroot/js/material-ui/core/ListItem/ListIcon.reast
+build  wwwroot/js/material-ui/core/ListItem/ListIcon-BtsCore.cmj |  wwwroot/js/material-ui/core/ListItem/ListIcon-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/ListItem/ListIcon.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/ListItem/ListIcon.reast ||  wwwroot/js/material-ui/core/ListItem/ListIcon.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/ListItem
+build  wwwroot/js/material-ui/core/ListItem/ListItem.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/ListItem/ListItem.re
+build  wwwroot/js/material-ui/core/ListItem/ListItem.d : build_deps wwwroot/js/material-ui/core/ListItem/ListItem.reast
+build  wwwroot/js/material-ui/core/ListItem/ListItem-BtsCore.cmj |  wwwroot/js/material-ui/core/ListItem/ListItem-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/ListItem/ListItem.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/ListItem/ListItem.reast ||  wwwroot/js/material-ui/core/ListItem/ListItem.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/ListItem
+build  wwwroot/js/material-ui/core/PieChart/PiePath.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/PieChart/PiePath.re
+build  wwwroot/js/material-ui/core/PieChart/PiePath.d : build_deps wwwroot/js/material-ui/core/PieChart/PiePath.reast
+build  wwwroot/js/material-ui/core/PieChart/PiePath-BtsCore.cmj |  wwwroot/js/material-ui/core/PieChart/PiePath-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/PieChart/PiePath.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/PieChart/PiePath.reast ||  wwwroot/js/material-ui/core/PieChart/PiePath.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/PieChart
+build  wwwroot/js/material-ui/core/PieChart/PieBoard.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/PieChart/PieBoard.re
+build  wwwroot/js/material-ui/core/PieChart/PieBoard.d : build_deps wwwroot/js/material-ui/core/PieChart/PieBoard.reast
+build  wwwroot/js/material-ui/core/PieChart/PieBoard-BtsCore.cmj |  wwwroot/js/material-ui/core/PieChart/PieBoard-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/PieChart/PieBoard.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/PieChart/PieBoard.reast ||  wwwroot/js/material-ui/core/PieChart/PieBoard.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/PieChart
+build  wwwroot/js/material-ui/core/PieChart/PieCircle.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/PieChart/PieCircle.re
+build  wwwroot/js/material-ui/core/PieChart/PieCircle.d : build_deps wwwroot/js/material-ui/core/PieChart/PieCircle.reast
+build  wwwroot/js/material-ui/core/PieChart/PieCircle-BtsCore.cmj |  wwwroot/js/material-ui/core/PieChart/PieCircle-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/PieChart/PieCircle.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/PieChart/PieCircle.reast ||  wwwroot/js/material-ui/core/PieChart/PieCircle.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/PieChart
+build  wwwroot/js/material-ui/core/MenuItem/MenuIcon.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/MenuItem/MenuIcon.re
+build  wwwroot/js/material-ui/core/MenuItem/MenuIcon.d : build_deps wwwroot/js/material-ui/core/MenuItem/MenuIcon.reast
+build  wwwroot/js/material-ui/core/MenuItem/MenuIcon-BtsCore.cmj |  wwwroot/js/material-ui/core/MenuItem/MenuIcon-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/MenuItem/MenuIcon.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/MenuItem/MenuIcon.reast ||  wwwroot/js/material-ui/core/MenuItem/MenuIcon.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/MenuItem
+build  wwwroot/js/material-ui/core/MenuItem/MenuItem.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/MenuItem/MenuItem.re
+build  wwwroot/js/material-ui/core/MenuItem/MenuItem.d : build_deps wwwroot/js/material-ui/core/MenuItem/MenuItem.reast
+build  wwwroot/js/material-ui/core/MenuItem/MenuItem-BtsCore.cmj |  wwwroot/js/material-ui/core/MenuItem/MenuItem-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/MenuItem/MenuItem.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/MenuItem/MenuItem.reast ||  wwwroot/js/material-ui/core/MenuItem/MenuItem.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/MenuItem
+build  wwwroot/js/material-ui/core/Slider/Slider.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/Slider/Slider.re
+build  wwwroot/js/material-ui/core/Slider/Slider.d : build_deps wwwroot/js/material-ui/core/Slider/Slider.reast
+build  wwwroot/js/material-ui/core/Slider/Slider-BtsCore.cmj |  wwwroot/js/material-ui/core/Slider/Slider-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/Slider/Slider.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/Slider/Slider.reast ||  wwwroot/js/material-ui/core/Slider/Slider.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/Slider
+build  wwwroot/js/material-ui/core/TextField/TextFieldArticle.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/TextField/TextFieldArticle.re
+build  wwwroot/js/material-ui/core/TextField/TextFieldArticle.d : build_deps wwwroot/js/material-ui/core/TextField/TextFieldArticle.reast
+build  wwwroot/js/material-ui/core/TextField/TextFieldArticle-BtsCore.cmj |  wwwroot/js/material-ui/core/TextField/TextFieldArticle-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/TextField/TextFieldArticle.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/TextField/TextFieldArticle.reast ||  wwwroot/js/material-ui/core/TextField/TextFieldArticle.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/TextField
+build  wwwroot/js/material-ui/core/TextField/TextFieldOutline.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/TextField/TextFieldOutline.re
+build  wwwroot/js/material-ui/core/TextField/TextFieldOutline.d : build_deps wwwroot/js/material-ui/core/TextField/TextFieldOutline.reast
+build  wwwroot/js/material-ui/core/TextField/TextFieldOutline-BtsCore.cmj |  wwwroot/js/material-ui/core/TextField/TextFieldOutline-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/TextField/TextFieldOutline.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/TextField/TextFieldOutline.reast ||  wwwroot/js/material-ui/core/TextField/TextFieldOutline.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/TextField
+build  wwwroot/js/material-ui/core/TextField/TextFieldStandard.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/TextField/TextFieldStandard.re
+build  wwwroot/js/material-ui/core/TextField/TextFieldStandard.d : build_deps wwwroot/js/material-ui/core/TextField/TextFieldStandard.reast
+build  wwwroot/js/material-ui/core/TextField/TextFieldStandard-BtsCore.cmj |  wwwroot/js/material-ui/core/TextField/TextFieldStandard-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/TextField/TextFieldStandard.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/TextField/TextFieldStandard.reast ||  wwwroot/js/material-ui/core/TextField/TextFieldStandard.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/TextField
+build  wwwroot/js/material-ui/core/TextField/TextFieldMultiline.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/TextField/TextFieldMultiline.re
+build  wwwroot/js/material-ui/core/TextField/TextFieldMultiline.d : build_deps wwwroot/js/material-ui/core/TextField/TextFieldMultiline.reast
+build  wwwroot/js/material-ui/core/TextField/TextFieldMultiline-BtsCore.cmj |  wwwroot/js/material-ui/core/TextField/TextFieldMultiline-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/TextField/TextFieldMultiline.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/TextField/TextFieldMultiline.reast ||  wwwroot/js/material-ui/core/TextField/TextFieldMultiline.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/TextField
+build  wwwroot/js/material-ui/core/Navigation/Navigation.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/Navigation/Navigation.re
+build  wwwroot/js/material-ui/core/Navigation/Navigation.d : build_deps wwwroot/js/material-ui/core/Navigation/Navigation.reast
+build  wwwroot/js/material-ui/core/Navigation/Navigation-BtsCore.cmj |  wwwroot/js/material-ui/core/Navigation/Navigation-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/Navigation/Navigation.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/Navigation/Navigation.reast ||  wwwroot/js/material-ui/core/Navigation/Navigation.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/Navigation
+build  wwwroot/js/material-ui/core/Navigation/NavigationAction.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/Navigation/NavigationAction.re
+build  wwwroot/js/material-ui/core/Navigation/NavigationAction.d : build_deps wwwroot/js/material-ui/core/Navigation/NavigationAction.reast
+build  wwwroot/js/material-ui/core/Navigation/NavigationAction-BtsCore.cmj |  wwwroot/js/material-ui/core/Navigation/NavigationAction-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/Navigation/NavigationAction.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/Navigation/NavigationAction.reast ||  wwwroot/js/material-ui/core/Navigation/NavigationAction.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/Navigation
+build  wwwroot/js/material-ui/core/Chip/Chip.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/Chip/Chip.re
+build  wwwroot/js/material-ui/core/Chip/Chip.d : build_deps wwwroot/js/material-ui/core/Chip/Chip.reast
+build  wwwroot/js/material-ui/core/Chip/Chip-BtsCore.cmj |  wwwroot/js/material-ui/core/Chip/Chip-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/Chip/Chip.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/Chip/Chip.reast ||  wwwroot/js/material-ui/core/Chip/Chip.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/Chip
+build  wwwroot/js/material-ui/core/ListSecondary/ListSecondary.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/ListSecondary/ListSecondary.re
+build  wwwroot/js/material-ui/core/ListSecondary/ListSecondary.d : build_deps wwwroot/js/material-ui/core/ListSecondary/ListSecondary.reast
+build  wwwroot/js/material-ui/core/ListSecondary/ListSecondary-BtsCore.cmj |  wwwroot/js/material-ui/core/ListSecondary/ListSecondary-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/ListSecondary/ListSecondary.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/ListSecondary/ListSecondary.reast ||  wwwroot/js/material-ui/core/ListSecondary/ListSecondary.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/ListSecondary
+build  wwwroot/js/material-ui/core/ListSecondary/ListSecondaryIcon.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/ListSecondary/ListSecondaryIcon.re
+build  wwwroot/js/material-ui/core/ListSecondary/ListSecondaryIcon.d : build_deps wwwroot/js/material-ui/core/ListSecondary/ListSecondaryIcon.reast
+build  wwwroot/js/material-ui/core/ListSecondary/ListSecondaryIcon-BtsCore.cmj |  wwwroot/js/material-ui/core/ListSecondary/ListSecondaryIcon-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/ListSecondary/ListSecondaryIcon.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/ListSecondary/ListSecondaryIcon.reast ||  wwwroot/js/material-ui/core/ListSecondary/ListSecondaryIcon.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/ListSecondary
+build  wwwroot/js/material-ui/core/ListSecondary/SecondaryIconText.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/ListSecondary/SecondaryIconText.re
+build  wwwroot/js/material-ui/core/ListSecondary/SecondaryIconText.d : build_deps wwwroot/js/material-ui/core/ListSecondary/SecondaryIconText.reast
+build  wwwroot/js/material-ui/core/ListSecondary/SecondaryIconText-BtsCore.cmj |  wwwroot/js/material-ui/core/ListSecondary/SecondaryIconText-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/ListSecondary/SecondaryIconText.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/ListSecondary/SecondaryIconText.reast ||  wwwroot/js/material-ui/core/ListSecondary/SecondaryIconText.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/ListSecondary
+build  wwwroot/js/material-ui/core/Snackbar/SnackbarGmail.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/Snackbar/SnackbarGmail.re
+build  wwwroot/js/material-ui/core/Snackbar/SnackbarGmail.d : build_deps wwwroot/js/material-ui/core/Snackbar/SnackbarGmail.reast
+build  wwwroot/js/material-ui/core/Snackbar/SnackbarGmail-BtsCore.cmj |  wwwroot/js/material-ui/core/Snackbar/SnackbarGmail-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/Snackbar/SnackbarGmail.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/Snackbar/SnackbarGmail.reast ||  wwwroot/js/material-ui/core/Snackbar/SnackbarGmail.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/Snackbar
+build  wwwroot/js/material-ui/core/Snackbar/SnackbarYoutube.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/Snackbar/SnackbarYoutube.re
+build  wwwroot/js/material-ui/core/Snackbar/SnackbarYoutube.d : build_deps wwwroot/js/material-ui/core/Snackbar/SnackbarYoutube.reast
+build  wwwroot/js/material-ui/core/Snackbar/SnackbarYoutube-BtsCore.cmj |  wwwroot/js/material-ui/core/Snackbar/SnackbarYoutube-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/Snackbar/SnackbarYoutube.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/Snackbar/SnackbarYoutube.reast ||  wwwroot/js/material-ui/core/Snackbar/SnackbarYoutube.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/Snackbar
+build  wwwroot/js/material-ui/core/List_/List_.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/List_/List_.re
+build  wwwroot/js/material-ui/core/List_/List_.d : build_deps wwwroot/js/material-ui/core/List_/List_.reast
+build  wwwroot/js/material-ui/core/List_/List_-BtsCore.cmj |  wwwroot/js/material-ui/core/List_/List_-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/List_/List_.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/List_/List_.reast ||  wwwroot/js/material-ui/core/List_/List_.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/List_
+build  wwwroot/js/material-ui/core/Progress/ProgressLinear.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/Progress/ProgressLinear.re
+build  wwwroot/js/material-ui/core/Progress/ProgressLinear.d : build_deps wwwroot/js/material-ui/core/Progress/ProgressLinear.reast
+build  wwwroot/js/material-ui/core/Progress/ProgressLinear-BtsCore.cmj |  wwwroot/js/material-ui/core/Progress/ProgressLinear-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/Progress/ProgressLinear.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/Progress/ProgressLinear.reast ||  wwwroot/js/material-ui/core/Progress/ProgressLinear.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/Progress
+build  wwwroot/js/material-ui/core/Progress/ProgressLoading.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/Progress/ProgressLoading.re
+build  wwwroot/js/material-ui/core/Progress/ProgressLoading.d : build_deps wwwroot/js/material-ui/core/Progress/ProgressLoading.reast
+build  wwwroot/js/material-ui/core/Progress/ProgressLoading-BtsCore.cmj |  wwwroot/js/material-ui/core/Progress/ProgressLoading-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/Progress/ProgressLoading.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/Progress/ProgressLoading.reast ||  wwwroot/js/material-ui/core/Progress/ProgressLoading.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/Progress
+build  wwwroot/js/material-ui/core/Progress/ProgressWaiting.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/Progress/ProgressWaiting.re
+build  wwwroot/js/material-ui/core/Progress/ProgressWaiting.d : build_deps wwwroot/js/material-ui/core/Progress/ProgressWaiting.reast
+build  wwwroot/js/material-ui/core/Progress/ProgressWaiting-BtsCore.cmj |  wwwroot/js/material-ui/core/Progress/ProgressWaiting-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/Progress/ProgressWaiting.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/Progress/ProgressWaiting.reast ||  wwwroot/js/material-ui/core/Progress/ProgressWaiting.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/Progress
+build  wwwroot/js/material-ui/core/Progress/ProgressCircular.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/Progress/ProgressCircular.re
+build  wwwroot/js/material-ui/core/Progress/ProgressCircular.d : build_deps wwwroot/js/material-ui/core/Progress/ProgressCircular.reast
+build  wwwroot/js/material-ui/core/Progress/ProgressCircular-BtsCore.cmj |  wwwroot/js/material-ui/core/Progress/ProgressCircular-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/Progress/ProgressCircular.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/Progress/ProgressCircular.reast ||  wwwroot/js/material-ui/core/Progress/ProgressCircular.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/Progress
+build  wwwroot/js/material-ui/core/BarChart/BarLine.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/BarChart/BarLine.re
+build  wwwroot/js/material-ui/core/BarChart/BarLine.d : build_deps wwwroot/js/material-ui/core/BarChart/BarLine.reast
+build  wwwroot/js/material-ui/core/BarChart/BarLine-BtsCore.cmj |  wwwroot/js/material-ui/core/BarChart/BarLine-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/BarChart/BarLine.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/BarChart/BarLine.reast ||  wwwroot/js/material-ui/core/BarChart/BarLine.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/BarChart
+build  wwwroot/js/material-ui/core/BarChart/BarText.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/BarChart/BarText.re
+build  wwwroot/js/material-ui/core/BarChart/BarText.d : build_deps wwwroot/js/material-ui/core/BarChart/BarText.reast
+build  wwwroot/js/material-ui/core/BarChart/BarText-BtsCore.cmj |  wwwroot/js/material-ui/core/BarChart/BarText-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/BarChart/BarText.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/BarChart/BarText.reast ||  wwwroot/js/material-ui/core/BarChart/BarText.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/BarChart
+build  wwwroot/js/material-ui/core/BarChart/BarBoard.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/BarChart/BarBoard.re
+build  wwwroot/js/material-ui/core/BarChart/BarBoard.d : build_deps wwwroot/js/material-ui/core/BarChart/BarBoard.reast
+build  wwwroot/js/material-ui/core/BarChart/BarBoard-BtsCore.cmj |  wwwroot/js/material-ui/core/BarChart/BarBoard-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/BarChart/BarBoard.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/BarChart/BarBoard.reast ||  wwwroot/js/material-ui/core/BarChart/BarBoard.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/BarChart
+build  wwwroot/js/material-ui/core/BarChart/BarPillar.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/BarChart/BarPillar.re
+build  wwwroot/js/material-ui/core/BarChart/BarPillar.d : build_deps wwwroot/js/material-ui/core/BarChart/BarPillar.reast
+build  wwwroot/js/material-ui/core/BarChart/BarPillar-BtsCore.cmj |  wwwroot/js/material-ui/core/BarChart/BarPillar-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/BarChart/BarPillar.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/BarChart/BarPillar.reast ||  wwwroot/js/material-ui/core/BarChart/BarPillar.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/BarChart
+build  wwwroot/js/material-ui/core/Card/Card.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/Card/Card.re
+build  wwwroot/js/material-ui/core/Card/Card.d : build_deps wwwroot/js/material-ui/core/Card/Card.reast
+build  wwwroot/js/material-ui/core/Card/Card-BtsCore.cmj |  wwwroot/js/material-ui/core/Card/Card-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/Card/Card.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/Card/Card.reast ||  wwwroot/js/material-ui/core/Card/Card.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/Card
+build  wwwroot/js/material-ui/core/Card/CardBottom.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/Card/CardBottom.re
+build  wwwroot/js/material-ui/core/Card/CardBottom.d : build_deps wwwroot/js/material-ui/core/Card/CardBottom.reast
+build  wwwroot/js/material-ui/core/Card/CardBottom-BtsCore.cmj |  wwwroot/js/material-ui/core/Card/CardBottom-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/Card/CardBottom.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/Card/CardBottom.reast ||  wwwroot/js/material-ui/core/Card/CardBottom.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/Card
+build  wwwroot/js/material-ui/core/Card/CardHeader.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/Card/CardHeader.re
+build  wwwroot/js/material-ui/core/Card/CardHeader.d : build_deps wwwroot/js/material-ui/core/Card/CardHeader.reast
+build  wwwroot/js/material-ui/core/Card/CardHeader-BtsCore.cmj |  wwwroot/js/material-ui/core/Card/CardHeader-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/Card/CardHeader.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/Card/CardHeader.reast ||  wwwroot/js/material-ui/core/Card/CardHeader.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/Card
+build  wwwroot/js/material-ui/core/Iframe/Iframe.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/Iframe/Iframe.re
+build  wwwroot/js/material-ui/core/Iframe/Iframe.d : build_deps wwwroot/js/material-ui/core/Iframe/Iframe.reast
+build  wwwroot/js/material-ui/core/Iframe/Iframe-BtsCore.cmj |  wwwroot/js/material-ui/core/Iframe/Iframe-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/Iframe/Iframe.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/Iframe/Iframe.reast ||  wwwroot/js/material-ui/core/Iframe/Iframe.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/Iframe
+build  wwwroot/js/material-ui/core/Tooltip/Tooltip.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/Tooltip/Tooltip.re
+build  wwwroot/js/material-ui/core/Tooltip/Tooltip.d : build_deps wwwroot/js/material-ui/core/Tooltip/Tooltip.reast
+build  wwwroot/js/material-ui/core/Tooltip/Tooltip-BtsCore.cmj |  wwwroot/js/material-ui/core/Tooltip/Tooltip-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/Tooltip/Tooltip.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/Tooltip/Tooltip.reast ||  wwwroot/js/material-ui/core/Tooltip/Tooltip.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/Tooltip
+build  wwwroot/js/material-ui/core/Animate/Animate.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/Animate/Animate.re
+build  wwwroot/js/material-ui/core/Animate/Animate.d : build_deps wwwroot/js/material-ui/core/Animate/Animate.reast
+build  wwwroot/js/material-ui/core/Animate/Animate-BtsCore.cmj |  wwwroot/js/material-ui/core/Animate/Animate-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/Animate/Animate.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/Animate/Animate.reast ||  wwwroot/js/material-ui/core/Animate/Animate.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/Animate
+build  wwwroot/js/material-ui/core/IconStyle/IconAction.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/IconStyle/IconAction.re
+build  wwwroot/js/material-ui/core/IconStyle/IconAction.d : build_deps wwwroot/js/material-ui/core/IconStyle/IconAction.reast
+build  wwwroot/js/material-ui/core/IconStyle/IconAction-BtsCore.cmj |  wwwroot/js/material-ui/core/IconStyle/IconAction-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/IconStyle/IconAction.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/IconStyle/IconAction.reast ||  wwwroot/js/material-ui/core/IconStyle/IconAction.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/IconStyle
+build  wwwroot/js/material-ui/core/IconStyle/IconGeneral.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/IconStyle/IconGeneral.re
+build  wwwroot/js/material-ui/core/IconStyle/IconGeneral.d : build_deps wwwroot/js/material-ui/core/IconStyle/IconGeneral.reast
+build  wwwroot/js/material-ui/core/IconStyle/IconGeneral-BtsCore.cmj |  wwwroot/js/material-ui/core/IconStyle/IconGeneral-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/IconStyle/IconGeneral.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/IconStyle/IconGeneral.reast ||  wwwroot/js/material-ui/core/IconStyle/IconGeneral.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/IconStyle
+build  wwwroot/js/material-ui/core/Drawer/Drawer.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/Drawer/Drawer.re
+build  wwwroot/js/material-ui/core/Drawer/Drawer.d : build_deps wwwroot/js/material-ui/core/Drawer/Drawer.reast
+build  wwwroot/js/material-ui/core/Drawer/Drawer-BtsCore.cmj |  wwwroot/js/material-ui/core/Drawer/Drawer-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/Drawer/Drawer.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/Drawer/Drawer.reast ||  wwwroot/js/material-ui/core/Drawer/Drawer.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/Drawer
+build  wwwroot/js/material-ui/core/ExpansionPanel/ExpansionBasis.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/ExpansionPanel/ExpansionBasis.re
+build  wwwroot/js/material-ui/core/ExpansionPanel/ExpansionBasis.d : build_deps wwwroot/js/material-ui/core/ExpansionPanel/ExpansionBasis.reast
+build  wwwroot/js/material-ui/core/ExpansionPanel/ExpansionBasis-BtsCore.cmj |  wwwroot/js/material-ui/core/ExpansionPanel/ExpansionBasis-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/ExpansionPanel/ExpansionBasis.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/ExpansionPanel/ExpansionBasis.reast ||  wwwroot/js/material-ui/core/ExpansionPanel/ExpansionBasis.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/ExpansionPanel
+build  wwwroot/js/material-ui/core/ExpansionPanel/ExpansionPanel.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/ExpansionPanel/ExpansionPanel.re
+build  wwwroot/js/material-ui/core/ExpansionPanel/ExpansionPanel.d : build_deps wwwroot/js/material-ui/core/ExpansionPanel/ExpansionPanel.reast
+build  wwwroot/js/material-ui/core/ExpansionPanel/ExpansionPanel-BtsCore.cmj |  wwwroot/js/material-ui/core/ExpansionPanel/ExpansionPanel-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/ExpansionPanel/ExpansionPanel.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/ExpansionPanel/ExpansionPanel.reast ||  wwwroot/js/material-ui/core/ExpansionPanel/ExpansionPanel.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/ExpansionPanel
+build  wwwroot/js/material-ui/core/ExpansionPanel/ExpansionSummary.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/ExpansionPanel/ExpansionSummary.re
+build  wwwroot/js/material-ui/core/ExpansionPanel/ExpansionSummary.d : build_deps wwwroot/js/material-ui/core/ExpansionPanel/ExpansionSummary.reast
+build  wwwroot/js/material-ui/core/ExpansionPanel/ExpansionSummary-BtsCore.cmj |  wwwroot/js/material-ui/core/ExpansionPanel/ExpansionSummary-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/ExpansionPanel/ExpansionSummary.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/ExpansionPanel/ExpansionSummary.reast ||  wwwroot/js/material-ui/core/ExpansionPanel/ExpansionSummary.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/ExpansionPanel
+build  wwwroot/js/material-ui/core/AppBar/AppBar.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/AppBar/AppBar.re
+build  wwwroot/js/material-ui/core/AppBar/AppBar.d : build_deps wwwroot/js/material-ui/core/AppBar/AppBar.reast
+build  wwwroot/js/material-ui/core/AppBar/AppBar-BtsCore.cmj |  wwwroot/js/material-ui/core/AppBar/AppBar-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/AppBar/AppBar.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/AppBar/AppBar.reast ||  wwwroot/js/material-ui/core/AppBar/AppBar.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/AppBar
+build  wwwroot/js/material-ui/core/PasteBoard/PasteBoard.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/PasteBoard/PasteBoard.re
+build  wwwroot/js/material-ui/core/PasteBoard/PasteBoard.d : build_deps wwwroot/js/material-ui/core/PasteBoard/PasteBoard.reast
+build  wwwroot/js/material-ui/core/PasteBoard/PasteBoard-BtsCore.cmj |  wwwroot/js/material-ui/core/PasteBoard/PasteBoard-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/PasteBoard/PasteBoard.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/PasteBoard/PasteBoard.reast ||  wwwroot/js/material-ui/core/PasteBoard/PasteBoard.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/PasteBoard
+build  wwwroot/js/material-ui/core/PasteBoard/PasteInformation.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/PasteBoard/PasteInformation.re
+build  wwwroot/js/material-ui/core/PasteBoard/PasteInformation.d : build_deps wwwroot/js/material-ui/core/PasteBoard/PasteInformation.reast
+build  wwwroot/js/material-ui/core/PasteBoard/PasteInformation-BtsCore.cmj |  wwwroot/js/material-ui/core/PasteBoard/PasteInformation-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/PasteBoard/PasteInformation.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/PasteBoard/PasteInformation.reast ||  wwwroot/js/material-ui/core/PasteBoard/PasteInformation.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/PasteBoard
+build  wwwroot/js/material-ui/core/Tabs/Tab.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/Tabs/Tab.re
+build  wwwroot/js/material-ui/core/Tabs/Tab.d : build_deps wwwroot/js/material-ui/core/Tabs/Tab.reast
+build  wwwroot/js/material-ui/core/Tabs/Tab-BtsCore.cmj |  wwwroot/js/material-ui/core/Tabs/Tab-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/Tabs/Tab.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/Tabs/Tab.reast ||  wwwroot/js/material-ui/core/Tabs/Tab.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/Tabs
+build  wwwroot/js/material-ui/core/Tabs/Tabs.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/Tabs/Tabs.re
+build  wwwroot/js/material-ui/core/Tabs/Tabs.d : build_deps wwwroot/js/material-ui/core/Tabs/Tabs.reast
+build  wwwroot/js/material-ui/core/Tabs/Tabs-BtsCore.cmj |  wwwroot/js/material-ui/core/Tabs/Tabs-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/Tabs/Tabs.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/Tabs/Tabs.reast ||  wwwroot/js/material-ui/core/Tabs/Tabs.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/Tabs
+build  wwwroot/js/material-ui/core/Paper/Paper.reast : build_ast_from_re $src_root_dir/wwwroot/js/material-ui/core/Paper/Paper.re
+build  wwwroot/js/material-ui/core/Paper/Paper.d : build_deps wwwroot/js/material-ui/core/Paper/Paper.reast
+build  wwwroot/js/material-ui/core/Paper/Paper-BtsCore.cmj |  wwwroot/js/material-ui/core/Paper/Paper-BtsCore.cmi $src_root_dir/wwwroot/js/material-ui/core/Paper/Paper.bs.js : ml_cmj_cmi wwwroot/js/material-ui/core/Paper/Paper.reast ||  wwwroot/js/material-ui/core/Paper/Paper.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/material-ui/core/Paper
+build  wwwroot/js/locales/Locale.reast : build_ast_from_re $src_root_dir/wwwroot/js/locales/Locale.re
+build  wwwroot/js/locales/Locale.d : build_deps wwwroot/js/locales/Locale.reast
+build  wwwroot/js/locales/Locale-BtsCore.cmj |  wwwroot/js/locales/Locale-BtsCore.cmi $src_root_dir/wwwroot/js/locales/Locale.bs.js : ml_cmj_cmi wwwroot/js/locales/Locale.reast ||  wwwroot/js/locales/Locale.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/locales
+build  wwwroot/js/locales/Translation.reast : build_ast_from_re $src_root_dir/wwwroot/js/locales/Translation.re
+build  wwwroot/js/locales/Translation.d : build_deps wwwroot/js/locales/Translation.reast
+build  wwwroot/js/locales/Translation-BtsCore.cmj |  wwwroot/js/locales/Translation-BtsCore.cmi $src_root_dir/wwwroot/js/locales/Translation.bs.js : ml_cmj_cmi wwwroot/js/locales/Translation.reast ||  wwwroot/js/locales/Translation.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6:wwwroot/js/locales
+rule build_package
+  command = $bsc -w -49 -color always -no-alias-deps  $in
+  restat = 1
+  description = [34mBuilding[39m [2m${out}[22m
+build  BtsCore.cmi : build_package BtsCore.mlmap

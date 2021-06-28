@@ -1,0 +1,21 @@
+@media (min-width: 450px) {
+  .paperAccount {
+    padding: 48px 40px 36px;
+  }
+}
+
+@media (max-width: 600.95px) {
+  .paperAccount {
+    width: 100%;
+    padding: 16px;
+  }
+}
+
+@media (min-width: 601px) {
+  .paperAccount {
+    width: 370px;
+    height: auto;
+    margin: 0 auto;
+    box-sizing: inherit;
+  }
+}

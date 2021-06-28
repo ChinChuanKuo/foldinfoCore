@@ -1,0 +1,110 @@
+@import "../parameter";
+
+.MuiSlider-root {
+    width: 100%;
+    cursor: pointer;
+    height: 2px;
+    display: inline-block;
+    padding: 11px 0;
+    position: relative;
+    box-sizing: content-box;
+    touch-action: none;
+    -webkit-tap-highlight-color: transparent;
+
+    &:focus {
+        outline: -webkit-focus-ring-color auto 5px;
+    }
+}
+
+.MuiSlider-rail {
+    width: 100%;
+    height: 2px;
+    display: block;
+    opacity: 0.38;
+    position: absolute;
+    border-radius: 1px;
+    background-color: currentColor;
+}
+
+.MuiSlider-track {
+    height: 2px;
+    display: block;
+    position: absolute;
+    border-radius: 1px;
+    background-color: currentColor;
+}
+
+.MuiSlider-thumb {
+    width: 12px;
+    height: 12px;
+    display: flex;
+    outline: 0;
+    position: absolute;
+    box-sizing: border-box;
+    margin-top: -5px;
+    transition: box-shadow 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    align-items: center;
+    margin-left: -6px;
+    border-radius: 50%;
+    justify-content: center;
+    background-color: currentColor;
+}
+
+.jss867 {
+    top: -34px;
+    left: calc(-50% + -4px);
+    z-index: 1;
+    position: absolute;
+    font-size: 0.75rem;
+    transform: scale(0);
+    transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.01071em;
+    transform-origin: bottom center;
+}
+
+.jss868 {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    transform: rotate(-45deg);
+    align-items: center;
+    border-radius: 50% 50% 50% 0;
+    justify-content: center;
+    background-color: currentColor;
+}
+
+.jss869 {
+    transform: rotate(45deg);
+}
+
+.MuiSlider-mark {
+    width: 2px;
+    height: 2px;
+    position: absolute;
+    border-radius: 1px;
+    background-color: currentColor;
+}
+
+.MuiSlider-markActive {
+    opacity: 0.8;
+    background-color: #424242;
+}
+
+.MuiSlider-markLabelActive {
+    color: #ffffff;
+}
+
+.MuiSlider-markLabel {
+    top: 22px;
+    color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    font-size: 0.875rem;
+    transform: translateX(-50%);
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 1.43;
+    white-space: nowrap;
+    letter-spacing: 0.01071em;
+}
