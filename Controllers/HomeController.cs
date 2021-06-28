@@ -108,5 +108,13 @@ namespace foldinfoCore.Controllers
             string clientip = Request.HttpContext.Connection.RemoteIpAddress.ToString().TrimEnd() == "::1" ? "127.0.0.1" : Request.HttpContext.Connection.RemoteIpAddress.ToString().TrimEnd();
             return Json(new HomeClass().GetSendModels(iFormsData, clientip));
         }
+
+        [HttpPost]
+        public JsonResult stageData([FromBody] dFormData dFormData)
+        {
+            string clientip = Request.HttpContext.Connection.RemoteIpAddress.ToString().TrimEnd() == "::1" ? "127.0.0.1" : Request.HttpContext.Connection.RemoteIpAddress.ToString().TrimEnd();
+            return Json(new HomeClass().GetStageModels(dFormData, clientip));
+
+        }
     }
 }

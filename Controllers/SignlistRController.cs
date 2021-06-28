@@ -26,10 +26,10 @@ namespace foldinfoCore.Controllers
         }
 
         [HttpPost]
-        public JsonResult sendData([FromBody] dFormData dFormData)
+        public JsonResult sendData([FromBody] iFormData iFormData)
         {
             string clientip = Request.HttpContext.Connection.RemoteIpAddress.ToString().TrimEnd() == "::1" ? "127.0.0.1" : Request.HttpContext.Connection.RemoteIpAddress.ToString().TrimEnd();
-            return Json(new SignlistRClass().GetSSendModels(dFormData, clientip));
+            return Json(new SignlistRClass().GetSSendModels(iFormData, clientip));
         }
 
         [HttpPost]

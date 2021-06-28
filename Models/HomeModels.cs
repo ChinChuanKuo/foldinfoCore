@@ -317,13 +317,10 @@ namespace foldinfoCore.Models
             return $"品異已{status}";
         }
 
-        public bool editPermission(string newid, string signing, string sign2)
+        public bool editPermission(string newid, string signing, string sign2, string stage)
         {
-            switch (signing)
-            {
-                case "0":
-                    return true;
-            }
+            switch (signing) { case "0": return true; }
+            switch (stage) { case "對策發行(簽核中)": return false; }
             List<dbparam> dbparamlist = new List<dbparam>();
             dbparamlist.Add(new dbparam("@newid", newid));
             return sign2 == "" || new database().checkSelectSql("mssql", "flyfnstring", "exec web.searchusername @newid;", dbparamlist).Rows[0]["username"].ToString().TrimEnd() == "何凱宏";
@@ -521,7 +518,7 @@ namespace foldinfoCore.Models
             dbparamlist.Clear();
             dbparamlist.Add(new dbparam("@original", mainRows.Rows[0]["worknumber"].ToString().TrimEnd()));
             List<Dictionary<string, object>> items = new List<Dictionary<string, object>>();
-            items.Add(new Dictionary<string, object>() { { "postdate", mainRows.Rows[0]["postdate"].ToString().TrimEnd() }, { "postGroup", mainRows.Rows[0]["post_group"].ToString().TrimEnd() }, { "postName", mainRows.Rows[0]["postname"].ToString().TrimEnd() }, { "showFloorMenu", false }, { "flooritems", flooritems.ToArray() }, { "floor", mainRows.Rows[0]["floor"].ToString().TrimEnd() }, { "workno", mainRows.Rows[0]["worknumber"].ToString().TrimEnd() }, { "showXps", int.Parse(database.checkSelectSql("mssql", "flycsastring", "exec dbo.countwkpaperform @original;", dbparamlist).Rows[0]["itemCount"].ToString().TrimEnd()) > 0 }, { "homepage1", mainRows.Rows[0]["homepage1"].ToString().TrimEnd() }, { "pnumber", mainRows.Rows[0]["pnumber"].ToString().TrimEnd() }, { "showMomoMenu", false }, { "momoitems", momoitems.ToArray() }, { "homepageMomo", mainRows.Rows[0]["homepage_momo"].ToString().TrimEnd() }, { "showMbMenu", false }, { "mbitems", mbitems.ToArray() }, { "mb", mainRows.Rows[0]["mb"].ToString().TrimEnd() }, { "showObjMenu", false }, { "objitems", objitems.ToArray() }, { "obj", mainRows.Rows[0]["obj"].ToString().TrimEnd() }, { "pn", mainRows.Rows[0]["pn"].ToString().TrimEnd() }, { "amount", mainRows.Rows[0]["amount"].ToString().TrimEnd() }, { "invest", mainRows.Rows[0]["invest"].ToString().TrimEnd() }, { "fail", mainRows.Rows[0]["fail"].ToString().TrimEnd() }, { "subject", mainRows.Rows[0]["subject"].ToString().TrimEnd() }, { "containment", mainRows.Rows[0]["containment"].ToString().TrimEnd() }, { "cause", mainRows.Rows[0]["cause"].ToString().TrimEnd() }, { "showRegroupMenu", false }, { "regroupitems", groupitems.ToArray() }, { "reGroup", "" }, { "showReplierMenu", false }, { "replieritems", new List<Dictionary<string, object>>().ToArray() }, { "replier", mainRows.Rows[0]["replier"].ToString().TrimEnd() }, { "showIssueMenu", false }, { "issueitems", issueitems.ToArray() }, { "issuesort", mainRows.Rows[0]["issuesort"].ToString().TrimEnd() }, { "showCauseMenu", false }, { "causeitems", causeitems.ToArray() }, { "causeclass", mainRows.Rows[0]["causeclass"].ToString().TrimEnd() }, { "directPt", mainRows.Rows[0]["direct_pt"].ToString().TrimEnd() }, { "indirectPt", mainRows.Rows[0]["indirect_pt"].ToString().TrimEnd() }, { "correctiveaction1", mainRows.Rows[0]["correctiveaction1"].ToString().TrimEnd() }, { "correctiveaction2", mainRows.Rows[0]["correctiveaction2"].ToString().TrimEnd() }, { "showFile", showFile }, { "showImage", showImage }, { "showVideo", showVideo }, { "showAudio", showAudio }, { "src", src }, { "path", database.connectionString("folderHttps") }, { "original", original }, { "encryption", encryption }, { "extension", extension }, { "date", date }, { "closure", mainRows.Rows[0]["closure"].ToString().TrimEnd() }, { "body", mainRows.Rows[0]["body"].ToString().TrimEnd() }, { "notice", mainRows.Rows[0]["notice"].ToString().TrimEnd() == "yes" }, { "nonstatistical", mainRows.Rows[0]["nonstatistical"].ToString().TrimEnd() == "yes" }, { "showBelongMenu", false }, { "belongitems", belongitems.ToArray() }, { "belong", mainRows.Rows[0]["belong"].ToString().TrimEnd() }, { "belonger", mainRows.Rows[0]["belonger"].ToString().TrimEnd() }, { "showStageMenu", false }, { "stageitems", stageitems.ToArray() }, { "stage", mainRows.Rows[0]["stage"].ToString().TrimEnd() }, { "showRelease", releasePermission(dFormData.newid.TrimEnd(), mainRows.Rows[0]["releasedate"].ToString().TrimEnd(), mainRows.Rows[0]["signing"].ToString().TrimEnd()) }, { "releasedate", mainRows.Rows[0]["releasedate"].ToString().TrimEnd() == "" ? "尚未結案" : mainRows.Rows[0]["releasedate"].ToString().TrimEnd().Replace("/", "-") }, { "formDelete", unsendPermission(dFormData.newid.TrimEnd(), mainRows.Rows[0]["postname"].ToString().TrimEnd(), mainRows.Rows[0]["signing"].ToString().TrimEnd()) }, { "formEdit", editPermission(dFormData.newid.TrimEnd(), mainRows.Rows[0]["signing"].ToString().TrimEnd(), mainRows.Rows[0]["sign2"].ToString().TrimEnd()) }, { "formWork", false }, { "formQuality", qualityPermission(dFormData.newid.TrimEnd(), mainRows.Rows[0]["replier"].ToString().TrimEnd()) }, { "formSend", sendPermission(dFormData.newid.TrimEnd(), mainRows.Rows[0]["postname"].ToString().TrimEnd(), mainRows.Rows[0]["signing"].ToString().TrimEnd()) }, { "formModify", false } });
+            items.Add(new Dictionary<string, object>() { { "postdate", mainRows.Rows[0]["postdate"].ToString().TrimEnd() }, { "postGroup", mainRows.Rows[0]["post_group"].ToString().TrimEnd() }, { "postName", mainRows.Rows[0]["postname"].ToString().TrimEnd() }, { "showFloorMenu", false }, { "flooritems", flooritems.ToArray() }, { "floor", mainRows.Rows[0]["floor"].ToString().TrimEnd() }, { "workno", mainRows.Rows[0]["worknumber"].ToString().TrimEnd() }, { "showXps", int.Parse(database.checkSelectSql("mssql", "flycsastring", "exec dbo.countwkpaperform @original;", dbparamlist).Rows[0]["itemCount"].ToString().TrimEnd()) > 0 }, { "homepage1", mainRows.Rows[0]["homepage1"].ToString().TrimEnd() }, { "pnumber", mainRows.Rows[0]["pnumber"].ToString().TrimEnd() }, { "showMomoMenu", false }, { "momoitems", momoitems.ToArray() }, { "homepageMomo", mainRows.Rows[0]["homepage_momo"].ToString().TrimEnd() }, { "showMbMenu", false }, { "mbitems", mbitems.ToArray() }, { "mb", mainRows.Rows[0]["mb"].ToString().TrimEnd() }, { "showObjMenu", false }, { "objitems", objitems.ToArray() }, { "obj", mainRows.Rows[0]["obj"].ToString().TrimEnd() }, { "pn", mainRows.Rows[0]["pn"].ToString().TrimEnd() }, { "amount", mainRows.Rows[0]["amount"].ToString().TrimEnd() }, { "invest", mainRows.Rows[0]["invest"].ToString().TrimEnd() }, { "fail", mainRows.Rows[0]["fail"].ToString().TrimEnd() }, { "subject", mainRows.Rows[0]["subject"].ToString().TrimEnd() }, { "containment", mainRows.Rows[0]["containment"].ToString().TrimEnd() }, { "cause", mainRows.Rows[0]["cause"].ToString().TrimEnd() }, { "showRegroupMenu", false }, { "regroupitems", groupitems.ToArray() }, { "reGroup", "" }, { "showReplierMenu", false }, { "replieritems", new List<Dictionary<string, object>>().ToArray() }, { "replier", mainRows.Rows[0]["replier"].ToString().TrimEnd() }, { "showIssueMenu", false }, { "issueitems", issueitems.ToArray() }, { "issuesort", mainRows.Rows[0]["issuesort"].ToString().TrimEnd() }, { "showCauseMenu", false }, { "causeitems", causeitems.ToArray() }, { "causeclass", mainRows.Rows[0]["causeclass"].ToString().TrimEnd() }, { "directPt", mainRows.Rows[0]["direct_pt"].ToString().TrimEnd() }, { "indirectPt", mainRows.Rows[0]["indirect_pt"].ToString().TrimEnd() }, { "correctiveaction1", mainRows.Rows[0]["correctiveaction1"].ToString().TrimEnd() }, { "correctiveaction2", mainRows.Rows[0]["correctiveaction2"].ToString().TrimEnd() }, { "showFile", showFile }, { "showImage", showImage }, { "showVideo", showVideo }, { "showAudio", showAudio }, { "src", src }, { "path", database.connectionString("folderHttps") }, { "original", original }, { "encryption", encryption }, { "extension", extension }, { "date", date }, { "closure", mainRows.Rows[0]["closure"].ToString().TrimEnd() }, { "body", mainRows.Rows[0]["body"].ToString().TrimEnd() }, { "notice", mainRows.Rows[0]["notice"].ToString().TrimEnd() == "yes" }, { "nonstatistical", mainRows.Rows[0]["nonstatistical"].ToString().TrimEnd() == "yes" }, { "showBelongMenu", false }, { "belongitems", belongitems.ToArray() }, { "belong", mainRows.Rows[0]["belong"].ToString().TrimEnd() }, { "belonger", mainRows.Rows[0]["belonger"].ToString().TrimEnd() }, { "showStageMenu", false }, { "stageitems", stageitems.ToArray() }, { "stage", mainRows.Rows[0]["stage"].ToString().TrimEnd() }, { "showRelease", releasePermission(dFormData.newid.TrimEnd(), mainRows.Rows[0]["releasedate"].ToString().TrimEnd(), mainRows.Rows[0]["signing"].ToString().TrimEnd()) }, { "releasedate", mainRows.Rows[0]["releasedate"].ToString().TrimEnd() == "" ? "尚未結案" : mainRows.Rows[0]["releasedate"].ToString().TrimEnd().Replace("/", "-") }, { "formDelete", unsendPermission(dFormData.newid.TrimEnd(), mainRows.Rows[0]["postname"].ToString().TrimEnd(), mainRows.Rows[0]["signing"].ToString().TrimEnd()) }, { "formEdit", editPermission(dFormData.newid.TrimEnd(), mainRows.Rows[0]["signing"].ToString().TrimEnd(), mainRows.Rows[0]["sign2"].ToString().TrimEnd(), mainRows.Rows[0]["stage"].ToString().TrimEnd()) }, { "formWork", false }, { "formQuality", qualityPermission(dFormData.newid.TrimEnd(), mainRows.Rows[0]["replier"].ToString().TrimEnd(), mainRows.Rows[0]["stage"].ToString().TrimEnd()) }, { "formSend", sendPermission(dFormData.newid.TrimEnd(), mainRows.Rows[0]["postname"].ToString().TrimEnd(), mainRows.Rows[0]["signing"].ToString().TrimEnd()) }, { "formModify", false } });
             return new sRowsModels() { formId = mainRows.Rows[0]["id"].ToString().TrimEnd(), tile = $"{mainRows.Rows[0]["number"].ToString().TrimEnd()}-{mainRows.Rows[0]["version"].ToString().TrimEnd()}", items = items, status = "istrue" };
         }
 
@@ -537,7 +534,6 @@ namespace foldinfoCore.Models
             return false;
         }
 
-        //releasePermission(dFormData.newid.TrimEnd(), mainRows.Rows[0]["releasedate"].ToString().TrimEnd(), mainRows.Rows[0]["signing"].ToString().TrimEnd())
         public bool releasePermission(string newid, string release, string signing)
         {
             if (signing != "0" && release == "")
@@ -549,8 +545,9 @@ namespace foldinfoCore.Models
             return false;
         }
 
-        public bool qualityPermission(string newid, string replier)
+        public bool qualityPermission(string newid, string replier, string stage)
         {
+            switch (stage) { case "對策發行(簽核中)": return false; }
             List<dbparam> dbparamlist = new List<dbparam>();
             dbparamlist.Add(new dbparam("@newid", newid));
             string username = new database().checkSelectSql("mssql", "flyfnstring", "exec web.searchusername @newid;", dbparamlist).Rows[0]["username"].ToString().TrimEnd();
@@ -591,7 +588,7 @@ namespace foldinfoCore.Models
 
         public statusModels GetInsertModels(iFormsData iFormsData, string cuurip)
         {
-            string checkItems = checkItemValue(iFormsData.items);
+            string checkItems = checkItemValue(iFormsData.items), stage = "";
             if (checkItems != "")
             {
                 return new statusModels() { status = checkItems };
@@ -600,6 +597,7 @@ namespace foldinfoCore.Models
             foreach (var item in iFormsData.items)
             {
                 string sqlCode = "";
+                stage = checkStage(item["containment"].ToString().TrimEnd(), item["cause"].ToString().TrimEnd(), item["correctiveaction1"].ToString().TrimEnd(), item["issuesort"].ToString().TrimEnd(), item["causeclass"].ToString().TrimEnd(), item["indirectPt"].ToString().TrimEnd(), item["correctiveaction2"].ToString().TrimEnd());
                 List<dbparam> dbparamlist = new List<dbparam>();
                 switch (bool.Parse(item["formEdit"].ToString().TrimEnd()))
                 {
@@ -640,7 +638,7 @@ namespace foldinfoCore.Models
                         //dbparamlist.Add(new dbparam("@belong", item["belong"].ToString().TrimEnd()));
                         dbparamlist.Add(new dbparam("@belong", checkBelong(item["belonger"].ToString().TrimEnd(), item["belong"].ToString().TrimEnd(), item["issuesort"].ToString().TrimEnd(), item["causeclass"].ToString().TrimEnd())));
                         dbparamlist.Add(new dbparam("@belonger", item["belonger"].ToString().TrimEnd()));
-                        dbparamlist.Add(new dbparam("@stage", item["stage"].ToString().TrimEnd()));
+                        dbparamlist.Add(new dbparam("@stage", stage));
                         if (sqlCode != "")
                         {
                             sqlCode += ",";
@@ -700,12 +698,12 @@ namespace foldinfoCore.Models
                         break;
                 }
             }
-            return new statusModels() { status = "istrue" };
+            return new statusModels() { status = stage == "對策發行" ? "isask" : "istrue" };
         }
 
         public statusModels GetSendModels(iFormsData iFormsData, string cuurip)
         {
-            string checkItems = checkItemValue(iFormsData.items);
+            string checkItems = checkItemValue(iFormsData.items), stage = "";
             if (checkItems != "")
             {
                 return new statusModels() { status = checkItems };
@@ -716,6 +714,7 @@ namespace foldinfoCore.Models
             {
                 string sqlCode = "";
                 dbparamlist.Clear();
+                stage = checkStage(item["containment"].ToString().TrimEnd(), item["cause"].ToString().TrimEnd(), item["correctiveaction1"].ToString().TrimEnd(), item["issuesort"].ToString().TrimEnd(), item["causeclass"].ToString().TrimEnd(), item["indirectPt"].ToString().TrimEnd(), item["correctiveaction2"].ToString().TrimEnd());
                 switch (bool.Parse(item["formEdit"].ToString().TrimEnd()))
                 {
                     case true:
@@ -753,7 +752,7 @@ namespace foldinfoCore.Models
                         //dbparamlist.Add(new dbparam("@belong", item["belong"].ToString().TrimEnd()));
                         dbparamlist.Add(new dbparam("@belong", checkBelong(item["belonger"].ToString().TrimEnd(), item["belong"].ToString().TrimEnd(), item["issuesort"].ToString().TrimEnd(), item["causeclass"].ToString().TrimEnd())));
                         dbparamlist.Add(new dbparam("@belonger", item["belonger"].ToString().TrimEnd()));
-                        dbparamlist.Add(new dbparam("@stage", item["stage"].ToString().TrimEnd()));
+                        dbparamlist.Add(new dbparam("@stage", stage));
                         if (sqlCode != "")
                         {
                             sqlCode += ",";
@@ -790,9 +789,7 @@ namespace foldinfoCore.Models
                                 dbparamlist.Add(new dbparam("@type", new FilesClass().GetFileType(item["photoExtension"].ToString().TrimEnd())));
                                 dbparamlist.Add(new dbparam("@capacity", new FilesClass().GetFileCapacity(database.connectionString("folderFiles"), $"{item["photoOriginal"].ToString().TrimEnd()}({item["photoEncryption"].ToString().TrimEnd()}){item["photoExtension"].ToString().TrimEnd()}")));
                                 if (database.checkActiveSql("mssql", "flyfnstring", "exec web.insertrefileform @formId,@inoper,@uploadPath,@imagePath,@original,@encryption,@extension,@type,@capacity;", dbparamlist) != "istrue")
-                                {
                                     return new statusModels() { status = "error" };
-                                }
                                 break;
                         }
                         break;
@@ -805,9 +802,7 @@ namespace foldinfoCore.Models
                                 dbparamlist.Add(new dbparam("@formId", iFormsData.formId.TrimEnd()));
                                 dbparamlist.Add(new dbparam("@inoper", iFormsData.newid.TrimEnd()));
                                 if (database.checkActiveSql("mssql", "flyfnstring", "delete from web.refileform where iid = @iid and id = @formId and inoper = @inoper;", dbparamlist) != "istrue")
-                                {
                                     return new statusModels() { status = "error" };
-                                }
                                 break;
                         }
                         break;
@@ -817,9 +812,7 @@ namespace foldinfoCore.Models
             dbparamlist.Add(new dbparam("@signing", "1"));
             dbparamlist.Add(new dbparam("@id", iFormsData.formId.TrimEnd()));
             if (database.checkActiveSql("mssql", "flyfnstring", "update dbo.[5C_Report] set signing = @signing where id = @id;", dbparamlist) != "istrue")
-            {
                 return new statusModels() { status = "error" };
-            }
             dbparamlist.Clear();
             DataTable supeRows = new DataTable();
             dbparamlist.Add(new dbparam("@inoper", iFormsData.newid.TrimEnd()));
@@ -836,7 +829,35 @@ namespace foldinfoCore.Models
             dbparamlist.Add(new dbparam("@mBody", $"<div style='width: 300px;text-align:center;'><div style='padding: 12px; border:2px solid white;'><div><h2 style='color:red;'>5C REPORT SYSTEM NEWS</h2></div><div> <hr /></div><div><h3 style='color: red;'>建立品異單需簽核</h3></div><div style='font-size: 16px;'>{new datetime().sqldate("mssql", "flyfnstring")} {new datetime().sqltime("mssql", "flyfnstring")}</div><div><h4>請相關主管進行簽核或退簽此問題．</h4></div><div><h4>http://221.222.222.181:7250/signlistR#{iFormsData.formId.TrimEnd()} => 請複製此連結</h4></div></div></div>"));
             //dbparamlist.Add(new dbparam("@mBody", $"<div style='width: 300px;margin: 0 auto;'><div style='padding: 12px; border:2px solid white;'><div><h2 style='color:red;'>5C REPORT SYSTEM NEWS</h2></div><div> <hr /></div><div><h3 style='color: red;'>建立品異單需簽核</h3></div><div style='font-size: 16px;'>{new datetime().sqldate("mssql", "flyfnstring")} {new datetime().sqltime("mssql", "flyfnstring")}</div><div><h4>請相關主管進行簽核或退簽此問題．</h4></div><div><a style='background-color:red; color:white; padding:12px;' href='http://221.222.222.181:7250/signlistR#{iFormsData.formId.TrimEnd()}'>前往簽核</a></div></div></div>"));
             database.checkActiveSql("mssql", "mailstring", "insert into dbo.MailBox (mAddrName,mAddrBCCName,mSubject,mBody) values (@mAddrName,@mAddrBCCName,@mSubject,@mBody);", dbparamlist);
+            return new statusModels() { status = stage == "對策發行" ? "isask" : "istrue" };
+        }
+
+        public statusModels GetStageModels(dFormData dFormData, string cuurip)
+        {
+            database database = new database();
+            List<dbparam> dbparamlist = new List<dbparam>();
+            dbparamlist.Add(new dbparam("@stage", "對策發行(簽核中)"));
+            dbparamlist.Add(new dbparam("@id", dFormData.formId.TrimEnd()));
+            if (database.checkActiveSql("mssql", "flyfnstring", "update dbo.5C_Report set stage = @stage where id = @id;", dbparamlist) != "istrue")
+                return new statusModels() { status = "error" };
+            dbparamlist.Clear();
+            DataTable supeRows = new DataTable();
+            dbparamlist.Add(new dbparam("@inoper", dFormData.newid.TrimEnd()));
+            supeRows = database.checkSelectSql("mssql", "flyfnstring", "exec web.checksupeber @inoper;", dbparamlist);
+            dbparamlist.Clear();
+            dbparamlist.Add(new dbparam("@mAddrName", $"郭晉全,{supeRows.Rows[0]["supername"].ToString().TrimEnd()},{supeRows.Rows[0]["username"].ToString().TrimEnd()}"));
+            dbparamlist.Add(new dbparam("@mAddrBCCName", "郭晉全"));
+            dbparamlist.Add(new dbparam("@mSubject", $"「{supeRows.Rows[0]["username"].ToString().TrimEnd()}」對策發行需簽核"));
+            dbparamlist.Add(new dbparam("@mBody", $"<div style='width: 300px;text-align:center;'><div style='padding: 12px; border:2px solid white;'><div><h2 style='color:red;'>5C REPORT SYSTEM NEWS</h2></div><div> <hr /></div><div><h3 style='color: red;'>建立品異單需簽核</h3></div><div style='font-size: 16px;'>{new datetime().sqldate("mssql", "flyfnstring")} {new datetime().sqltime("mssql", "flyfnstring")}</div><div><h4>請相關主管進行簽核或退簽此問題．</h4></div><div><h4>http://221.222.222.181:7250/signlistR#{dFormData.formId.TrimEnd()} => 請複製此連結</h4></div></div></div>"));
             return new statusModels() { status = "istrue" };
+        }
+
+        public string checkStage(string containment, string cause, string correctiveaction1, string issuesort, string causeclass, string indirectPt, string correctiveaction2)
+        {
+            if (issuesort != "" && causeclass != "" && indirectPt != "" && correctiveaction2 != "") return "對策發行";
+            switch (correctiveaction1) { case "": return "暫時對策"; }
+            switch (cause) { case "": return "原因確認"; }
+            return "現況掌握";
         }
 
         public string checkBelong(string belonger, string belong, string issuesort, string causeclass)

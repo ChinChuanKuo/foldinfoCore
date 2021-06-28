@@ -1,0 +1,85 @@
+@import "snackbar";
+
+@media (max-width: 959.95px) {
+  .youtubeTopLeft,
+  .youtubeTopRight,
+  .youtubeBottomLeft,
+  .youtubeBottomRight {
+    left: 0;
+    right: 0;
+  }
+
+  .youtubeTopLeft,
+  .youtubeTopRight {
+    animation: youtubeMaxTop 1s ease-in-out forwards;
+  }
+
+  .youtubeBottomLeft,
+  .youtubeBottomRight {
+    animation: maxYoutubeBottom 1s ease-in-out forwards;
+  }
+}
+
+@media (min-width: 960px) {
+  .youtubeTopLeft,
+  .youtubeBottomLeft {
+    left: 24px;
+    right: auto;
+  }
+
+  .youtubeTopRight,
+  .youtubeBottomRight {
+    left: auto;
+    right: 24px;
+  }
+
+  .youtubeBottomLeft,
+  .youtubeBottomRight {
+    animation: minBottom 1s ease-in-out forwards;
+  }
+
+  .youtubeTopLeft,
+  .youtubeTopRight {
+    animation: minTop 1s ease-in-out forwards;
+  }
+}
+
+@keyframes youtubeMaxTop {
+  from {
+    top: -65px;
+  }
+
+  to {
+    top: 65px;
+  }
+}
+
+@keyframes minTop {
+  from {
+    top: -65px;
+  }
+
+  to {
+    top: 88px;
+  }
+}
+
+@keyframes maxYoutubeBottom {
+  from {
+    bottom: -65px;
+  }
+
+  to {
+    bottom: 0px;
+  }
+}
+
+@keyframes minBottom {
+  from {
+    bottom: -65px;
+  }
+
+  to {
+    bottom: 24px;
+  }
+}

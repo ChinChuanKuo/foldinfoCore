@@ -1,0 +1,23 @@
+@media (max-width: 959.95px) {
+  .newfacelayout {
+    left: 0;
+    right: 0;
+  }
+
+  .youfacenavigation {
+    left: 0;
+    right: 0;
+  }
+}
+
+@media (min-width: 960px) {
+  .newfacelayout {
+    left: 72px;
+    right: 245px;
+  }
+
+  .youfacenavigation {
+    left: 73px;
+    right: 243px;
+  }
+}

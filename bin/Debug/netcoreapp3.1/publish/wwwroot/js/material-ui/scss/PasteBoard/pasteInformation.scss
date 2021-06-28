@@ -1,0 +1,14 @@
+.fontSetting {
+  display: block;
+  text-align: center;
+}
+
+.titlePaste {
+  @extend .fontSetting;
+  padding: 0 10px;
+}
+
+.instructionsPaste {
+  @extend .fontSetting;
+  padding: 10px 0 5px;
+}
