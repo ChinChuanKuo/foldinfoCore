@@ -629,6 +629,7 @@ let make = _ => {
     Js.Promise.(
       state.items
       |> Js_array.length
+      |> string_of_int
       |> otherData("newid" |> Locals.select)
       |> Axiosapi.Product.search
       |> then_(response =>

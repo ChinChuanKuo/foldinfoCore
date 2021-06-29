@@ -813,6 +813,7 @@ let make = _ => {
     Js.Promise.(
       state.items
       |> Js_array.length
+      |> string_of_int
       |> otherData("newid" |> Locals.select)
       |> Axiosapi.IsoFile.search
       |> then_(response =>

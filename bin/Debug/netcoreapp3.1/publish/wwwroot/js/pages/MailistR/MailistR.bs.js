@@ -358,7 +358,7 @@ function MailistR(Props) {
     
   };
   var searchAJax = function (param) {
-    Axiosapi$BtsCore.MailistR.search(Data$BtsCore.otherData(localStorage.getItem("newid"), state.items.length)).then((function (response) {
+    Axiosapi$BtsCore.MailistR.search(Data$BtsCore.otherData(localStorage.getItem("newid"), String(state.items.length))).then((function (response) {
               var match = response.data.status;
               var tmp;
               if (match === "istrue") {
