@@ -16,7 +16,7 @@ namespace foldinfoCore.Models
             {
                 groupitems.Add(new Dictionary<string, object>() { { "optionPadding", false }, { "value", dr["department"].ToString().TrimEnd() } });
             }
-            string[] floorArray = new string[] { "NA", "1F", "2F", "3F", "4F", "5F", "6F" };
+            string[] floorArray = new string[] { "NA", "1F", "2F", "3F", "4F", "5F", "6F", "外包" };
             List<Dictionary<string, object>> flooritems = new List<Dictionary<string, object>>();
             foreach (var floor in floorArray)
             {
