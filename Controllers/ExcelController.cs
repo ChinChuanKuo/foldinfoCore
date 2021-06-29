@@ -41,6 +41,7 @@ namespace foldinfoCore.Controllers
             sheet.SetColumnWidth(27, (int)((12 + 0.71) * 256));
             sheet.SetColumnWidth(28, (int)((12 + 0.71) * 256));
             sheet.SetColumnWidth(29, (int)((16 + 0.71) * 256));
+            sheet.SetColumnWidth(30, (int)((16 + 0.71) * 256));
             XSSFRow row = (XSSFRow)sheet.CreateRow(0);
             database database = new database();
             DataTable mainRows = new DataTable();
@@ -76,7 +77,7 @@ namespace foldinfoCore.Controllers
                     thinStyle.BorderLeft = BorderStyle.Thin;
                     thinStyle.WrapText = true;
                     thinStyle.VerticalAlignment = NPOI.SS.UserModel.VerticalAlignment.Top;
-                    string[] cellArray = new string[] { "提出日期", "提出部門", "提出者", "生產樓層", "文件編號", "客戶", "產品規格單", "機種", "M/B", "製程別", "生產工單", "不良料號", "投入數", "不良數量", "不良率", "異常內容", "緊急處置", "真因調查", "責任單位", "責任人員", "原因大分類", "原因小分類", "直接損耗工時", "間接損耗工時", "處理者", "短期對策", "長期對策", "處理狀態", "結案日期", "不列入統計資料" };
+                    string[] cellArray = new string[] { "提出日期", "提出部門", "提出者", "生產樓層", "文件編號", "客戶", "產品規格單", "機種", "M/B", "製程別", "生產工單", "不良料號", "投入數", "不良數量", "不良率", "異常內容", "緊急處置", "真因調查", "責任單位", "責任人員", "原因大分類", "原因小分類", "直接損耗工時", "間接損耗工時", "處理者", "短期對策", "長期對策", "處理狀態", "結案日期", "不列入統計資料", "列入注意事項" };
                     row = (XSSFRow)sheet.CreateRow(0);
                     foreach (var item in cellArray.Select((value, i) => new { i, value }))
                     {
@@ -152,6 +153,8 @@ namespace foldinfoCore.Controllers
                         row.GetCell(28).CellStyle = thinStyle;
                         row.CreateCell(29).SetCellValue(dr["nonstatistical"].ToString().TrimEnd());
                         row.GetCell(29).CellStyle = thinStyle;
+                        row.CreateCell(30).SetCellValue(dr["notice"].ToString().TrimEnd());
+                        row.GetCell(30).CellStyle = thinStyle;
                         i++;
                     }
                     dbparamlist.Clear();
