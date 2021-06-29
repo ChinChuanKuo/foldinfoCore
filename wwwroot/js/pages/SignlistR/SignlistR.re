@@ -72,6 +72,7 @@ type item = {
   belonger: string,
   stage: string,
   releasedate: string,
+  formEdit: bool,
   formModify: bool,
 };
 
@@ -834,7 +835,7 @@ let make = _ => {
                             downBorderColor="rgba(255,0,0,0.6)"
                             borderColor="rgba(0,0,0,0.2)"
                             value={item.reGroup}
-                            disabled={state.showProgress || !state.update}
+                            disabled={state.showProgress || !item.formEdit || !state.update}
                             onClick={_ => i |> showRegroupMenu}>
                             ...(
                                  item.showRegroupMenu
@@ -902,7 +903,7 @@ let make = _ => {
                             downBorderColor="rgba(255,0,0,0.6)"
                             borderColor="rgba(0,0,0,0.2)"
                             value={item.replier}
-                            disabled={state.showProgress || !state.update}
+                            disabled={state.showProgress || !item.formEdit || !state.update}
                             onClick={_ => i |> showReplierMenu}>
                             ...(
                                  item.showReplierMenu

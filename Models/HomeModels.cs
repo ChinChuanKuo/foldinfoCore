@@ -703,7 +703,7 @@ namespace foldinfoCore.Models
 
         public statusModels GetSendModels(iFormsData iFormsData, string cuurip)
         {
-            string checkItems = checkItemValue(iFormsData.items), stage = "";
+            string checkItems = checkItemValue(iFormsData.items);
             if (checkItems != "")
             {
                 return new statusModels() { status = checkItems };
@@ -714,7 +714,6 @@ namespace foldinfoCore.Models
             {
                 string sqlCode = "";
                 dbparamlist.Clear();
-                stage = checkStage(item["containment"].ToString().TrimEnd(), item["cause"].ToString().TrimEnd(), item["correctiveaction1"].ToString().TrimEnd(), item["issuesort"].ToString().TrimEnd(), item["causeclass"].ToString().TrimEnd(), item["indirectPt"].ToString().TrimEnd(), item["correctiveaction2"].ToString().TrimEnd());
                 switch (bool.Parse(item["formEdit"].ToString().TrimEnd()))
                 {
                     case true:
@@ -752,11 +751,9 @@ namespace foldinfoCore.Models
                         //dbparamlist.Add(new dbparam("@belong", item["belong"].ToString().TrimEnd()));
                         dbparamlist.Add(new dbparam("@belong", checkBelong(item["belonger"].ToString().TrimEnd(), item["belong"].ToString().TrimEnd(), item["issuesort"].ToString().TrimEnd(), item["causeclass"].ToString().TrimEnd())));
                         dbparamlist.Add(new dbparam("@belonger", item["belonger"].ToString().TrimEnd()));
-                        dbparamlist.Add(new dbparam("@stage", stage));
+                        dbparamlist.Add(new dbparam("@stage", checkStage(item["containment"].ToString().TrimEnd(), item["cause"].ToString().TrimEnd(), item["correctiveaction1"].ToString().TrimEnd(), item["issuesort"].ToString().TrimEnd(), item["causeclass"].ToString().TrimEnd(), item["indirectPt"].ToString().TrimEnd(), item["correctiveaction2"].ToString().TrimEnd())));
                         if (sqlCode != "")
-                        {
                             sqlCode += ",";
-                        }
                         sqlCode += "cause = @cause,replier = @replier,issuesort = @issuesort,homepage3 = @homepage3,causeclass = @causeclass,direct_pt = @directPt,indirect_pt = @indirectPt,correctiveaction1 = @correctiveaction1,correctiveaction2 = @correctiveaction2,closure = @closure,body = @body,belong = @belong,belonger = @belonger,stage = @stage";
                         break;
                 }
@@ -764,9 +761,7 @@ namespace foldinfoCore.Models
                 {
                     dbparamlist.Add(new dbparam("@id", iFormsData.formId.TrimEnd()));
                     if (database.checkActiveSql("mssql", "flyfnstring", $"update dbo.[5C_Report] set {sqlCode} where id = @id;", dbparamlist) != "istrue")
-                    {
                         return new statusModels() { status = "error" };
-                    }
                 }
             }
             foreach (var item in iFormsData.qaitems)
@@ -829,7 +824,7 @@ namespace foldinfoCore.Models
             dbparamlist.Add(new dbparam("@mBody", $"<div style='width: 300px;text-align:center;'><div style='padding: 12px; border:2px solid white;'><div><h2 style='color:red;'>5C REPORT SYSTEM NEWS</h2></div><div> <hr /></div><div><h3 style='color: red;'>建立品異單需簽核</h3></div><div style='font-size: 16px;'>{new datetime().sqldate("mssql", "flyfnstring")} {new datetime().sqltime("mssql", "flyfnstring")}</div><div><h4>請相關主管進行簽核或退簽此問題．</h4></div><div><h4>http://221.222.222.181:7250/signlistR#{iFormsData.formId.TrimEnd()} => 請複製此連結</h4></div></div></div>"));
             //dbparamlist.Add(new dbparam("@mBody", $"<div style='width: 300px;margin: 0 auto;'><div style='padding: 12px; border:2px solid white;'><div><h2 style='color:red;'>5C REPORT SYSTEM NEWS</h2></div><div> <hr /></div><div><h3 style='color: red;'>建立品異單需簽核</h3></div><div style='font-size: 16px;'>{new datetime().sqldate("mssql", "flyfnstring")} {new datetime().sqltime("mssql", "flyfnstring")}</div><div><h4>請相關主管進行簽核或退簽此問題．</h4></div><div><a style='background-color:red; color:white; padding:12px;' href='http://221.222.222.181:7250/signlistR#{iFormsData.formId.TrimEnd()}'>前往簽核</a></div></div></div>"));
             database.checkActiveSql("mssql", "mailstring", "insert into dbo.MailBox (mAddrName,mAddrBCCName,mSubject,mBody) values (@mAddrName,@mAddrBCCName,@mSubject,@mBody);", dbparamlist);
-            return new statusModels() { status = stage == "對策發行" ? "isask" : "istrue" };
+            return new statusModels() { status = "istrue" };
         }
 
         public statusModels GetStageModels(dFormData dFormData, string cuurip)

@@ -1485,6 +1485,7 @@ function Home(Props) {
                     switch (match) {
                       case "isask" :
                           Curry._1(dispatch, /* CloseAnimationFull */4);
+                          Curry._1(dispatch, /* ActionShowProgress */2);
                           tmp = Curry._1(dispatch, /* CloseAskFull */7);
                           break;
                       case "istrue" :
@@ -3563,71 +3564,47 @@ function Home(Props) {
                                                                       children: "異常內容"
                                                                     })
                                                               }), React.createElement(GridItem$BtsCore.make, {
-                                                                top: "18",
-                                                                bottom: "0",
-                                                                left: "0",
-                                                                xs: "auto",
-                                                                children: React.createElement(Typography$BtsCore.make, {
-                                                                      variant: "subheading",
-                                                                      color: "rgba(0,0,0,0.6)",
-                                                                      fontWeight: "bolder",
-                                                                      children: "【Containment】緊急處置"
-                                                                    })
-                                                              }), React.createElement(GridItem$BtsCore.make, {
-                                                                top: "0",
                                                                 right: "0",
                                                                 bottom: "0",
                                                                 left: "0",
                                                                 xs: "auto",
-                                                                children: React.createElement(TextFieldMultiline$BtsCore.make, {
-                                                                      top: "12",
-                                                                      right: "0",
-                                                                      left: "0",
-                                                                      labelColor: "rgba(255,0,0,0.8)",
-                                                                      enterBorderColor: "rgba(255,0,0,0.8)",
-                                                                      downBorderColor: "rgba(255,0,0,0.6)",
-                                                                      borderColor: "rgba(0,0,0,0.2)",
-                                                                      rows: 3,
-                                                                      value: item.containment,
-                                                                      disabled: state.showProgress || !item.formEdit || !state.update,
-                                                                      onChange: (function ($$event) {
-                                                                          return Curry._2(changeContainment, $$event.target.value, i);
-                                                                        }),
-                                                                      children: null
-                                                                    })
-                                                              }), React.createElement(GridItem$BtsCore.make, {
-                                                                top: "18",
-                                                                bottom: "0",
-                                                                left: "0",
-                                                                xs: "auto",
-                                                                children: React.createElement(Typography$BtsCore.make, {
-                                                                      variant: "subheading",
-                                                                      color: "rgba(0,0,0,0.6)",
-                                                                      fontWeight: "bolder",
-                                                                      children: "【Cause】真因調查"
-                                                                    })
-                                                              }), React.createElement(GridItem$BtsCore.make, {
-                                                                top: "0",
-                                                                right: "0",
-                                                                bottom: "0",
-                                                                left: "0",
-                                                                xs: "auto",
-                                                                children: React.createElement(TextFieldMultiline$BtsCore.make, {
-                                                                      top: "12",
-                                                                      right: "0",
-                                                                      left: "0",
-                                                                      labelColor: "rgba(255,0,0,0.8)",
-                                                                      enterBorderColor: "rgba(255,0,0,0.8)",
-                                                                      downBorderColor: "rgba(255,0,0,0.6)",
-                                                                      borderColor: "rgba(0,0,0,0.2)",
-                                                                      rows: 3,
-                                                                      value: item.cause,
-                                                                      disabled: state.showProgress || !item.formQuality || !state.update,
-                                                                      onChange: (function ($$event) {
-                                                                          return Curry._2(changeCause, $$event.target.value, i);
-                                                                        }),
-                                                                      children: null
-                                                                    })
+                                                                children: React.createElement("div", {
+                                                                      onClick: (function (param) {
+                                                                          var image = item.showImage;
+                                                                          var audio = item.showAudio;
+                                                                          var video = item.showVideo;
+                                                                          var path = item.path;
+                                                                          var src = item.src;
+                                                                          return Curry._1(dispatch, /* SettingPhotoItem */Block.__(74, [
+                                                                                        state.formId,
+                                                                                        state.formTitle,
+                                                                                        image,
+                                                                                        audio,
+                                                                                        video,
+                                                                                        path,
+                                                                                        src
+                                                                                      ]));
+                                                                        })
+                                                                    }, React.createElement(OtherUpload$BtsCore.make, {
+                                                                          webLoad: state.showProgress,
+                                                                          showDrop: state.showDrop,
+                                                                          showFile: item.showFile,
+                                                                          showImage: item.showImage,
+                                                                          showVideo: item.showVideo,
+                                                                          showAudio: item.showAudio,
+                                                                          src: item.path + item.src,
+                                                                          fileRef: fileRef,
+                                                                          onDragOver: Curry.__1(dragOverFile),
+                                                                          onDragLeave: Curry.__1(dragLeaveFile),
+                                                                          onDrop: (function ($$event) {
+                                                                              return Curry._3(dropOtherFile, $$event, Caml_array.caml_array_get($$event.nativeEvent.dataTransfer.files, 0), i);
+                                                                            }),
+                                                                          disabled: state.showProgress || !item.formQuality || !state.update,
+                                                                          onClick: chooseFile,
+                                                                          onChange: (function ($$event) {
+                                                                              return Curry._2(changeOtherFile, Caml_array.caml_array_get($$event.target.files, 0), i);
+                                                                            })
+                                                                        }))
                                                               }), React.createElement(GridItem$BtsCore.make, {
                                                                 top: "0",
                                                                 right: "0",
@@ -3958,6 +3935,72 @@ function Home(Props) {
                                                                         }))
                                                               }), React.createElement(GridItem$BtsCore.make, {
                                                                 top: "18",
+                                                                bottom: "0",
+                                                                left: "0",
+                                                                xs: "auto",
+                                                                children: React.createElement(Typography$BtsCore.make, {
+                                                                      variant: "subheading",
+                                                                      color: "rgba(0,0,0,0.6)",
+                                                                      fontWeight: "bolder",
+                                                                      children: "【Containment】緊急處置"
+                                                                    })
+                                                              }), React.createElement(GridItem$BtsCore.make, {
+                                                                top: "0",
+                                                                right: "0",
+                                                                bottom: "0",
+                                                                left: "0",
+                                                                xs: "auto",
+                                                                children: React.createElement(TextFieldMultiline$BtsCore.make, {
+                                                                      top: "12",
+                                                                      right: "0",
+                                                                      left: "0",
+                                                                      labelColor: "rgba(255,0,0,0.8)",
+                                                                      enterBorderColor: "rgba(255,0,0,0.8)",
+                                                                      downBorderColor: "rgba(255,0,0,0.6)",
+                                                                      borderColor: "rgba(0,0,0,0.2)",
+                                                                      rows: 3,
+                                                                      value: item.containment,
+                                                                      disabled: state.showProgress || !item.formEdit || !state.update,
+                                                                      onChange: (function ($$event) {
+                                                                          return Curry._2(changeContainment, $$event.target.value, i);
+                                                                        }),
+                                                                      children: null
+                                                                    })
+                                                              }), React.createElement(GridItem$BtsCore.make, {
+                                                                top: "18",
+                                                                bottom: "0",
+                                                                left: "0",
+                                                                xs: "auto",
+                                                                children: React.createElement(Typography$BtsCore.make, {
+                                                                      variant: "subheading",
+                                                                      color: "rgba(0,0,0,0.6)",
+                                                                      fontWeight: "bolder",
+                                                                      children: "【Cause】真因調查"
+                                                                    })
+                                                              }), React.createElement(GridItem$BtsCore.make, {
+                                                                top: "0",
+                                                                right: "0",
+                                                                bottom: "0",
+                                                                left: "0",
+                                                                xs: "auto",
+                                                                children: React.createElement(TextFieldMultiline$BtsCore.make, {
+                                                                      top: "12",
+                                                                      right: "0",
+                                                                      left: "0",
+                                                                      labelColor: "rgba(255,0,0,0.8)",
+                                                                      enterBorderColor: "rgba(255,0,0,0.8)",
+                                                                      downBorderColor: "rgba(255,0,0,0.6)",
+                                                                      borderColor: "rgba(0,0,0,0.2)",
+                                                                      rows: 3,
+                                                                      value: item.cause,
+                                                                      disabled: state.showProgress || !item.formQuality || !state.update,
+                                                                      onChange: (function ($$event) {
+                                                                          return Curry._2(changeCause, $$event.target.value, i);
+                                                                        }),
+                                                                      children: null
+                                                                    })
+                                                              }), React.createElement(GridItem$BtsCore.make, {
+                                                                top: "18",
                                                                 bottom: "6",
                                                                 left: "0",
                                                                 xs: "auto",
@@ -4011,48 +4054,6 @@ function Home(Props) {
                                                                         }),
                                                                       children: "Long Term"
                                                                     })
-                                                              }), React.createElement(GridItem$BtsCore.make, {
-                                                                right: "0",
-                                                                bottom: "0",
-                                                                left: "0",
-                                                                xs: "auto",
-                                                                children: React.createElement("div", {
-                                                                      onClick: (function (param) {
-                                                                          var image = item.showImage;
-                                                                          var audio = item.showAudio;
-                                                                          var video = item.showVideo;
-                                                                          var path = item.path;
-                                                                          var src = item.src;
-                                                                          return Curry._1(dispatch, /* SettingPhotoItem */Block.__(74, [
-                                                                                        state.formId,
-                                                                                        state.formTitle,
-                                                                                        image,
-                                                                                        audio,
-                                                                                        video,
-                                                                                        path,
-                                                                                        src
-                                                                                      ]));
-                                                                        })
-                                                                    }, React.createElement(OtherUpload$BtsCore.make, {
-                                                                          webLoad: state.showProgress,
-                                                                          showDrop: state.showDrop,
-                                                                          showFile: item.showFile,
-                                                                          showImage: item.showImage,
-                                                                          showVideo: item.showVideo,
-                                                                          showAudio: item.showAudio,
-                                                                          src: item.path + item.src,
-                                                                          fileRef: fileRef,
-                                                                          onDragOver: Curry.__1(dragOverFile),
-                                                                          onDragLeave: Curry.__1(dragLeaveFile),
-                                                                          onDrop: (function ($$event) {
-                                                                              return Curry._3(dropOtherFile, $$event, Caml_array.caml_array_get($$event.nativeEvent.dataTransfer.files, 0), i);
-                                                                            }),
-                                                                          disabled: state.showProgress || !item.formQuality || !state.update,
-                                                                          onClick: chooseFile,
-                                                                          onChange: (function ($$event) {
-                                                                              return Curry._2(changeOtherFile, Caml_array.caml_array_get($$event.target.files, 0), i);
-                                                                            })
-                                                                        }))
                                                               }), React.createElement(GridItem$BtsCore.make, {
                                                                 top: "18",
                                                                 bottom: "0",

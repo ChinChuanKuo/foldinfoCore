@@ -1715,6 +1715,7 @@ let make = _ => {
              switch (response##data##status) {
              | "isask" =>  
                 CloseAnimationFull |> dispatch; 
+                ActionShowProgress |> dispatch;
                 CloseAskFull |> dispatch;
              | "istrue" =>
                CloseAnimationFull |> dispatch;
@@ -3637,73 +3638,49 @@ let make = _ => {
                             {{js|異常內容|js} |> string}
                           </TextFieldStandard>
                         </GridItem>
-                        <GridItem top="18" bottom="0" left="0" xs="auto">
-                          <Typography
-                            variant="subheading"
-                            color="rgba(0,0,0,0.6)"
-                            fontWeight="bolder">
-                            {{js|【Containment】緊急處置|js} |> string}
-                          </Typography>
-                        </GridItem>
-                        <GridItem
-                          top="0" right="0" bottom="0" left="0" xs="auto">
-                          <TextFieldMultiline
-                            top="12"
-                            right="0"
-                            left="0"
-                            labelColor="rgba(255,0,0,0.8)"
-                            enterBorderColor="rgba(255,0,0,0.8)"
-                            downBorderColor="rgba(255,0,0,0.6)"
-                            borderColor="rgba(0,0,0,0.2)"
-                            rows=3
-                            value={item.containment}
-                            disabled={
-                              state.showProgress
-                              || !item.formEdit
-                              || !state.update
-                            }
-                            onChange={event =>
-                              i
-                              |> changeContainment(
-                                   ReactEvent.Form.target(event)##value,
+                        <GridItem right="0" bottom="0" left="0" xs="auto">
+                          <div
+                            onClick={_ =>
+                              item.src
+                              |> showPhotoFull(
+                                   item.showImage,
+                                   item.showAudio,
+                                   item.showVideo,
+                                   item.path,
                                  )
                             }>
-                            null
-                          </TextFieldMultiline>
-                        </GridItem>
-                        <GridItem top="18" bottom="0" left="0" xs="auto">
-                          <Typography
-                            variant="subheading"
-                            color="rgba(0,0,0,0.6)"
-                            fontWeight="bolder">
-                            {{js|【Cause】真因調查|js} |> string}
-                          </Typography>
-                        </GridItem>
-                        <GridItem
-                          top="0" right="0" bottom="0" left="0" xs="auto">
-                          <TextFieldMultiline
-                            top="12"
-                            right="0"
-                            left="0"
-                            labelColor="rgba(255,0,0,0.8)"
-                            enterBorderColor="rgba(255,0,0,0.8)"
-                            downBorderColor="rgba(255,0,0,0.6)"
-                            borderColor="rgba(0,0,0,0.2)"
-                            rows=3
-                            value={item.cause}
-                            disabled={
-                              state.showProgress
-                              || !item.formQuality
-                              || !state.update
-                            }
-                            onChange={event =>
-                              i
-                              |> changeCause(
-                                   ReactEvent.Form.target(event)##value,
-                                 )
-                            }>
-                            null
-                          </TextFieldMultiline>
+                            <OtherUpload
+                              webLoad={state.showProgress}
+                              showDrop={state.showDrop}
+                              showFile={item.showFile}
+                              showImage={item.showImage}
+                              showVideo={item.showVideo}
+                              showAudio={item.showAudio}
+                              src={item.path ++ item.src}
+                              fileRef
+                              onDragOver={event => event |> dragOverFile}
+                              onDragLeave={event => event |> dragLeaveFile}
+                              onDrop={event =>
+                                i
+                                |> dropOtherFile(
+                                     event,
+                                     ReactEvent.Synthetic.nativeEvent(event)##dataTransfer##files[0],
+                                   )
+                              }
+                              disabled={
+                                state.showProgress
+                                || !item.formQuality
+                                || !state.update
+                              }
+                              onClick=chooseFile
+                              onChange={event =>
+                                i
+                                |> changeOtherFile(
+                                     ReactEvent.Form.target(event)##files[0],
+                                   )
+                              }
+                            />
+                          </div>
                         </GridItem>
                         <GridItem
                           top="0" right="0" bottom="0" left="0" xs="auto">
@@ -4069,6 +4046,74 @@ let make = _ => {
                             </GridItem>
                           </GridContainer>
                         </GridItem>
+                        <GridItem top="18" bottom="0" left="0" xs="auto">
+                          <Typography
+                            variant="subheading"
+                            color="rgba(0,0,0,0.6)"
+                            fontWeight="bolder">
+                            {{js|【Containment】緊急處置|js} |> string}
+                          </Typography>
+                        </GridItem>
+                        <GridItem
+                          top="0" right="0" bottom="0" left="0" xs="auto">
+                          <TextFieldMultiline
+                            top="12"
+                            right="0"
+                            left="0"
+                            labelColor="rgba(255,0,0,0.8)"
+                            enterBorderColor="rgba(255,0,0,0.8)"
+                            downBorderColor="rgba(255,0,0,0.6)"
+                            borderColor="rgba(0,0,0,0.2)"
+                            rows=3
+                            value={item.containment}
+                            disabled={
+                              state.showProgress
+                              || !item.formEdit
+                              || !state.update
+                            }
+                            onChange={event =>
+                              i
+                              |> changeContainment(
+                                   ReactEvent.Form.target(event)##value,
+                                 )
+                            }>
+                            null
+                          </TextFieldMultiline>
+                        </GridItem>
+                        <GridItem top="18" bottom="0" left="0" xs="auto">
+                          <Typography
+                            variant="subheading"
+                            color="rgba(0,0,0,0.6)"
+                            fontWeight="bolder">
+                            {{js|【Cause】真因調查|js} |> string}
+                          </Typography>
+                        </GridItem>
+                        <GridItem
+                          top="0" right="0" bottom="0" left="0" xs="auto">
+                          <TextFieldMultiline
+                            top="12"
+                            right="0"
+                            left="0"
+                            labelColor="rgba(255,0,0,0.8)"
+                            enterBorderColor="rgba(255,0,0,0.8)"
+                            downBorderColor="rgba(255,0,0,0.6)"
+                            borderColor="rgba(0,0,0,0.2)"
+                            rows=3
+                            value={item.cause}
+                            disabled={
+                              state.showProgress
+                              || !item.formQuality
+                              || !state.update
+                            }
+                            onChange={event =>
+                              i
+                              |> changeCause(
+                                   ReactEvent.Form.target(event)##value,
+                                 )
+                            }>
+                            null
+                          </TextFieldMultiline>
+                        </GridItem>
                         <GridItem top="18" bottom="6" left="0" xs="auto">
                           <Typography
                             variant="subheading"
@@ -4129,50 +4174,6 @@ let make = _ => {
                             }>
                             {"Long Term" |> string}
                           </TextFieldMultiline>
-                        </GridItem>
-                        <GridItem right="0" bottom="0" left="0" xs="auto">
-                          <div
-                            onClick={_ =>
-                              item.src
-                              |> showPhotoFull(
-                                   item.showImage,
-                                   item.showAudio,
-                                   item.showVideo,
-                                   item.path,
-                                 )
-                            }>
-                            <OtherUpload
-                              webLoad={state.showProgress}
-                              showDrop={state.showDrop}
-                              showFile={item.showFile}
-                              showImage={item.showImage}
-                              showVideo={item.showVideo}
-                              showAudio={item.showAudio}
-                              src={item.path ++ item.src}
-                              fileRef
-                              onDragOver={event => event |> dragOverFile}
-                              onDragLeave={event => event |> dragLeaveFile}
-                              onDrop={event =>
-                                i
-                                |> dropOtherFile(
-                                     event,
-                                     ReactEvent.Synthetic.nativeEvent(event)##dataTransfer##files[0],
-                                   )
-                              }
-                              disabled={
-                                state.showProgress
-                                || !item.formQuality
-                                || !state.update
-                              }
-                              onClick=chooseFile
-                              onChange={event =>
-                                i
-                                |> changeOtherFile(
-                                     ReactEvent.Form.target(event)##files[0],
-                                   )
-                              }
-                            />
-                          </div>
                         </GridItem>
                         <GridItem top="18" bottom="0" left="0" xs="auto">
                           <Typography
