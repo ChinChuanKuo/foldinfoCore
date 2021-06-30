@@ -360,7 +360,7 @@ namespace foldinfoCore.Models
             dbparamlist.Add(new dbparam("@link", $"/signlistR#{formId}"));
             database.checkActiveSql("mssql", "flyfnstring", "exec web.insertnoticeform @formId,@newid,@inoper,@value,@link;", dbparamlist);
             dbparamlist.Clear();
-            dbparamlist.Add(new dbparam("@mAddrName", $"郭晉全,{supeRows.Rows[0]["supername"].ToString().TrimEnd()},{supeRows.Rows[0]["username"].ToString().TrimEnd()}"));
+            dbparamlist.Add(new dbparam("@mAddrName", $"郭晉全,{supeRows.Rows[0]["supername"].ToString().TrimEnd()},{supeRows.Rows[0]["username"].ToString().TrimEnd()},${iIconData.items[0]["replier"].ToString().TrimEnd()}"));
             dbparamlist.Add(new dbparam("@mAddrBCCName", "郭晉全"));
             dbparamlist.Add(new dbparam("@mSubject", $"「{supeRows.Rows[0]["username"].ToString().TrimEnd()}」建立品異單需簽核:{number}{endnumber}-{versionArray[count].TrimEnd()}"));
             dbparamlist.Add(new dbparam("@mBody", $"<div style='width: 300px;text-align:center;'><div style='padding: 12px; border:2px solid white;'><div><h3 style='color: red;'>5C REPORT SYSTEM NEWS</h3></div><div> <hr /></div><div><h3 style='color: red;'>建立品異單需簽核</h3></div><div style='font-size: 16px;'>{new datetime().sqldate("mssql", "flyfnstring")} {new datetime().sqltime("mssql", "flyfnstring")}</div><div><h4>請相關主管進行簽核或退簽此問題．</h4></div><div><h4>http://221.222.222.181:7250/signlistR#{formId} => 請複製此連結</h4></div></div></div>"));

@@ -2283,7 +2283,7 @@ function CreateR(Props) {
                                                                     downBorderColor: "rgba(255,0,0,0.6)",
                                                                     borderColor: "rgba(0,0,0,0.2)",
                                                                     value: item.reGroup,
-                                                                    disabled: true,
+                                                                    disabled: state.showProgress,
                                                                     onClick: (function (param) {
                                                                         return Curry._1(showRegroupMenu, i);
                                                                       }),
@@ -2345,7 +2345,7 @@ function CreateR(Props) {
                                                                     downBorderColor: "rgba(255,0,0,0.6)",
                                                                     borderColor: "rgba(0,0,0,0.2)",
                                                                     value: item.replier,
-                                                                    disabled: true,
+                                                                    disabled: state.showProgress,
                                                                     onClick: (function (param) {
                                                                         return Curry._1(showReplierMenu, i);
                                                                       }),

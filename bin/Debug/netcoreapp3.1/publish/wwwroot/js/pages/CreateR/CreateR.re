@@ -2087,7 +2087,7 @@ let make = _ => {
                             downBorderColor="rgba(255,0,0,0.6)"
                             borderColor="rgba(0,0,0,0.2)"
                             value={item.reGroup}
-                            disabled=true
+                            disabled={state.showProgress}
                             onClick={_ => i |> showRegroupMenu}>
                             ...(
                                  item.showRegroupMenu
@@ -2155,7 +2155,7 @@ let make = _ => {
                             downBorderColor="rgba(255,0,0,0.6)"
                             borderColor="rgba(0,0,0,0.2)"
                             value={item.replier}
-                            disabled=true
+                            disabled={state.showProgress}
                             onClick={_ => i |> showReplierMenu}>
                             ...(
                                  item.showReplierMenu
