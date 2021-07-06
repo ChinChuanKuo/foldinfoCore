@@ -784,7 +784,7 @@ let make = _ => {
   let clickScrollBar =
     useCallback(_ => {
       ActionShowProgress |> dispatch;
-      state.items |> Js_array.length |> scrollAJax;
+      state.items |> Js_array.length |> string_of_int |> scrollAJax;
     });
 
   let sRecordAJax = () =>

@@ -1253,7 +1253,7 @@ function Home(Props) {
         }), ([]));
   var clickScrollBar = React.useCallback((function (param) {
           Curry._1(dispatch, /* ActionShowProgress */2);
-          var length = state.items.length;
+          var length = String(state.items.length);
           Axiosapi$BtsCore.Default.scroll(Data$BtsCore.sDesoData(state.filitems.filter((function (filitem) {
                               return filitem.filtValue !== "";
                             })), state.firdate, state.secdate, state.record, length, localStorage.getItem("newid"))).then((function (response) {
