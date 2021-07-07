@@ -709,7 +709,10 @@ namespace foldinfoCore.Models
                 return new statusModels() { status = checkItems };
             }
             database database = new database();
+            DataTable mainRows = new DataTable();
             List<dbparam> dbparamlist = new List<dbparam>();
+            dbparamlist.Add(new dbparam("@id", iFormsData.formId.TrimEnd()));
+            mainRows = database.checkSelectSql("mssql", "flyfnstring", "exec web.searchreportdeta @id;", dbparamlist);
             foreach (var item in iFormsData.items)
             {
                 string sqlCode = "";
@@ -757,6 +760,7 @@ namespace foldinfoCore.Models
                         sqlCode += "cause = @cause,replier = @replier,issuesort = @issuesort,homepage3 = @homepage3,causeclass = @causeclass,direct_pt = @directPt,indirect_pt = @indirectPt,correctiveaction1 = @correctiveaction1,correctiveaction2 = @correctiveaction2,closure = @closure,body = @body,belong = @belong,belonger = @belonger,stage = @stage";
                         break;
                 }
+                noticeReplier(mainRows.Rows[0]["sign2"].ToString().TrimEnd(), mainRows.Rows[0]["replier"].ToString().TrimEnd(), item["replier"].ToString().TrimEnd(), iFormsData.formId.TrimEnd(), iFormsData.tile.TrimEnd(), iFormsData.newid.TrimEnd());
                 if (sqlCode != "")
                 {
                     dbparamlist.Add(new dbparam("@id", iFormsData.formId.TrimEnd()));
@@ -827,6 +831,29 @@ namespace foldinfoCore.Models
             return new statusModels() { status = "istrue" };
         }
 
+        public void noticeReplier(string signup, string beforeReplier, string afterReplier, string id, string tile, string inoper)
+        {
+            if (beforeReplier != afterReplier || signup != "")
+            {
+                database database = new database();
+
+                DataTable mainRows = new DataTable();
+                List<dbparam> dbparamlist = new List<dbparam>();
+                dbparamlist.Add(new dbparam("@inoper", inoper));
+                mainRows = database.checkSelectSql("mssql", "flyfnstring", "select username from web.supeber where userid = @inoper;", dbparamlist);
+                dbparamlist.Clear();
+                DataTable supeRows = new DataTable();
+                dbparamlist.Add(new dbparam("@inoper", afterReplier));
+                supeRows = database.checkSelectSql("mssql", "flyfnstring", "select supername, username from web.supeber where username = @inoper;", dbparamlist);
+                dbparamlist.Clear();
+                dbparamlist.Add(new dbparam("@mAddrName", $"郭晉全,{supeRows.Rows[0]["supername"].ToString().TrimEnd()},{supeRows.Rows[0]["username"].ToString().TrimEnd()}"));
+                dbparamlist.Add(new dbparam("@mAddrBCCName", "郭晉全"));
+                dbparamlist.Add(new dbparam("@mSubject", $"「{mainRows.Rows[0]["username"].ToString().TrimEnd()} 變更品異單處理者:{tile}"));
+                dbparamlist.Add(new dbparam("@mBody", $"<div style='width: 300px;text-align:center;'><div style='padding: 12px; border:2px solid white;'><div><h2 style='color:red;'>5C REPORT SYSTEM NEWS</h2></div><div> <hr /></div><div><h3 style='color: red;'>變更品異單處理者</h3></div><div style='font-size: 16px;'>{new datetime().sqldate("mssql", "flyfnstring")} {new datetime().sqltime("mssql", "flyfnstring")}</div><div><h4>請相關處理者進行了解此問題．</h4></div><div><h4>http://221.222.222.181:7250/signlistR#{id} => 請複製此連結</h4></div></div></div>"));
+                database.checkActiveSql("mssql", "mailstring", "insert into dbo.MailBox (mAddrName,mAddrBCCName,mSubject,mBody) values (@mAddrName,@mAddrBCCName,@mSubject,@mBody);", dbparamlist);
+            }
+        }
+
         public statusModels GetStageModels(dFormData dFormData, string cuurip)
         {
             database database = new database();
@@ -836,9 +863,12 @@ namespace foldinfoCore.Models
             if (database.checkActiveSql("mssql", "flyfnstring", "update dbo.5C_Report set stage = @stage where id = @id;", dbparamlist) != "istrue")
                 return new statusModels() { status = "error" };
             dbparamlist.Clear();
+            DataTable mainRows = new DataTable();
+            dbparamlist.Add(new dbparam("@id", dFormData.formId.TrimEnd()));
+            mainRows = database.checkSelectSql("mssql", "flyfnstring", "exec web.searchreportdeta @id;", dbparamlist);
             DataTable supeRows = new DataTable();
-            dbparamlist.Add(new dbparam("@inoper", dFormData.newid.TrimEnd()));
-            supeRows = database.checkSelectSql("mssql", "flyfnstring", "exec web.checksupeber @inoper;", dbparamlist);
+            dbparamlist.Add(new dbparam("@inoper", mainRows.Rows[0]["postname"].ToString().TrimEnd()));
+            supeRows = database.checkSelectSql("mssql", "flyfnstring", "select supername, username from web.supeber where username = @inoper;", dbparamlist);
             dbparamlist.Clear();
             dbparamlist.Add(new dbparam("@mAddrName", $"郭晉全,{supeRows.Rows[0]["supername"].ToString().TrimEnd()},{supeRows.Rows[0]["username"].ToString().TrimEnd()}"));
             dbparamlist.Add(new dbparam("@mAddrBCCName", "郭晉全"));
