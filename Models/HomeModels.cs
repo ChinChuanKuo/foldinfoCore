@@ -667,7 +667,7 @@ namespace foldinfoCore.Models
                     List<dbparam> dbparamlist = new List<dbparam>();
                     dbparamlist.Add(new dbparam("@id", iFormsData.formId.TrimEnd()));
                     mainRows = database.checkSelectSql("mssql", "flyfnstring", "exec web.searchreportdeta @id;", dbparamlist);
-                    stage = checkStage(mainRows.Rows[0]["containment"].ToString().TrimEnd(), mainRows.Rows[0]["cause"].ToString().TrimEnd(), mainRows.Rows[0]["correctiveaction1"].ToString().TrimEnd(), mainRows.Rows[0]["issuesort"].ToString().TrimEnd(), mainRows.Rows[0]["causeclass"].ToString().TrimEnd(), mainRows.Rows[0]["indirectPt"].ToString().TrimEnd(), mainRows.Rows[0]["correctiveaction2"].ToString().TrimEnd());
+                    stage = checkStage(mainRows.Rows[0]["containment"].ToString().TrimEnd(), mainRows.Rows[0]["cause"].ToString().TrimEnd(), mainRows.Rows[0]["correctiveaction1"].ToString().TrimEnd(), mainRows.Rows[0]["issuesort"].ToString().TrimEnd(), mainRows.Rows[0]["causeclass"].ToString().TrimEnd(), mainRows.Rows[0]["indirect_pt"].ToString().TrimEnd(), mainRows.Rows[0]["correctiveaction2"].ToString().TrimEnd());
                     break;
             }
             foreach (var item in iFormsData.qaitems)
@@ -880,7 +880,7 @@ namespace foldinfoCore.Models
             List<dbparam> dbparamlist = new List<dbparam>();
             dbparamlist.Add(new dbparam("@stage", "對策發行(簽核中)"));
             dbparamlist.Add(new dbparam("@id", dFormData.formId.TrimEnd()));
-            if (database.checkActiveSql("mssql", "flyfnstring", "update dbo.5C_Report set stage = @stage where id = @id;", dbparamlist) != "istrue")
+            if (database.checkActiveSql("mssql", "flyfnstring", "update dbo.[5C_Report] set stage = @stage where id = @id;", dbparamlist) != "istrue")
                 return new statusModels() { status = "error" };
             dbparamlist.Clear();
             List<string> mailist = new List<string>();
