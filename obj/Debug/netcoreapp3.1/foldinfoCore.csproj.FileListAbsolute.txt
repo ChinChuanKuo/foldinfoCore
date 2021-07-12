@@ -98,3 +98,4 @@
 /Users/chinchuankuo/Documents/core/foldinfoCore/obj/Debug/netcoreapp3.1/foldinfoCore.dll
 /Users/chinchuankuo/Documents/core/foldinfoCore/obj/Debug/netcoreapp3.1/foldinfoCore.pdb
 /Users/chinchuankuo/Documents/core/foldinfoCore/obj/Debug/netcoreapp3.1/foldinfoCore.genruntimeconfig.cache
+/Users/chinchuankuo/Documents/core/foldinfoCore/obj/Debug/netcoreapp3.1/Razor/Views/SendistR/Index.cshtml.g.cs

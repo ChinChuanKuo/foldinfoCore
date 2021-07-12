@@ -25,6 +25,7 @@ import * as MailistF$BtsCore from "./pages/MailistF/MailistF.bs.js";
 import * as MailistI$BtsCore from "./pages/MailistI/MailistI.bs.js";
 import * as MailistR$BtsCore from "./pages/MailistR/MailistR.bs.js";
 import * as SendistF$BtsCore from "./pages/SendistF/SendistF.bs.js";
+import * as SendistR$BtsCore from "./pages/SendistR/SendistR.bs.js";
 import * as Signlist$BtsCore from "./pages/Signlist/Signlist.bs.js";
 import * as Bookmarks$BtsCore from "./pages/Bookmarks/Bookmarks.bs.js";
 import * as ReasonReactRouter from "reason-react/src/ReasonReactRouter.bs.js";
@@ -197,6 +198,13 @@ function Route(Props) {
               exit$1 = 2;
             } else {
               tmp = React.createElement(SendistF$BtsCore.make, { });
+            }
+            break;
+        case "sendistR" :
+            if (match$1[1]) {
+              exit$1 = 2;
+            } else {
+              tmp = React.createElement(SendistR$BtsCore.make, { });
             }
             break;
         case "signlist" :

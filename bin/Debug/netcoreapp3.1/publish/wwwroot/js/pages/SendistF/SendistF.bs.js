@@ -360,10 +360,16 @@ function reducer(state, action) {
 
 var initialState_tabitems = /* :: */[
   {
-    showTab: true,
-    tabImage: Icons$BtsCore.factoryBlack
+    showTab: false,
+    tabImage: Icons$BtsCore.transmissionBlack
   },
-  /* [] */0
+  /* :: */[
+    {
+      showTab: true,
+      tabImage: Icons$BtsCore.factoryBlack
+    },
+    /* [] */0
+  ]
 ];
 
 var initialState_items = [];
@@ -379,7 +385,7 @@ var initialState = {
   delete: false,
   export: false,
   tabitems: initialState_tabitems,
-  index: 0,
+  index: 1,
   items: initialState_items,
   showYoutube: false,
   youtubeText: ""
@@ -464,7 +470,11 @@ function SendistF(Props) {
                   });
         }), ([]));
   var clickItemTab = React.useCallback((function (i) {
-          return ReasonReactRouter.push(Path$BtsCore.sendistFPath);
+          if (i !== 0) {
+            return ReasonReactRouter.push(Path$BtsCore.sendistFPath);
+          } else {
+            return ReasonReactRouter.push(Path$BtsCore.sendistRPath);
+          }
         }));
   var insertForm = React.useCallback((function (param) {
           Curry._1(dispatch, /* ActionShowProgress */2);

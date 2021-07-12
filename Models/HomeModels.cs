@@ -648,6 +648,11 @@ namespace foldinfoCore.Models
                 }
                 if (sqlCode != "")
                 {
+                    datetime datetime = new datetime();
+                    sqlCode += ",modate = @modate, motime = @motime, mooper = @mooper";
+                    dbparamlist.Add(new dbparam("@modate", datetime.sqldate("mssql", "flyfnstring")));
+                    dbparamlist.Add(new dbparam("@motime", datetime.sqltime("mssql", "flyfnstring")));
+                    dbparamlist.Add(new dbparam("@mooper", iFormsData.newid.TrimEnd()));
                     dbparamlist.Add(new dbparam("@id", iFormsData.formId.TrimEnd()));
                     if (database.checkActiveSql("mssql", "flyfnstring", $"update dbo.[5C_Report] set {sqlCode} where id = @id;", dbparamlist) != "istrue")
                     {
@@ -763,6 +768,11 @@ namespace foldinfoCore.Models
                 noticeReplier(mainRows.Rows[0]["sign2"].ToString().TrimEnd(), mainRows.Rows[0]["replier"].ToString().TrimEnd(), item["replier"].ToString().TrimEnd(), iFormsData.formId.TrimEnd(), iFormsData.tile.TrimEnd(), iFormsData.newid.TrimEnd());
                 if (sqlCode != "")
                 {
+                    datetime datetime = new datetime();
+                    sqlCode += ",modate = @modate, motime = @motime, mooper = @mooper";
+                    dbparamlist.Add(new dbparam("@modate", datetime.sqldate("mssql", "flyfnstring")));
+                    dbparamlist.Add(new dbparam("@motime", datetime.sqltime("mssql", "flyfnstring")));
+                    dbparamlist.Add(new dbparam("@mooper", iFormsData.newid.TrimEnd()));
                     dbparamlist.Add(new dbparam("@id", iFormsData.formId.TrimEnd()));
                     if (database.checkActiveSql("mssql", "flyfnstring", $"update dbo.[5C_Report] set {sqlCode} where id = @id;", dbparamlist) != "istrue")
                         return new statusModels() { status = "error" };
@@ -863,6 +873,12 @@ namespace foldinfoCore.Models
             if (database.checkActiveSql("mssql", "flyfnstring", "update dbo.5C_Report set stage = @stage where id = @id;", dbparamlist) != "istrue")
                 return new statusModels() { status = "error" };
             dbparamlist.Clear();
+            List<string> mailist = new List<string>();
+            foreach (DataRow dr in database.checkSelectSql("mssql", "flyfnstring", "select username from web.resignform;", dbparamlist).Rows)
+            {
+                mailist.Add(dr["username"].ToString().TrimEnd());
+            }
+            dbparamlist.Clear();
             DataTable mainRows = new DataTable();
             dbparamlist.Add(new dbparam("@id", dFormData.formId.TrimEnd()));
             mainRows = database.checkSelectSql("mssql", "flyfnstring", "exec web.searchreportdeta @id;", dbparamlist);
@@ -870,7 +886,7 @@ namespace foldinfoCore.Models
             dbparamlist.Add(new dbparam("@inoper", mainRows.Rows[0]["postname"].ToString().TrimEnd()));
             supeRows = database.checkSelectSql("mssql", "flyfnstring", "select supername, username from web.supeber where username = @inoper;", dbparamlist);
             dbparamlist.Clear();
-            dbparamlist.Add(new dbparam("@mAddrName", $"郭晉全,{supeRows.Rows[0]["supername"].ToString().TrimEnd()},{supeRows.Rows[0]["username"].ToString().TrimEnd()}"));
+            dbparamlist.Add(new dbparam("@mAddrName", $"郭晉全,{string.Join(',', mailist)},{supeRows.Rows[0]["supername"].ToString().TrimEnd()},{supeRows.Rows[0]["username"].ToString().TrimEnd()}"));
             dbparamlist.Add(new dbparam("@mAddrBCCName", "郭晉全"));
             dbparamlist.Add(new dbparam("@mSubject", $"「{supeRows.Rows[0]["username"].ToString().TrimEnd()}」對策發行需簽核"));
             dbparamlist.Add(new dbparam("@mBody", $"<div style='width: 300px;text-align:center;'><div style='padding: 12px; border:2px solid white;'><div><h2 style='color:red;'>5C REPORT SYSTEM NEWS</h2></div><div> <hr /></div><div><h3 style='color: red;'>建立品異單需簽核</h3></div><div style='font-size: 16px;'>{new datetime().sqldate("mssql", "flyfnstring")} {new datetime().sqltime("mssql", "flyfnstring")}</div><div><h4>請相關主管進行簽核或退簽此問題．</h4></div><div><h4>http://221.222.222.181:7250/signlistR#{dFormData.formId.TrimEnd()} => 請複製此連結</h4></div></div></div>"));

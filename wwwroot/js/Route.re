@@ -31,6 +31,7 @@ let make = _ => {
        | ["mailistR"] => <MailistR />
        | ["mailistF"] => <MailistF />
        | ["mailistI"] => <MailistI />
+       | ["sendistR"] => <SendistR />
        | ["sendistF"] => <SendistF />
        | ["modifyR"] => <ModifyR />
        | ["modifyF"] => <ModifyF />

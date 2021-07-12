@@ -50,4 +50,6 @@ let mailistFPath: string = "/mailistF";
 [@genType]
 let mailistIPath: string = "/mailistI";
 [@genType]
+let sendistRPath: string = "/sendistR";
+[@genType]
 let sendistFPath: string = "/sendistF";

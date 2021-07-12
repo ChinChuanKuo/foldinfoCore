@@ -164,8 +164,8 @@ let initialState = {
   update: false,
   delete: false,
   export: false,
-  tabitems: [{showTab: true, tabImage: factoryBlack}],
-  index: 0,
+  tabitems: [{showTab: false, tabImage: transmissionBlack}, {showTab: true, tabImage: factoryBlack}],
+  index: 1,
   items: [||],
   showYoutube: false,
   youtubeText: "",
@@ -260,7 +260,12 @@ let make = _ => {
     Some(() => sizeId);
   });
 
-  let clickItemTab = useCallback(i => sendistFPath |> ReasonReactRouter.push);
+  let clickItemTab = useCallback(i => {
+      switch (i) {
+      | 0 => sendistRPath |> ReasonReactRouter.push
+      | _ => sendistFPath |> ReasonReactRouter.push
+      };
+  });
 
   let insertAJax = () =>
     Js.Promise.(

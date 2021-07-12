@@ -24,6 +24,8 @@ S wwwroot/js/pages/Resend
 B lib/bs/wwwroot/js/pages/Resend
 S wwwroot/js/pages/Login
 B lib/bs/wwwroot/js/pages/Login
+S wwwroot/js/pages/SendistR
+B lib/bs/wwwroot/js/pages/SendistR
 S wwwroot/js/pages/Icon
 B lib/bs/wwwroot/js/pages/Icon
 S wwwroot/js/pages/Forget

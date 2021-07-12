@@ -219,3 +219,10 @@ module SendistF = {
   let sGroup = data => postData("/SendistF/sGroupData", data);
   let insert = data => postData("/SendistF/insertData", data);
 };
+
+module SendistR = {
+  let search = data => postData("/SendistR/searchData", data);
+  let add = data => postData("/SendistR/addData", data);
+  let sGroup = data => postData("/SendistR/sGroupData", data);
+  let insert = data => postData("/SendistR/insertData", data);
+};

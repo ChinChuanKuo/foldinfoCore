@@ -51,6 +51,8 @@ var mailistFPath = "/mailistF";
 
 var mailistIPath = "/mailistI";
 
+var sendistRPath = "/sendistR";
+
 var sendistFPath = "/sendistF";
 
 export {
@@ -79,6 +81,7 @@ export {
   mailistRPath ,
   mailistFPath ,
   mailistIPath ,
+  sendistRPath ,
   sendistFPath ,
   
 }

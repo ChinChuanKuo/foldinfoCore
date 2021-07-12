@@ -283,7 +283,7 @@ function NewFacebook(Props) {
                           bottomRight: "20",
                           bottomLeft: "20",
                           onClick: (function (param) {
-                              return ReasonReactRouter.push(Path$BtsCore.sendistFPath);
+                              return ReasonReactRouter.push(Path$BtsCore.sendistRPath);
                             }),
                           children: /* tuple */[
                             React.createElement(IconGeneral$BtsCore.make, {

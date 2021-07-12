@@ -769,6 +769,29 @@ var SendistF = {
   insert: insert$12
 };
 
+function search$17(data) {
+  return Axios$1.post("/SendistR/searchData", data);
+}
+
+function add$2(data) {
+  return Axios$1.post("/SendistR/addData", data);
+}
+
+function sGroup$5(data) {
+  return Axios$1.post("/SendistR/sGroupData", data);
+}
+
+function insert$13(data) {
+  return Axios$1.post("/SendistR/insertData", data);
+}
+
+var SendistR = {
+  search: search$17,
+  add: add$2,
+  sGroup: sGroup$5,
+  insert: insert$13
+};
+
 export {
   Form ,
   Login ,
@@ -795,6 +818,7 @@ export {
   MailistF ,
   MailistI ,
   SendistF ,
+  SendistR ,
   
 }
 /* axios Not a pure module */

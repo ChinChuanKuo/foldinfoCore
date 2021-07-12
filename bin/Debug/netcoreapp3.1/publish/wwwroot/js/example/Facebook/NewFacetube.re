@@ -223,7 +223,7 @@ let make =
           topRight="20"
           bottomRight="20"
           bottomLeft="20"
-          onClick={_ => sendistFPath |> ReasonReactRouter.push}>
+          onClick={_ => sendistRPath |> ReasonReactRouter.push}>
           ...(
                <IconGeneral src=mailBlack />,
                <Typography variant="subheading">
