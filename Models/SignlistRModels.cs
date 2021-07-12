@@ -33,8 +33,7 @@ namespace foldinfoCore.Models
 
         public bool checkEdit(string stage)
         {
-            switch (stage) { case "對策發行(簽核中)": return true; }
-            return false;
+            return stage == "對策發行(簽核中)";
         }
 
         public sOptonModels GetSFileModels(dFormData dFormData, string cuurip)

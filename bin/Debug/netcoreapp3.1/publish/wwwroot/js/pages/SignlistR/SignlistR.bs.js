@@ -1167,7 +1167,7 @@ function SignlistR(Props) {
                                                                     downBorderColor: "rgba(255,0,0,0.6)",
                                                                     borderColor: "rgba(0,0,0,0.2)",
                                                                     value: item.reGroup,
-                                                                    disabled: state.showProgress || !item.formEdit || !state.update,
+                                                                    disabled: state.showProgress || item.formEdit || !state.update,
                                                                     onClick: (function (param) {
                                                                         return Curry._1(showRegroupMenu, i);
                                                                       }),
@@ -1229,7 +1229,7 @@ function SignlistR(Props) {
                                                                     downBorderColor: "rgba(255,0,0,0.6)",
                                                                     borderColor: "rgba(0,0,0,0.2)",
                                                                     value: item.replier,
-                                                                    disabled: state.showProgress || !item.formEdit || !state.update,
+                                                                    disabled: state.showProgress || item.formEdit || !state.update,
                                                                     onClick: (function (param) {
                                                                         return Curry._1(showReplierMenu, i);
                                                                       }),
