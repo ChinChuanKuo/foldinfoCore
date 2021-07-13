@@ -929,60 +929,32 @@ function reducer(state, action) {
                   return newrecord;
                 }), state.formitems);
           return newrecord$72;
-      case /* ShowRelease */65 :
-          var index$50 = action[0];
+      case /* ChangeReleasedate */65 :
+          var index$50 = action[1];
+          var value$29 = action[0];
           var newrecord$73 = Caml_obj.caml_obj_dup(state);
           newrecord$73.formitems = $$Array.mapi((function (i, item) {
                   if (index$50 !== i) {
                     return item;
                   }
                   var newrecord = Caml_obj.caml_obj_dup(item);
-                  newrecord.showRelease = !item.showRelease;
-                  return newrecord;
-                }), state.formitems);
-          return newrecord$73;
-      case /* ChangeReleasedate */66 :
-          var index$51 = action[1];
-          var value$29 = action[0];
-          var newrecord$74 = Caml_obj.caml_obj_dup(state);
-          newrecord$74.formitems = $$Array.mapi((function (i, item) {
-                  if (index$51 !== i) {
-                    return item;
-                  }
-                  var newrecord = Caml_obj.caml_obj_dup(item);
                   newrecord.releasedate = value$29;
                   return newrecord;
                 }), state.formitems);
+          return newrecord$73;
+      case /* ShowDrop */66 :
+          var newrecord$74 = Caml_obj.caml_obj_dup(state);
+          newrecord$74.showDrop = action[0];
           return newrecord$74;
-      case /* CloseItem */67 :
-          var index$52 = action[2];
-          var date$1 = action[1];
-          var stage = action[0];
+      case /* AddPhotoItem */67 :
           var newrecord$75 = Caml_obj.caml_obj_dup(state);
-          newrecord$75.formitems = $$Array.mapi((function (i, item) {
-                  if (index$52 !== i) {
-                    return item;
-                  }
-                  var newrecord = Caml_obj.caml_obj_dup(item);
-                  newrecord.releasedate = date$1;
-                  newrecord.showRelease = !item.showRelease;
-                  newrecord.stage = stage;
-                  return newrecord;
-                }), state.formitems);
+          newrecord$75.photoitems = $$Array.append(state.photoitems, newitem(state.photoitems.length + 1 | 0, action[0], action[1], action[2], action[3], action[4], action[5], action[6], action[7], action[8]));
           return newrecord$75;
-      case /* ShowDrop */68 :
+      case /* ActionPhotoItem */68 :
+          var index$51 = action[0];
           var newrecord$76 = Caml_obj.caml_obj_dup(state);
-          newrecord$76.showDrop = action[0];
-          return newrecord$76;
-      case /* AddPhotoItem */69 :
-          var newrecord$77 = Caml_obj.caml_obj_dup(state);
-          newrecord$77.photoitems = $$Array.append(state.photoitems, newitem(state.photoitems.length + 1 | 0, action[0], action[1], action[2], action[3], action[4], action[5], action[6], action[7], action[8]));
-          return newrecord$77;
-      case /* ActionPhotoItem */70 :
-          var index$53 = action[0];
-          var newrecord$78 = Caml_obj.caml_obj_dup(state);
-          newrecord$78.photoitems = $$Array.mapi((function (i, photoitem) {
-                  if (index$53 === i) {
+          newrecord$76.photoitems = $$Array.mapi((function (i, photoitem) {
+                  if (index$51 === i) {
                     return {
                             photoId: photoitem.photoId,
                             photoImage: photoitem.photoImage,
@@ -1002,55 +974,55 @@ function reducer(state, action) {
                     return photoitem;
                   }
                 }), state.photoitems);
-          return newrecord$78;
-      case /* SendAnimationFull */71 :
-          var index$54 = action[0];
-          var newrecord$79 = Caml_obj.caml_obj_dup(state);
-          newrecord$79.showFull = !state.showFull;
-          newrecord$79.items = $$Array.mapi((function (i, item) {
-                  if (index$54 !== i) {
+          return newrecord$76;
+      case /* SendAnimationFull */69 :
+          var index$52 = action[0];
+          var newrecord$77 = Caml_obj.caml_obj_dup(state);
+          newrecord$77.showFull = !state.showFull;
+          newrecord$77.items = $$Array.mapi((function (i, item) {
+                  if (index$52 !== i) {
                     return item;
                   }
                   var newrecord = Caml_obj.caml_obj_dup(item);
                   newrecord.itemDelete = false;
                   return newrecord;
                 }), state.items);
-          return newrecord$79;
-      case /* ClearAnimationFull */72 :
+          return newrecord$77;
+      case /* ClearAnimationFull */70 :
           var id$1 = action[0];
-          var newrecord$80 = Caml_obj.caml_obj_dup(state);
-          newrecord$80.showFull = !state.showFull;
-          newrecord$80.items = state.items.filter((function (item) {
+          var newrecord$78 = Caml_obj.caml_obj_dup(state);
+          newrecord$78.showFull = !state.showFull;
+          newrecord$78.items = state.items.filter((function (item) {
                   return item.ids !== id$1;
                 }));
-          newrecord$80.itemCount = state.itemCount - 1 | 0;
+          newrecord$78.itemCount = state.itemCount - 1 | 0;
+          return newrecord$78;
+      case /* SettingFileItem */71 :
+          var newrecord$79 = Caml_obj.caml_obj_dup(state);
+          newrecord$79.fileSrc = action[3];
+          newrecord$79.filePath = action[2];
+          newrecord$79.fileTile = action[1];
+          newrecord$79.fileId = action[0];
+          newrecord$79.showFileFull = !state.showFileFull;
+          newrecord$79.showFull = !state.showFull;
+          return newrecord$79;
+      case /* SettingPhotoItem */72 :
+          var newrecord$80 = Caml_obj.caml_obj_dup(state);
+          newrecord$80.photoSrc = action[6];
+          newrecord$80.photoPath = action[5];
+          newrecord$80.photoVideo = action[4];
+          newrecord$80.photoAudio = action[3];
+          newrecord$80.photoImage = action[2];
+          newrecord$80.photoTile = action[1];
+          newrecord$80.photoId = action[0];
+          newrecord$80.showPhotoFull = !state.showPhotoFull;
+          newrecord$80.showFull = !state.showFull;
           return newrecord$80;
-      case /* SettingFileItem */73 :
+      case /* ActionSnackBar */73 :
           var newrecord$81 = Caml_obj.caml_obj_dup(state);
-          newrecord$81.fileSrc = action[3];
-          newrecord$81.filePath = action[2];
-          newrecord$81.fileTile = action[1];
-          newrecord$81.fileId = action[0];
-          newrecord$81.showFileFull = !state.showFileFull;
-          newrecord$81.showFull = !state.showFull;
+          newrecord$81.youtubeText = action[0];
+          newrecord$81.showYoutube = action[1];
           return newrecord$81;
-      case /* SettingPhotoItem */74 :
-          var newrecord$82 = Caml_obj.caml_obj_dup(state);
-          newrecord$82.photoSrc = action[6];
-          newrecord$82.photoPath = action[5];
-          newrecord$82.photoVideo = action[4];
-          newrecord$82.photoAudio = action[3];
-          newrecord$82.photoImage = action[2];
-          newrecord$82.photoTile = action[1];
-          newrecord$82.photoId = action[0];
-          newrecord$82.showPhotoFull = !state.showPhotoFull;
-          newrecord$82.showFull = !state.showFull;
-          return newrecord$82;
-      case /* ActionSnackBar */75 :
-          var newrecord$83 = Caml_obj.caml_obj_dup(state);
-          newrecord$83.youtubeText = action[0];
-          newrecord$83.showYoutube = action[1];
-          return newrecord$83;
       
     }
   }
@@ -1148,12 +1120,12 @@ function Home(Props) {
   var state = match[0];
   var fileRef = React.useRef(null);
   var barShowRestoreAction = function (youtubeText) {
-    Curry._1(dispatch, /* ActionSnackBar */Block.__(75, [
+    Curry._1(dispatch, /* ActionSnackBar */Block.__(73, [
             youtubeText,
             true
           ]));
     setTimeout((function (param) {
-            return Curry._1(dispatch, /* ActionSnackBar */Block.__(75, [
+            return Curry._1(dispatch, /* ActionSnackBar */Block.__(73, [
                           "",
                           false
                         ]));
@@ -1456,7 +1428,7 @@ function Home(Props) {
                     var match = response.data.status;
                     var tmp;
                     if (match === "istrue") {
-                      Curry._1(dispatch, /* ClearAnimationFull */Block.__(72, [state.formId]));
+                      Curry._1(dispatch, /* ClearAnimationFull */Block.__(70, [state.formId]));
                       barShowRestoreAction(Status$BtsCore.statusModule("deleteSuccess"));
                       tmp = Curry._1(dispatch, /* ActionShowProgress */2);
                     } else {
@@ -1517,7 +1489,7 @@ function Home(Props) {
                     var match = response.data.status;
                     var tmp;
                     if (match === "istrue") {
-                      Curry._1(dispatch, /* SendAnimationFull */Block.__(71, [state.formIndex]));
+                      Curry._1(dispatch, /* SendAnimationFull */Block.__(69, [state.formIndex]));
                       barShowRestoreAction(Status$BtsCore.statusModule("sendSuccess"));
                       tmp = Curry._1(dispatch, /* ActionShowProgress */2);
                     } else {
@@ -1579,7 +1551,7 @@ function Home(Props) {
                     var match = response.data.status;
                     var tmp;
                     if (match === "istrue") {
-                      Curry._1(dispatch, /* SettingFileItem */Block.__(73, [
+                      Curry._1(dispatch, /* SettingFileItem */Block.__(71, [
                               response.data.formId,
                               response.data.tile,
                               Caml_array.caml_array_get(response.data.items, 0).filePath,
@@ -1872,51 +1844,23 @@ function Home(Props) {
                           ]));
             });
         }));
-  var changeReleasedate = React.useCallback((function (value) {
+  React.useCallback((function (value) {
           return (function (i) {
-              return Curry._1(dispatch, /* ChangeReleasedate */Block.__(66, [
+              return Curry._1(dispatch, /* ChangeReleasedate */Block.__(65, [
                             value,
                             i
                           ]));
             });
         }));
-  var closeDate = React.useCallback((function (value) {
-          return (function (i) {
-              Curry._1(dispatch, /* ActionShowProgress */2);
-              Axiosapi$BtsCore.Default.close(Data$BtsCore.sRowsData(state.formId, value, localStorage.getItem("newid"))).then((function (response) {
-                        var match = response.data.status;
-                        var tmp;
-                        if (match === "istrue") {
-                          Curry._1(dispatch, /* CloseItem */Block.__(67, [
-                                  Caml_array.caml_array_get(response.data.items, 0).stage,
-                                  Caml_array.caml_array_get(response.data.items, 0).date,
-                                  i
-                                ]));
-                          Curry._1(dispatch, /* ActionShowProgress */2);
-                          tmp = Curry._1(dispatch, /* RefreshFormItem */Block.__(5, [
-                                  "rgba(169,169,169,0.8)",
-                                  "品異已結案"
-                                ]));
-                        } else {
-                          Curry._1(dispatch, /* ShowRelease */Block.__(65, [i]));
-                          tmp = Curry._1(dispatch, /* ActionShowProgress */2);
-                        }
-                        return Promise.resolve(tmp);
-                      })).catch((function (error) {
-                      return Promise.resolve((console.log(error), undefined));
-                    }));
-              
-            });
-        }));
   var dragOverFile = React.useCallback((function ($$event) {
           $$event.preventDefault();
           $$event.stopPropagation();
-          return Curry._1(dispatch, /* ShowDrop */Block.__(68, [true]));
+          return Curry._1(dispatch, /* ShowDrop */Block.__(66, [true]));
         }));
   var dragLeaveFile = React.useCallback((function ($$event) {
           $$event.preventDefault();
           $$event.stopPropagation();
-          return Curry._1(dispatch, /* ShowDrop */Block.__(68, [false]));
+          return Curry._1(dispatch, /* ShowDrop */Block.__(66, [false]));
         }));
   var uploadAJax = function (files) {
     var formData = new FormData();
@@ -1925,7 +1869,7 @@ function Home(Props) {
               var match = response.data.status;
               var tmp;
               if (match === "istrue") {
-                Curry._1(dispatch, /* AddPhotoItem */Block.__(69, [
+                Curry._1(dispatch, /* AddPhotoItem */Block.__(67, [
                         response.data.images,
                         response.data.videos,
                         response.data.audios,
@@ -1951,7 +1895,7 @@ function Home(Props) {
               $$event.preventDefault();
               $$event.stopPropagation();
               Curry._1(dispatch, /* ActionShowProgress */2);
-              Curry._1(dispatch, /* ShowDrop */Block.__(68, [false]));
+              Curry._1(dispatch, /* ShowDrop */Block.__(66, [false]));
               return uploadAJax(value);
             });
         }));
@@ -1968,7 +1912,7 @@ function Home(Props) {
           return uploadAJax(value);
         }));
   var actionPhoto = React.useCallback((function (i) {
-          return Curry._1(dispatch, /* ActionPhotoItem */Block.__(70, [i]));
+          return Curry._1(dispatch, /* ActionPhotoItem */Block.__(68, [i]));
         }));
   var upOtherAJax = function (files, i) {
     var formData = new FormData();
@@ -2004,7 +1948,7 @@ function Home(Props) {
               $$event.preventDefault();
               $$event.stopPropagation();
               Curry._1(dispatch, /* ActionShowProgress */2);
-              Curry._1(dispatch, /* ShowDrop */Block.__(68, [false]));
+              Curry._1(dispatch, /* ShowDrop */Block.__(66, [false]));
               return upOtherAJax(value, i);
             });
         }));
@@ -3575,7 +3519,7 @@ function Home(Props) {
                                                                           var video = item.showVideo;
                                                                           var path = item.path;
                                                                           var src = item.src;
-                                                                          return Curry._1(dispatch, /* SettingPhotoItem */Block.__(74, [
+                                                                          return Curry._1(dispatch, /* SettingPhotoItem */Block.__(72, [
                                                                                         state.formId,
                                                                                         state.formTitle,
                                                                                         image,
@@ -4325,53 +4269,18 @@ function Home(Props) {
                                                                               onClick: (function (param) {
                                                                                   return Curry._1(showStageMenu, i);
                                                                                 })
-                                                                            })), item.showRelease ? React.createElement(React.Fragment, undefined, React.createElement(GridItem$BtsCore.make, {
-                                                                                top: "0",
-                                                                                right: "0",
-                                                                                bottom: "0",
-                                                                                left: "0",
-                                                                                xs: "auto",
-                                                                                children: React.createElement(TextFieldStandard$BtsCore.make, {
-                                                                                      top: "0",
-                                                                                      right: "0",
-                                                                                      bottom: "0",
-                                                                                      left: "0",
-                                                                                      type_: "date",
-                                                                                      value: item.releasedate,
-                                                                                      disabled: state.showProgress,
-                                                                                      onChange: (function ($$event) {
-                                                                                          return Curry._2(changeReleasedate, $$event.target.value, i);
-                                                                                        }),
-                                                                                      children: "結案日期:"
-                                                                                    })
-                                                                              }), React.createElement(GridItem$BtsCore.make, {
-                                                                                top: "6",
-                                                                                bottom: "0",
-                                                                                left: "0",
-                                                                                xs: "no",
-                                                                                children: React.createElement(Button$BtsCore.make, {
-                                                                                      variant: "button",
-                                                                                      disabled: state.showProgress,
-                                                                                      onClick: (function (param) {
-                                                                                          return Curry._2(closeDate, item.releasedate, i);
-                                                                                        }),
-                                                                                      children: React.createElement(ReactIntl.FormattedMessage, {
-                                                                                            id: "Default.close",
-                                                                                            defaultMessage: "Close"
-                                                                                          })
-                                                                                    })
-                                                                              })) : React.createElement(GridItem$BtsCore.make, {
-                                                                            top: "20",
-                                                                            right: "0",
-                                                                            bottom: "0",
-                                                                            left: "0",
-                                                                            xs: "auto",
-                                                                            children: React.createElement(Typography$BtsCore.make, {
-                                                                                  variant: "subheading",
-                                                                                  fontWeight: "bolder",
-                                                                                  children: "結案日期:" + item.releasedate
-                                                                                })
-                                                                          }))
+                                                                            })), React.createElement(GridItem$BtsCore.make, {
+                                                                          top: "20",
+                                                                          right: "0",
+                                                                          bottom: "0",
+                                                                          left: "0",
+                                                                          xs: "auto",
+                                                                          children: React.createElement(Typography$BtsCore.make, {
+                                                                                variant: "subheading",
+                                                                                fontWeight: "bolder",
+                                                                                children: "結案日期:" + item.releasedate
+                                                                              })
+                                                                        }))
                                                               }));
                                               }), state.formitems))
                                 })

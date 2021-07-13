@@ -94,7 +94,6 @@ type formitem = {
   showStageMenu: bool,
   stageitems: array(optionitem),
   stage: string,
-  showRelease: bool,
   releasedate: string,
   formDelete: bool,
   formEdit: bool,
@@ -308,9 +307,7 @@ type action =
   | ChangeBelonger(string, int)
   | ShowStageMenu(int)
   | ClickStageMenu(string, int)
-  | ShowRelease(int)
   | ChangeReleasedate(string, int)
-  | CloseItem(string, string, int)
   | ShowDrop(bool)
   | AddPhotoItem(
       bool,
@@ -1011,36 +1008,11 @@ let reducer = (state, action) =>
           state.formitems,
         ),
     }
-  | ShowRelease(index) => {
-      ...state,
-      formitems:
-        Array.mapi(
-          (i, item) =>
-            index == i ? {...item, showRelease: !item.showRelease} : item,
-          state.formitems,
-        ),
-    }
   | ChangeReleasedate(value, index) => {
       ...state,
       formitems:
         Array.mapi(
           (i, item) => index == i ? {...item, releasedate: value} : item,
-          state.formitems,
-        ),
-    }
-  | CloseItem(stage, date, index) => {
-      ...state,
-      formitems:
-        Array.mapi(
-          (i, item) =>
-            index == i
-              ? {
-                ...item,
-                stage,
-                releasedate: date,
-                showRelease: !item.showRelease,
-              }
-              : item,
           state.formitems,
         ),
     }
@@ -2014,41 +1986,6 @@ let make = _ => {
 
   let refreshAJax = (color, status) =>
     RefreshFormItem(color, status) |> dispatch;
-
-  let closeAJax = (value, i) =>
-    Js.Promise.(
-      "newid"
-      |> Locals.select
-      |> sRowsData(state.formId, value)
-      |> Default.close
-      |> then_(response =>
-           {
-             switch (response##data##status) {
-             | "istrue" =>
-               CloseItem(
-                 response##data##items[0].stage,
-                 response##data##items[0].date,
-                 i,
-               )
-               |> dispatch;
-               ActionShowProgress |> dispatch;
-               {js|品異已結案|js} |> refreshAJax("rgba(169,169,169,0.8)");
-             | _ =>
-               ShowRelease(i) |> dispatch;
-               ActionShowProgress |> dispatch;
-             };
-           }
-           |> resolve
-         )
-      |> catch(error => error |> Js.log |> resolve)
-      |> ignore
-    );
-
-  let closeDate =
-    useCallback((value, i) => {
-      ActionShowProgress |> dispatch;
-      i |> closeAJax(value);
-    });
 
   let dragOverFile =
     useCallback(event => {
@@ -4460,59 +4397,19 @@ let make = _ => {
                                 onClick={_ => i |> showStageMenu}
                               />
                             </GridItem>
-                            {item.showRelease
-                               ? <>
-                                   <GridItem
-                                     top="0"
-                                     right="0"
-                                     bottom="0"
-                                     left="0"
-                                     xs="auto">
-                                     <TextFieldStandard
-                                       top="0"
-                                       right="0"
-                                       left="0"
-                                       bottom="0"
-                                       type_="date"
-                                       value={item.releasedate}
-                                       disabled={state.showProgress}
-                                       onChange={event =>
-                                         i
-                                         |> changeReleasedate(
-                                              ReactEvent.Form.target(event)##value,
-                                            )
-                                       }>
-                                       {{js|結案日期:|js} |> string}
-                                     </TextFieldStandard>
-                                   </GridItem>
-                                   <GridItem
-                                     top="6" bottom="0" left="0" xs="no">
-                                     <Button
-                                       variant="button"
-                                       disabled={state.showProgress}
-                                       onClick={_ =>
-                                         i |> closeDate(item.releasedate)
-                                       }>
-                                       <FormattedMessage
-                                         id="Default.close"
-                                         defaultMessage="Close"
-                                       />
-                                     </Button>
-                                   </GridItem>
-                                 </>
-                               : <GridItem
-                                   top="20"
-                                   right="0"
-                                   bottom="0"
-                                   left="0"
-                                   xs="auto">
-                                   <Typography
-                                     variant="subheading" fontWeight="bolder">
-                                     {{js|結案日期:|js}
-                                      ++ item.releasedate
-                                      |> string}
-                                   </Typography>
-                                 </GridItem>}
+                            <GridItem
+                              top="20"
+                              right="0"
+                              bottom="0"
+                              left="0"
+                              xs="auto">
+                              <Typography
+                                variant="subheading" fontWeight="bolder">
+                                {{js|結案日期:|js}
+                                ++ item.releasedate
+                                |> string}
+                              </Typography>
+                            </GridItem>
                           </GridContainer>
                         </GridItem>
                       </>
