@@ -4005,7 +4005,7 @@ let make = _ => {
                             value={item.containment}
                             disabled={
                               state.showProgress
-                              || !item.formEdit
+                              || !item.formQuality
                               || !state.update
                             }
                             onChange={event =>

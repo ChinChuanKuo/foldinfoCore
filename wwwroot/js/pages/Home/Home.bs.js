@@ -3904,7 +3904,7 @@ function Home(Props) {
                                                                       borderColor: "rgba(0,0,0,0.2)",
                                                                       rows: 3,
                                                                       value: item.containment,
-                                                                      disabled: state.showProgress || !item.formEdit || !state.update,
+                                                                      disabled: state.showProgress || !item.formQuality || !state.update,
                                                                       onChange: (function ($$event) {
                                                                           return Curry._2(changeContainment, $$event.target.value, i);
                                                                         }),

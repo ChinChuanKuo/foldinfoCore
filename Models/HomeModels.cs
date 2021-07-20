@@ -894,7 +894,7 @@ namespace foldinfoCore.Models
 
         public string checkStage(string containment, string cause, string correctiveaction1, string issuesort, string causeclass, string indirectPt, string correctiveaction2)
         {
-            if (issuesort != "" && causeclass != "" && indirectPt != "" && correctiveaction2 != "") return "對策發行";
+            if (containment != "" && cause != "" && issuesort != "" && causeclass != "" && indirectPt != "" && correctiveaction1 != "" && correctiveaction2 != "") return "對策發行";
             switch (correctiveaction1) { case "": return "暫時對策"; }
             switch (cause) { case "": return "原因確認"; }
             return "現況掌握";
