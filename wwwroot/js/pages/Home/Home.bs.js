@@ -3870,7 +3870,7 @@ function Home(Props) {
                                                                                 borderColor: "rgba(0,0,0,0.2)",
                                                                                 type_: "number",
                                                                                 value: item.indirectPt,
-                                                                                disabled: state.showProgress || !item.formEdit || !state.update,
+                                                                                disabled: state.showProgress || !item.formQuality || !state.update,
                                                                                 onChange: (function ($$event) {
                                                                                     return Curry._2(changeIndirectPt, $$event.target.value, i);
                                                                                   }),

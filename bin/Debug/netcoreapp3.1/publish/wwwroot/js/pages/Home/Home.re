@@ -3969,7 +3969,7 @@ let make = _ => {
                                 value={item.indirectPt}
                                 disabled={
                                   state.showProgress
-                                  || !item.formEdit
+                                  || !item.formQuality
                                   || !state.update
                                 }
                                 onChange={event =>
