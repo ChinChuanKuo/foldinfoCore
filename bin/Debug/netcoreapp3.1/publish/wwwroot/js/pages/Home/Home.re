@@ -3497,7 +3497,7 @@ let make = _ => {
                                 value={item.invest}
                                 disabled={
                                   state.showProgress
-                                  || !item.formEdit
+                                  || !item.formQuality
                                   || !state.update
                                 }
                                 onChange={event =>
@@ -3523,7 +3523,7 @@ let make = _ => {
                                 value={item.fail}
                                 disabled={
                                   state.showProgress
-                                  || !item.formEdit
+                                  || !item.formQuality
                                   || !state.update
                                 }
                                 onChange={event =>

@@ -3446,7 +3446,7 @@ function Home(Props) {
                                                                                 borderColor: "rgba(0,0,0,0.2)",
                                                                                 type_: "number",
                                                                                 value: item.invest,
-                                                                                disabled: state.showProgress || !item.formEdit || !state.update,
+                                                                                disabled: state.showProgress || !item.formQuality || !state.update,
                                                                                 onChange: (function ($$event) {
                                                                                     return Curry._2(changeInvest, $$event.target.value, i);
                                                                                   }),
@@ -3468,7 +3468,7 @@ function Home(Props) {
                                                                                 borderColor: "rgba(0,0,0,0.2)",
                                                                                 type_: "number",
                                                                                 value: item.fail,
-                                                                                disabled: state.showProgress || !item.formEdit || !state.update,
+                                                                                disabled: state.showProgress || !item.formQuality || !state.update,
                                                                                 onChange: (function ($$event) {
                                                                                     return Curry._2(changeFail, $$event.target.value, i);
                                                                                   }),
