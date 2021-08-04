@@ -378,14 +378,21 @@ namespace foldinfoCore.Models
                 case 0:
                     return new statusModels() { status = "istrue" };
             }
-            dbparamlist.Clear();
-            dbparamlist.Add(new dbparam("@number", mainRows.Rows[0]["pn"].ToString().TrimEnd()));
-            dbparamlist.Add(new dbparam("@reason", $"5CREPORT NUMBER:{mainRows.Rows[0]["pn"].ToString().TrimEnd()}"));
-            if (database.checkActiveSql("mssql", "flystkstring", "exec dbo.insertnopassitem @number,@reason;", dbparamlist) != "istrue")
-            {
-                return new statusModels() { status = "error" };
-            }
+            new HomeClass().checkReport(mainRows.Rows[0]["pn"].ToString().TrimEnd(), false);
             return new statusModels() { status = "istrue" };
+        }
+
+        public bool checkReport(string pn, bool deleted)
+        {
+            database database = new database();
+            List<dbparam> dbparams = new List<dbparam>();
+            dbparams.Add(new dbparam("@number", pn));
+            if (database.checkSelectSql("mssql", "flystkstring", "exec dbo.checknopassitem @number", dbparams).Rows.Count == 0)
+                if (!deleted)
+                    return database.checkActiveSql("mssql", "flystkstring", "exec dbo.insertnopassitem @number", dbparams) != "istrue";
+            if (deleted)
+                return database.checkActiveSql("mssql", "flystkstring", "exec dbo.deletenopassitem @number", dbparams) != "istrue";
+            return false;
         }
 
         public statusModels GetRemoveModels(dFormData dFormData, string cuurip)
@@ -400,12 +407,7 @@ namespace foldinfoCore.Models
                 case 0:
                     return new statusModels() { status = "istrue" };
             }
-            dbparamlist.Clear();
-            dbparamlist.Add(new dbparam("@number", mainRows.Rows[0]["pn"].ToString().TrimEnd()));
-            if (database.checkActiveSql("mssql", "flystkstring", "exec dbo.deletenopassitem @number;", dbparamlist) != "istrue")
-            {
-                return new statusModels() { status = "error" };
-            }
+            new HomeClass().checkReport(mainRows.Rows[0]["pn"].ToString().TrimEnd(), true);
             return new statusModels() { status = "istrue" };
         }
 

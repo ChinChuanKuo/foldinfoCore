@@ -129,9 +129,7 @@ namespace foldinfoCore.Models
             {
                 return new statusModels() { status = "error" };
             }
-            dbparamlist.Clear();
-            dbparamlist.Add(new dbparam("@reason", $"5cReport number：{dFormData.formId.TrimEnd()}"));
-            database.checkSelectSql("mssql", "flystkstring", "exec dbo.deletenopassitem @reason;", dbparamlist);
+            new HomeClass().checkReport(mainRows.Rows[0]["pn"].ToString().TrimEnd(), true);
             dbparamlist.Clear();
             DataTable supeRows = new DataTable();
             dbparamlist.Add(new dbparam("@inoper", dFormData.newid.TrimEnd()));
