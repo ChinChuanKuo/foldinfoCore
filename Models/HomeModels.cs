@@ -608,7 +608,8 @@ namespace foldinfoCore.Models
                         dbparamlist.Add(new dbparam("@failure", Math.Round(float.Parse(item["fail"].ToString().TrimEnd()) / float.Parse(item["invest"].ToString().TrimEnd()), 2, MidpointRounding.AwayFromZero)));
                         dbparamlist.Add(new dbparam("@subject", item["subject"].ToString().TrimEnd()));
                         dbparamlist.Add(new dbparam("@containment", item["containment"].ToString().TrimEnd()));
-                        sqlCode = "floor = @floor,homepage1 = @homepage1,pnumber = @pnumber,homepage_momo = @homepageMomo,mb = @mb,obj = @obj,worknumber = @workno,pn = @pn,amount = @amount,invest = @invest,fail = @fail,failure = @failure,subject = @subject";
+                        dbparamlist.Add(new dbparam("@directPt", item["directPt"].ToString().TrimEnd()));
+                        sqlCode = "floor = @floor,homepage1 = @homepage1,pnumber = @pnumber,homepage_momo = @homepageMomo,mb = @mb,obj = @obj,worknumber = @workno,pn = @pn,amount = @amount,invest = @invest,fail = @fail,failure = @failure,subject = @subject,direct_pt = @directPt";
                         break;
                 }
                 switch (bool.Parse(item["formQuality"].ToString().TrimEnd()))
@@ -622,7 +623,6 @@ namespace foldinfoCore.Models
                         dbparamlist.Add(new dbparam("@notice", bool.Parse(item["notice"].ToString().TrimEnd()) ? "yes" : "no"));
                         dbparamlist.Add(new dbparam("@nonstatistical", bool.Parse(item["nonstatistical"].ToString().TrimEnd()) ? "yes" : "no"));
                         dbparamlist.Add(new dbparam("@causeclass", item["causeclass"].ToString().TrimEnd()));
-                        dbparamlist.Add(new dbparam("@directPt", item["directPt"].ToString().TrimEnd()));
                         dbparamlist.Add(new dbparam("@indirectPt", item["indirectPt"].ToString().TrimEnd()));
                         dbparamlist.Add(new dbparam("@correctiveaction1", item["correctiveaction1"].ToString().TrimEnd()));
                         dbparamlist.Add(new dbparam("@correctiveaction2", item["correctiveaction2"].ToString().TrimEnd()));
@@ -636,7 +636,7 @@ namespace foldinfoCore.Models
                         {
                             sqlCode += ",";
                         }
-                        sqlCode += "containment = @containment,cause = @cause,replier = @replier,issuesort = @issuesort,homepage3 = @homepage3,notice = @notice,nonstatistical = @nonstatistical,causeclass = @causeclass,direct_pt = @directPt,indirect_pt = @indirectPt,correctiveaction1 = @correctiveaction1,correctiveaction2 = @correctiveaction2,closure = @closure,body = @body,belong = @belong,belonger = @belonger,stage = @stage";
+                        sqlCode += "containment = @containment,cause = @cause,replier = @replier,issuesort = @issuesort,homepage3 = @homepage3,notice = @notice,nonstatistical = @nonstatistical,causeclass = @causeclass,indirect_pt = @indirectPt,correctiveaction1 = @correctiveaction1,correctiveaction2 = @correctiveaction2,closure = @closure,body = @body,belong = @belong,belonger = @belonger,stage = @stage";
                         break;
                 }
                 if (sqlCode != "")
@@ -741,7 +741,8 @@ namespace foldinfoCore.Models
                         dbparamlist.Add(new dbparam("@fail", item["fail"].ToString().TrimEnd()));
                         dbparamlist.Add(new dbparam("@failure", Math.Round(float.Parse(item["fail"].ToString().TrimEnd()) / float.Parse(item["invest"].ToString().TrimEnd()), 2, MidpointRounding.AwayFromZero)));
                         dbparamlist.Add(new dbparam("@subject", item["subject"].ToString().TrimEnd()));
-                        sqlCode = "floor = @floor,homepage1 = @homepage1,pnumber = @pnumber,homepage_momo = @homepageMomo,mb = @mb,obj = @obj,worknumber = @workno,pn = @pn,amount = @amount,invest = @invest,fail = @fail,failure = @failure,subject = @subject";
+                        dbparamlist.Add(new dbparam("@directPt", item["directPt"].ToString().TrimEnd()));
+                        sqlCode = "floor = @floor,homepage1 = @homepage1,pnumber = @pnumber,homepage_momo = @homepageMomo,mb = @mb,obj = @obj,worknumber = @workno,pn = @pn,amount = @amount,invest = @invest,fail = @fail,failure = @failure,subject = @subject,direct_pt = @directPt";
                         break;
                 }
                 switch (bool.Parse(item["formQuality"].ToString().TrimEnd()))
@@ -753,7 +754,6 @@ namespace foldinfoCore.Models
                         dbparamlist.Add(new dbparam("@issuesort", item["issuesort"].ToString().TrimEnd()));
                         dbparamlist.Add(new dbparam("@homepage3", item["src"].ToString().TrimEnd()));
                         dbparamlist.Add(new dbparam("@causeclass", item["causeclass"].ToString().TrimEnd()));
-                        dbparamlist.Add(new dbparam("@directPt", item["directPt"].ToString().TrimEnd()));
                         dbparamlist.Add(new dbparam("@indirectPt", item["indirectPt"].ToString().TrimEnd()));
                         dbparamlist.Add(new dbparam("@correctiveaction1", item["correctiveaction1"].ToString().TrimEnd()));
                         dbparamlist.Add(new dbparam("@correctiveaction2", item["correctiveaction2"].ToString().TrimEnd()));
@@ -765,7 +765,7 @@ namespace foldinfoCore.Models
                         dbparamlist.Add(new dbparam("@stage", checkStage(item["containment"].ToString().TrimEnd(), item["cause"].ToString().TrimEnd(), item["correctiveaction1"].ToString().TrimEnd(), item["issuesort"].ToString().TrimEnd(), item["causeclass"].ToString().TrimEnd(), item["indirectPt"].ToString().TrimEnd(), item["correctiveaction2"].ToString().TrimEnd())));
                         if (sqlCode != "")
                             sqlCode += ",";
-                        sqlCode += "containment = @containment,cause = @cause,replier = @replier,issuesort = @issuesort,homepage3 = @homepage3,causeclass = @causeclass,direct_pt = @directPt,indirect_pt = @indirectPt,correctiveaction1 = @correctiveaction1,correctiveaction2 = @correctiveaction2,closure = @closure,body = @body,belong = @belong,belonger = @belonger,stage = @stage";
+                        sqlCode += "containment = @containment,cause = @cause,replier = @replier,issuesort = @issuesort,homepage3 = @homepage3,causeclass = @causeclass,indirect_pt = @indirectPt,correctiveaction1 = @correctiveaction1,correctiveaction2 = @correctiveaction2,closure = @closure,body = @body,belong = @belong,belonger = @belonger,stage = @stage";
                         break;
                 }
                 noticeReplier(mainRows.Rows[0]["sign2"].ToString().TrimEnd(), mainRows.Rows[0]["replier"].ToString().TrimEnd(), item["replier"].ToString().TrimEnd(), iFormsData.formId.TrimEnd(), iFormsData.tile.TrimEnd(), iFormsData.newid.TrimEnd());
