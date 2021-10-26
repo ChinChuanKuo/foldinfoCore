@@ -1557,6 +1557,7 @@ function Home(Props) {
                               Caml_array.caml_array_get(response.data.items, 0).filePath,
                               Caml_array.caml_array_get(response.data.items, 0).fileSrc
                             ]));
+                      console.log(response.data);
                       tmp = Curry._1(dispatch, /* ActionShowProgress */2);
                     } else {
                       barShowRestoreAction(Status$BtsCore.statusModule(response.data.status));
@@ -1957,6 +1958,10 @@ function Home(Props) {
               Curry._1(dispatch, /* ActionShowProgress */2);
               return upOtherAJax(value, i);
             });
+        }));
+  var downloadImage = React.useCallback((function (value) {
+          window.open(value, "_blank");
+          
         }));
   var closeAnimationFull = React.useCallback((function (param) {
           return Curry._1(dispatch, /* CloseAnimationFull */4);
@@ -3512,43 +3517,29 @@ function Home(Props) {
                                                                 bottom: "0",
                                                                 left: "0",
                                                                 xs: "auto",
-                                                                children: React.createElement("div", {
-                                                                      onClick: (function (param) {
-                                                                          var image = item.showImage;
-                                                                          var audio = item.showAudio;
-                                                                          var video = item.showVideo;
-                                                                          var path = item.path;
-                                                                          var src = item.src;
-                                                                          return Curry._1(dispatch, /* SettingPhotoItem */Block.__(72, [
-                                                                                        state.formId,
-                                                                                        state.formTitle,
-                                                                                        image,
-                                                                                        audio,
-                                                                                        video,
-                                                                                        path,
-                                                                                        src
-                                                                                      ]));
+                                                                children: React.createElement(OtherUpload$BtsCore.make, {
+                                                                      webLoad: state.showProgress,
+                                                                      showDrop: state.showDrop,
+                                                                      showFile: item.showFile,
+                                                                      showImage: item.showImage,
+                                                                      showVideo: item.showVideo,
+                                                                      showAudio: item.showAudio,
+                                                                      src: item.path + item.src,
+                                                                      fileRef: fileRef,
+                                                                      onDragOver: Curry.__1(dragOverFile),
+                                                                      onDragLeave: Curry.__1(dragLeaveFile),
+                                                                      onDrop: (function ($$event) {
+                                                                          return Curry._3(dropOtherFile, $$event, Caml_array.caml_array_get($$event.nativeEvent.dataTransfer.files, 0), i);
+                                                                        }),
+                                                                      disabled: state.showProgress || !item.formQuality || !state.update,
+                                                                      onClick: chooseFile,
+                                                                      onDownload: (function (param) {
+                                                                          return Curry._1(downloadImage, item.path + item.src);
+                                                                        }),
+                                                                      onChange: (function ($$event) {
+                                                                          return Curry._2(changeOtherFile, Caml_array.caml_array_get($$event.target.files, 0), i);
                                                                         })
-                                                                    }, React.createElement(OtherUpload$BtsCore.make, {
-                                                                          webLoad: state.showProgress,
-                                                                          showDrop: state.showDrop,
-                                                                          showFile: item.showFile,
-                                                                          showImage: item.showImage,
-                                                                          showVideo: item.showVideo,
-                                                                          showAudio: item.showAudio,
-                                                                          src: item.path + item.src,
-                                                                          fileRef: fileRef,
-                                                                          onDragOver: Curry.__1(dragOverFile),
-                                                                          onDragLeave: Curry.__1(dragLeaveFile),
-                                                                          onDrop: (function ($$event) {
-                                                                              return Curry._3(dropOtherFile, $$event, Caml_array.caml_array_get($$event.nativeEvent.dataTransfer.files, 0), i);
-                                                                            }),
-                                                                          disabled: state.showProgress || !item.formQuality || !state.update,
-                                                                          onClick: chooseFile,
-                                                                          onChange: (function ($$event) {
-                                                                              return Curry._2(changeOtherFile, Caml_array.caml_array_get($$event.target.files, 0), i);
-                                                                            })
-                                                                        }))
+                                                                    })
                                                               }), React.createElement(GridItem$BtsCore.make, {
                                                                 top: "0",
                                                                 right: "0",

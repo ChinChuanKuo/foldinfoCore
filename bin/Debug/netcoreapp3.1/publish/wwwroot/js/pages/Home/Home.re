@@ -1808,6 +1808,7 @@ let make = _ => {
                  response##data##items[0].fileSrc,
                )
                |> dispatch;
+               response##data |> Js.log;
                ActionShowProgress |> dispatch;
              | _ =>
                response##data##status |> statusModule |> barShowRestoreAction;
@@ -2107,6 +2108,8 @@ let make = _ => {
       ActionShowProgress |> dispatch;
       i |> upOtherAJax(value);
     });
+
+  let downloadImage = useCallback(value => Window.Locations.href(value, "_blank"));
 
   let closeAnimationFull = useCallback(_ => CloseAnimationFull |> dispatch);
 
@@ -3576,16 +3579,6 @@ let make = _ => {
                           </TextFieldStandard>
                         </GridItem>
                         <GridItem right="0" bottom="0" left="0" xs="auto">
-                          <div
-                            onClick={_ =>
-                              item.src
-                              |> showPhotoFull(
-                                   item.showImage,
-                                   item.showAudio,
-                                   item.showVideo,
-                                   item.path,
-                                 )
-                            }>
                             <OtherUpload
                               webLoad={state.showProgress}
                               showDrop={state.showDrop}
@@ -3616,8 +3609,8 @@ let make = _ => {
                                      ReactEvent.Form.target(event)##files[0],
                                    )
                               }
+                              onDownload={_ => downloadImage(item.path ++ item.src)}
                             />
-                          </div>
                         </GridItem>
                         <GridItem
                           top="0" right="0" bottom="0" left="0" xs="auto">
