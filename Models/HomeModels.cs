@@ -607,7 +607,6 @@ namespace foldinfoCore.Models
                         dbparamlist.Add(new dbparam("@fail", item["fail"].ToString().TrimEnd()));
                         dbparamlist.Add(new dbparam("@failure", Math.Round(float.Parse(item["fail"].ToString().TrimEnd()) / float.Parse(item["invest"].ToString().TrimEnd()), 2, MidpointRounding.AwayFromZero)));
                         dbparamlist.Add(new dbparam("@subject", item["subject"].ToString().TrimEnd()));
-                        dbparamlist.Add(new dbparam("@containment", item["containment"].ToString().TrimEnd()));
                         dbparamlist.Add(new dbparam("@directPt", item["directPt"].ToString().TrimEnd()));
                         sqlCode = "floor = @floor,homepage1 = @homepage1,pnumber = @pnumber,homepage_momo = @homepageMomo,mb = @mb,obj = @obj,worknumber = @workno,pn = @pn,amount = @amount,invest = @invest,fail = @fail,failure = @failure,subject = @subject,direct_pt = @directPt";
                         break;

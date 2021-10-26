@@ -76,7 +76,6 @@ let make =
                color="rgba(255,255,255,1)"
                border="contained"
                size="medium"
-               disabled={disabled |> disabledObjects}
                onClick=?onDownload>
                <FormattedMessage id="download" defaultMessage="Download" />
              </Button>

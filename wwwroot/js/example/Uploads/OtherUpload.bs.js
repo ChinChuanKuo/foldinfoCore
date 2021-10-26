@@ -119,7 +119,6 @@ function OtherUpload(Props) {
       color: "rgba(255,255,255,1)",
       border: "contained",
       size: "medium",
-      disabled: Setting$BtsCore.disabledObjects(disabled),
       children: React.createElement(ReactIntl.FormattedMessage, {
             id: "download",
             defaultMessage: "Download"
