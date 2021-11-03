@@ -19,6 +19,7 @@ type photoitem = {
   photoAudio: bool,
   photoSrc: string,
   photoPath: string,
+  originalPath: string,
   photoOriginal: string,
   photoEncryption: string,
   photoExtension: string,
@@ -204,6 +205,7 @@ let newitem =
     photoVideo: videos,
     photoAudio: audios,
     photoSrc: src,
+    originalPath: imagePath,
     photoPath: imagePath,
     photoOriginal: original,
     photoEncryption: encryption,
@@ -4463,8 +4465,8 @@ let make = _ => {
                                      enterBackgroundColor="transparent"
                                      backgroundColor="transparent"
                                      xs="auto"
-                                     onClick={_ => downloadImage(photoitem.photoPath
-                                            ++ photoitem.photoSrc)}>
+                                     onClick={_ => downloadImage(photoitem.originalPath
+                                            ++ photoitem.photoOriginal ++ "(" ++photoitem.photoEncryption++ ")" ++ photoitem.photoExtension)}>
                                      {switch (
                                         photoitem.photoImage,
                                         photoitem.photoVideo,

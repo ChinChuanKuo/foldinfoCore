@@ -63,6 +63,7 @@ function newitem(id, images, videos, audios, src, imagePath, original, encryptio
             photoAudio: audios,
             photoSrc: src,
             photoPath: imagePath,
+            originalPath: imagePath,
             photoOriginal: original,
             photoEncryption: encryption,
             photoExtension: extension,
@@ -962,6 +963,7 @@ function reducer(state, action) {
                             photoAudio: photoitem.photoAudio,
                             photoSrc: photoitem.photoSrc,
                             photoPath: photoitem.photoPath,
+                            originalPath: photoitem.originalPath,
                             photoOriginal: photoitem.photoOriginal,
                             photoEncryption: photoitem.photoEncryption,
                             photoExtension: photoitem.photoExtension,
@@ -2826,7 +2828,7 @@ function Home(Props) {
                                                                                           backgroundColor: "transparent",
                                                                                           xs: "auto",
                                                                                           onClick: (function (param) {
-                                                                                              return Curry._1(downloadImage, photoitem.photoPath + photoitem.photoSrc);
+                                                                                              return Curry._1(downloadImage, photoitem.originalPath + (photoitem.photoOriginal + ("(" + (photoitem.photoEncryption + (")" + photoitem.photoExtension)))));
                                                                                             }),
                                                                                           children: match ? React.createElement(Image$BtsCore.make, {
                                                                                                   width: "auto",
