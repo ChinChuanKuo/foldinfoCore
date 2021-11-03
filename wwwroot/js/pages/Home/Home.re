@@ -4462,7 +4462,9 @@ let make = _ => {
                                      left="0"
                                      enterBackgroundColor="transparent"
                                      backgroundColor="transparent"
-                                     xs="auto">
+                                     xs="auto"
+                                     onClick={_ => downloadImage(photoitem.photoPath
+                                            ++ photoitem.photoSrc)}>
                                      {switch (
                                         photoitem.photoImage,
                                         photoitem.photoVideo,

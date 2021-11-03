@@ -2825,6 +2825,9 @@ function Home(Props) {
                                                                                           enterBackgroundColor: "transparent",
                                                                                           backgroundColor: "transparent",
                                                                                           xs: "auto",
+                                                                                          onClick: (function (param) {
+                                                                                              return Curry._1(downloadImage, photoitem.photoPath + photoitem.photoSrc);
+                                                                                            }),
                                                                                           children: match ? React.createElement(Image$BtsCore.make, {
                                                                                                   width: "auto",
                                                                                                   height: "300px",
