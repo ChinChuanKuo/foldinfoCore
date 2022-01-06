@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "uCgFtpiZby1lADMnGruVTblSJpP9XAAjtL0uY20tKbv8dOCxvBVydGOpjFWRcqu16RftuChAyDKduuaQcIfl0Q==",
+  "dgSpecHash": "3XUfZxe9itVg0DDnvYr/+i8dK57t1z9i9j4hAMpRz3gKy5hIu904uiDPYPvaa5BKQe4VjY1ps9+rl399Z8Jo+A==",
   "success": true,
   "projectFilePath": "/Users/chinchuankuo/Documents/core/foldinfoCore/foldinfoCore.csproj",
   "expectedPackageFiles": [
@@ -154,7 +154,9 @@
     "/Users/chinchuankuo/.nuget/packages/system.threading.timer/4.3.0/system.threading.timer.4.3.0.nupkg.sha512",
     "/Users/chinchuankuo/.nuget/packages/system.valuetuple/4.5.0/system.valuetuple.4.5.0.nupkg.sha512",
     "/Users/chinchuankuo/.nuget/packages/system.xml.readerwriter/4.3.0/system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "/Users/chinchuankuo/.nuget/packages/system.xml.xdocument/4.3.0/system.xml.xdocument.4.3.0.nupkg.sha512"
+    "/Users/chinchuankuo/.nuget/packages/system.xml.xdocument/4.3.0/system.xml.xdocument.4.3.0.nupkg.sha512",
+    "/Users/chinchuankuo/.nuget/packages/microsoft.netcore.app.ref/3.1.0/microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "/Users/chinchuankuo/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.10/microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512"
   ],
   "logs": []
 }

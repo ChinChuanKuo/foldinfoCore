@@ -4,7 +4,6 @@
 /Users/chinchuankuo/Documents/core/foldinfoCore/bin/Debug/netcoreapp3.1/lib/bs/.sourcedirs.json
 /Users/chinchuankuo/Documents/core/foldinfoCore/bin/Debug/netcoreapp3.1/package-lock.json
 /Users/chinchuankuo/Documents/core/foldinfoCore/bin/Debug/netcoreapp3.1/package.json
-/Users/chinchuankuo/Documents/core/foldinfoCore/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
 /Users/chinchuankuo/Documents/core/foldinfoCore/bin/Debug/netcoreapp3.1/foldinfoCore.deps.json
 /Users/chinchuankuo/Documents/core/foldinfoCore/bin/Debug/netcoreapp3.1/foldinfoCore.runtimeconfig.json
 /Users/chinchuankuo/Documents/core/foldinfoCore/bin/Debug/netcoreapp3.1/foldinfoCore.runtimeconfig.dev.json
@@ -50,7 +49,6 @@
 /Users/chinchuankuo/Documents/core/foldinfoCore/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/libSkiaSharp.dll
 /Users/chinchuankuo/Documents/core/foldinfoCore/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll
 /Users/chinchuankuo/Documents/core/foldinfoCore/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll
-/Users/chinchuankuo/Documents/core/foldinfoCore/obj/Debug/netcoreapp3.1/foldinfoCore.csprojAssemblyReference.cache
 /Users/chinchuankuo/Documents/core/foldinfoCore/obj/Debug/netcoreapp3.1/foldinfoCore.AssemblyInfoInputs.cache
 /Users/chinchuankuo/Documents/core/foldinfoCore/obj/Debug/netcoreapp3.1/foldinfoCore.AssemblyInfo.cs
 /Users/chinchuankuo/Documents/core/foldinfoCore/obj/Debug/netcoreapp3.1/foldinfoCore.csproj.CoreCompileInputs.cache
@@ -99,3 +97,6 @@
 /Users/chinchuankuo/Documents/core/foldinfoCore/obj/Debug/netcoreapp3.1/foldinfoCore.pdb
 /Users/chinchuankuo/Documents/core/foldinfoCore/obj/Debug/netcoreapp3.1/foldinfoCore.genruntimeconfig.cache
 /Users/chinchuankuo/Documents/core/foldinfoCore/obj/Debug/netcoreapp3.1/Razor/Views/SendistR/Index.cshtml.g.cs
+/Users/chinchuankuo/Documents/core/foldinfoCore/obj/Debug/netcoreapp3.1/foldinfoCore.csproj.AssemblyReference.cache
+/Users/chinchuankuo/Documents/core/foldinfoCore/obj/Debug/netcoreapp3.1/foldinfoCore.GeneratedMSBuildEditorConfig.editorconfig
+/Users/chinchuankuo/Documents/core/foldinfoCore/obj/Debug/netcoreapp3.1/scopedcss/bundle/foldinfoCore.styles.css

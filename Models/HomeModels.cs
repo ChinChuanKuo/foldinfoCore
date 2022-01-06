@@ -323,7 +323,7 @@ namespace foldinfoCore.Models
             switch (stage) { case "對策發行(簽核中)": return false; }
             List<dbparam> dbparamlist = new List<dbparam>();
             dbparamlist.Add(new dbparam("@newid", newid));
-            return sign2 == "" || new database().checkSelectSql("mssql", "flyfnstring", "exec web.searchusername @newid;", dbparamlist).Rows[0]["username"].ToString().TrimEnd() == "孫亦可";
+            return sign2 == "" || new database().checkSelectSql("mssql", "flyfnstring", "exec web.searchusername @newid;", dbparamlist).Rows[0]["username"].ToString().TrimEnd() == "張芳魁";
         }
 
         public bool unsendPermission(string newid, string postname, string signing)
@@ -336,7 +336,7 @@ namespace foldinfoCore.Models
                 case "0":
                     return database.checkSelectSql("mssql", "flyfnstring", "exec web.searchusername @newid;", dbparamlist).Rows[0]["username"].ToString().TrimEnd() == postname;
             }
-            return database.checkSelectSql("mssql", "flyfnstring", "exec web.searchusername @newid;", dbparamlist).Rows[0]["username"].ToString().TrimEnd() == "孫亦可";
+            return database.checkSelectSql("mssql", "flyfnstring", "exec web.searchusername @newid;", dbparamlist).Rows[0]["username"].ToString().TrimEnd() == "張芳魁";
         }
 
         public bool addPassPermission(string signing, string signup, string newid)
@@ -344,7 +344,7 @@ namespace foldinfoCore.Models
             if (signing == "0" || signup == "") return false;
             List<dbparam> dbparamlist = new List<dbparam>();
             dbparamlist.Add(new dbparam("@newid", newid));
-            return new database().checkSelectSql("mssql", "flyfnstring", "exec web.searchusername @newid;", dbparamlist).Rows[0]["username"].ToString().TrimEnd() == "孫亦可";
+            return new database().checkSelectSql("mssql", "flyfnstring", "exec web.searchusername @newid;", dbparamlist).Rows[0]["username"].ToString().TrimEnd() == "張芳魁";
         }
 
         public bool checkPassitem(string pn)
@@ -543,7 +543,7 @@ namespace foldinfoCore.Models
             List<dbparam> dbparamlist = new List<dbparam>();
             dbparamlist.Add(new dbparam("@newid", newid));
             string username = new database().checkSelectSql("mssql", "flyfnstring", "exec web.searchusername @newid;", dbparamlist).Rows[0]["username"].ToString().TrimEnd();
-            return username == "孫尚可" || username == replier;
+            return username == "張芳魁" || username == replier;
         }
 
         public sOptonModels GetSFileModels(dFormData dFormData, string cuurip)
