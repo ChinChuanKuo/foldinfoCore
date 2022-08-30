@@ -1,19 +1,19 @@
 ####{BSB GENERATED: NO EDIT
 B lib/bs
 FLG -open BtsCore
-FLG -ppx /Users/chinchuankuo/Documents/core/foldinfoCore/node_modules/@baransu/graphql_ppx_re/ppx
-FLG -ppx '/Users/chinchuankuo/Documents/core/foldinfoCore/node_modules/bs-platform/darwin/bsc.exe -as-ppx -bs-jsx 3'
-S /Users/chinchuankuo/Documents/core/foldinfoCore/node_modules/bs-platform/lib/ocaml
-B /Users/chinchuankuo/Documents/core/foldinfoCore/node_modules/bs-platform/lib/ocaml
+FLG -ppx /Users/chinchuankuo/Documents/foldinfoCore/node_modules/@baransu/graphql_ppx_re/ppx
+FLG -ppx '/Users/chinchuankuo/Documents/foldinfoCore/node_modules/bs-platform/darwin/bsc.exe -as-ppx -bs-jsx 3'
+S /Users/chinchuankuo/Documents/foldinfoCore/node_modules/bs-platform/lib/ocaml
+B /Users/chinchuankuo/Documents/foldinfoCore/node_modules/bs-platform/lib/ocaml
 FLG -w +a-4-9-20-40-41-42-50-61-102
-S /Users/chinchuankuo/Documents/core/foldinfoCore/node_modules/reason-react/lib/ocaml
-B /Users/chinchuankuo/Documents/core/foldinfoCore/node_modules/reason-react/lib/ocaml
-S /Users/chinchuankuo/Documents/core/foldinfoCore/node_modules/reason-apollo/lib/ocaml
-B /Users/chinchuankuo/Documents/core/foldinfoCore/node_modules/reason-apollo/lib/ocaml
-S /Users/chinchuankuo/Documents/core/foldinfoCore/node_modules/bs-axios/lib/ocaml
-B /Users/chinchuankuo/Documents/core/foldinfoCore/node_modules/bs-axios/lib/ocaml
-S /Users/chinchuankuo/Documents/core/foldinfoCore/node_modules/bs-react-intl/lib/ocaml
-B /Users/chinchuankuo/Documents/core/foldinfoCore/node_modules/bs-react-intl/lib/ocaml
+S /Users/chinchuankuo/Documents/foldinfoCore/node_modules/reason-react/lib/ocaml
+B /Users/chinchuankuo/Documents/foldinfoCore/node_modules/reason-react/lib/ocaml
+S /Users/chinchuankuo/Documents/foldinfoCore/node_modules/reason-apollo/lib/ocaml
+B /Users/chinchuankuo/Documents/foldinfoCore/node_modules/reason-apollo/lib/ocaml
+S /Users/chinchuankuo/Documents/foldinfoCore/node_modules/bs-axios/lib/ocaml
+B /Users/chinchuankuo/Documents/foldinfoCore/node_modules/bs-axios/lib/ocaml
+S /Users/chinchuankuo/Documents/foldinfoCore/node_modules/bs-react-intl/lib/ocaml
+B /Users/chinchuankuo/Documents/foldinfoCore/node_modules/bs-react-intl/lib/ocaml
 S wwwroot/js
 B lib/bs/wwwroot/js
 S wwwroot/js/operates

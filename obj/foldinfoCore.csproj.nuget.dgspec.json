@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/chinchuankuo/Documents/core/foldinfoCore/foldinfoCore.csproj": {}
+    "/Users/chinchuankuo/Documents/foldinfoCore/foldinfoCore.csproj": {}
   },
   "projects": {
-    "/Users/chinchuankuo/Documents/core/foldinfoCore/foldinfoCore.csproj": {
+    "/Users/chinchuankuo/Documents/foldinfoCore/foldinfoCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/chinchuankuo/Documents/core/foldinfoCore/foldinfoCore.csproj",
+        "projectUniqueName": "/Users/chinchuankuo/Documents/foldinfoCore/foldinfoCore.csproj",
         "projectName": "foldinfoCore",
-        "projectPath": "/Users/chinchuankuo/Documents/core/foldinfoCore/foldinfoCore.csproj",
+        "projectPath": "/Users/chinchuankuo/Documents/foldinfoCore/foldinfoCore.csproj",
         "packagesPath": "/Users/chinchuankuo/.nuget/packages/",
-        "outputPath": "/Users/chinchuankuo/Documents/core/foldinfoCore/obj/",
+        "outputPath": "/Users/chinchuankuo/Documents/foldinfoCore/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/chinchuankuo/.nuget/NuGet/NuGet.Config"
@@ -99,6 +99,10 @@
               "version": "[3.1.10, 3.1.10]"
             },
             {
+              "name": "Microsoft.NETCore.App.Host.osx-x64",
+              "version": "[3.1.24, 3.1.24]"
+            },
+            {
               "name": "Microsoft.NETCore.App.Ref",
               "version": "[3.1.0, 3.1.0]"
             }
@@ -111,7 +115,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.403/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.202/RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -171,10 +171,9 @@ type action =
     )
   | ChangePage1(string, int)
   | ChangePnumber(string, int)
+  | ChangeMB(string, int)
   | ShowMomoMenu(int)
   | ClickMomoMenu(string, int)
-  | ShowMbMenu(int)
-  | ClickMbMenu(string, int)
   | ShowObjMenu(int)
   | ClickObjMenu(string, int)
   | ShowPn(bool, int)
@@ -345,6 +344,14 @@ let reducer = (state, action) =>
           state.items,
         ),
     }
+  | ChangeMB(value, index) => {
+      ...state,
+      items:
+        Array.mapi(
+          (i, item) => index == i ? {...item, mb: value} : item,
+          state.items,
+        ),
+    }
   | ShowMomoMenu(index) => {
       ...state,
       items:
@@ -366,25 +373,6 @@ let reducer = (state, action) =>
                 showMomoMenu: !item.showMomoMenu,
               }
               : item,
-          state.items,
-        ),
-    }
-  | ShowMbMenu(index) => {
-      ...state,
-      items:
-        Array.mapi(
-          (i, item) =>
-            index == i ? {...item, showMbMenu: !item.showMbMenu} : item,
-          state.items,
-        ),
-    }
-  | ClickMbMenu(value, index) => {
-      ...state,
-      items:
-        Array.mapi(
-          (i, item) =>
-            index == i
-              ? {...item, mb: value, showMbMenu: !item.showMbMenu} : item,
           state.items,
         ),
     }
@@ -1122,15 +1110,13 @@ let make = _ => {
   let changePnumber =
     useCallback((value, i) => ChangePnumber(value, i) |> dispatch);
 
+  let changeMB =
+    useCallback((value, i) => ChangeMB(value, i) |> dispatch);
+
   let showMomoMenu = useCallback(i => ShowMomoMenu(i) |> dispatch);
 
   let clickMomoMenu =
     useCallback((value, i) => ClickMomoMenu(value, i) |> dispatch);
-
-  let showMbMenu = useCallback(i => ShowMbMenu(i) |> dispatch);
-
-  let clickMbMenu =
-    useCallback((value, i) => ClickMbMenu(value, i) |> dispatch);
 
   let showObjMenu = useCallback(i => ShowObjMenu(i) |> dispatch);
 
@@ -1628,7 +1614,7 @@ let make = _ => {
                             downBorderColor="rgba(255,0,0,0.6)"
                             borderColor="rgba(0,0,0,0.2)"
                             value={item.homepage1}
-                            disabled={state.showProgress || !item.formWork}
+                            disabled={state.showProgress}
                             onChange={event =>
                               i
                               |> changePage1(
@@ -1649,7 +1635,7 @@ let make = _ => {
                             downBorderColor="rgba(255,0,0,0.6)"
                             borderColor="rgba(0,0,0,0.2)"
                             value={item.pnumber}
-                            disabled={state.showProgress || !item.formWork}
+                            disabled={state.showProgress}
                             onChange={event =>
                               i
                               |> changePnumber(
@@ -1671,7 +1657,7 @@ let make = _ => {
                             downBorderColor="rgba(255,0,0,0.6)"
                             borderColor="rgba(0,0,0,0.2)"
                             value={item.homepageMomo}
-                            disabled={state.showProgress || !item.formWork}
+                            disabled={state.showProgress}
                             onClick={_ => i |> showMomoMenu}>
                             ...(
                                  item.showMomoMenu
@@ -1734,67 +1720,24 @@ let make = _ => {
                         direction="row" justify="center" alignItem="center">
                         <GridItem
                           top="0" right="0" bottom="0" left="0" xs="auto">
-                          <SelectStandard
+                          <TextFieldStandard
                             top="12"
                             right="0"
                             left="0"
-                            tile="M/B"
                             labelColor="rgba(255,0,0,0.8)"
                             enterBorderColor="rgba(255,0,0,0.8)"
                             downBorderColor="rgba(255,0,0,0.6)"
                             borderColor="rgba(0,0,0,0.2)"
                             value={item.mb}
                             disabled={state.showProgress}
-                            onClick={_ => i |> showMbMenu}>
-                            ...(
-                                 item.showMbMenu
-                                   ? <SelectMenu
-                                       top="0"
-                                       transform="translate(0, 0)"
-                                       maxHeight="280"
-                                       minHeight="0"
-                                       topLeft="12"
-                                       topRight="12"
-                                       bottomRight="12"
-                                       bottomLeft="12"
-                                       paddingRight="8"
-                                       paddingLeft="8">
-                                       {item.mbitems
-                                        |> Array.map(mbitem =>
-                                             <MenuItem
-                                               top="0"
-                                               right="8"
-                                               bottom="0"
-                                               left="8"
-                                               disablePadding={
-                                                                mbitem.
-                                                                  optionPadding
-                                                              }
-                                               topLeft="12"
-                                               topRight="12"
-                                               bottomRight="12"
-                                               bottomLeft="12"
-                                               onClick={_ =>
-                                                 i
-                                                 |> clickMbMenu(mbitem.value)
-                                               }>
-                                               {mbitem.value |> string}
-                                             </MenuItem>
-                                           )
-                                        |> array}
-                                     </SelectMenu>
-                                   : null,
-                                 <IconGeneral
-                                   animation={item.showMbMenu |> topDownRorate}
-                                   src=arrowDownBlack
-                                 />,
-                               )
-                          </SelectStandard>
-                          <BackgroundBoard
-                            showBackground={item.showMbMenu}
-                            backgroundColor="transparent"
-                            onClick={_ => i |> showMbMenu}
-                          />
+                            onChange={event =>
+                              i
+                              |> changeMB(
+                                   ReactEvent.Form.target(event)##value,
+                                 )
+                            }>
+                            {{js|M/B|js} |> string}
+                          </TextFieldStandard>
                         </GridItem>
                         <GridItem
                           top="0" right="0" bottom="0" left="0" xs="auto">
@@ -1955,7 +1898,7 @@ let make = _ => {
                             borderColor="rgba(0,0,0,0.2)"
                             type_="number"
                             value={item.amount}
-                            disabled={state.showProgress || !item.formWork}
+                            disabled={state.showProgress}
                             onChange={event =>
                               i
                               |> changeAmount(

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3XUfZxe9itVg0DDnvYr/+i8dK57t1z9i9j4hAMpRz3gKy5hIu904uiDPYPvaa5BKQe4VjY1ps9+rl399Z8Jo+A==",
+  "dgSpecHash": "vFtUMKzM9e6I2leDr/Yk1nrS6ttg1hsnSkhSvIK4uQQsTJdS6emC/opz/Ca55IVNn8gWoC5UmCpyinEIR5Kjgw==",
   "success": true,
-  "projectFilePath": "/Users/chinchuankuo/Documents/core/foldinfoCore/foldinfoCore.csproj",
+  "projectFilePath": "/Users/chinchuankuo/Documents/foldinfoCore/foldinfoCore.csproj",
   "expectedPackageFiles": [
     "/Users/chinchuankuo/.nuget/packages/dnsclient/1.2.0/dnsclient.1.2.0.nupkg.sha512",
     "/Users/chinchuankuo/.nuget/packages/dotnetcore.npoi/1.2.1/dotnetcore.npoi.1.2.1.nupkg.sha512",
@@ -156,7 +156,8 @@
     "/Users/chinchuankuo/.nuget/packages/system.xml.readerwriter/4.3.0/system.xml.readerwriter.4.3.0.nupkg.sha512",
     "/Users/chinchuankuo/.nuget/packages/system.xml.xdocument/4.3.0/system.xml.xdocument.4.3.0.nupkg.sha512",
     "/Users/chinchuankuo/.nuget/packages/microsoft.netcore.app.ref/3.1.0/microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
-    "/Users/chinchuankuo/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.10/microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512"
+    "/Users/chinchuankuo/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.10/microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "/Users/chinchuankuo/.nuget/packages/microsoft.netcore.app.host.osx-x64/3.1.24/microsoft.netcore.app.host.osx-x64.3.1.24.nupkg.sha512"
   ],
   "logs": []
 }
