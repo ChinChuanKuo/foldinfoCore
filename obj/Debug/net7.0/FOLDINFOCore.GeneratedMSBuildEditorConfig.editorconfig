@@ -1,0 +1,141 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = FOLDINFOCore
+build_property.RootNamespace = FOLDINFOCore
+build_property.ProjectDir = C:\Users\nisha\OneDrive\Documents\NETCORE\FOLDINFOCore\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\nisha\OneDrive\Documents\NETCORE\FOLDINFOCore
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/nisha/OneDrive/Documents/NETCORE/FOLDINFOCore/Views/Bookmarks/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va21hcmtzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nisha/OneDrive/Documents/NETCORE/FOLDINFOCore/Views/Code/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29kZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nisha/OneDrive/Documents/NETCORE/FOLDINFOCore/Views/CreateF/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JlYXRlRlxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nisha/OneDrive/Documents/NETCORE/FOLDINFOCore/Views/CreateI/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JlYXRlSVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nisha/OneDrive/Documents/NETCORE/FOLDINFOCore/Views/CreateP/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JlYXRlUFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nisha/OneDrive/Documents/NETCORE/FOLDINFOCore/Views/CreateR/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JlYXRlUlxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nisha/OneDrive/Documents/NETCORE/FOLDINFOCore/Views/Forget/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9yZ2V0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nisha/OneDrive/Documents/NETCORE/FOLDINFOCore/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nisha/OneDrive/Documents/NETCORE/FOLDINFOCore/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nisha/OneDrive/Documents/NETCORE/FOLDINFOCore/Views/Icon/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWNvblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nisha/OneDrive/Documents/NETCORE/FOLDINFOCore/Views/Inside/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zaWRlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nisha/OneDrive/Documents/NETCORE/FOLDINFOCore/Views/IsoFile/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXNvRmlsZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nisha/OneDrive/Documents/NETCORE/FOLDINFOCore/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nisha/OneDrive/Documents/NETCORE/FOLDINFOCore/Views/MailistF/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbGlzdEZcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nisha/OneDrive/Documents/NETCORE/FOLDINFOCore/Views/MailistI/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbGlzdElcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nisha/OneDrive/Documents/NETCORE/FOLDINFOCore/Views/MailistR/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbGlzdFJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nisha/OneDrive/Documents/NETCORE/FOLDINFOCore/Views/ModifyF/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kaWZ5RlxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nisha/OneDrive/Documents/NETCORE/FOLDINFOCore/Views/ModifyI/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kaWZ5SVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nisha/OneDrive/Documents/NETCORE/FOLDINFOCore/Views/ModifyR/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kaWZ5UlxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nisha/OneDrive/Documents/NETCORE/FOLDINFOCore/Views/Oauth/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2F1dGhcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nisha/OneDrive/Documents/NETCORE/FOLDINFOCore/Views/Product/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nisha/OneDrive/Documents/NETCORE/FOLDINFOCore/Views/Report/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nisha/OneDrive/Documents/NETCORE/FOLDINFOCore/Views/SendistF/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VuZGlzdEZcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nisha/OneDrive/Documents/NETCORE/FOLDINFOCore/Views/SendistR/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VuZGlzdFJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nisha/OneDrive/Documents/NETCORE/FOLDINFOCore/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nisha/OneDrive/Documents/NETCORE/FOLDINFOCore/Views/SignlistF/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lnbmxpc3RGXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nisha/OneDrive/Documents/NETCORE/FOLDINFOCore/Views/SignlistI/SignlistI.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lnbmxpc3RJXFNpZ25saXN0SS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nisha/OneDrive/Documents/NETCORE/FOLDINFOCore/Views/SIgnlistR/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU0lnbmxpc3RSXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nisha/OneDrive/Documents/NETCORE/FOLDINFOCore/Views/Signlist/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lnbmxpc3RcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nisha/OneDrive/Documents/NETCORE/FOLDINFOCore/Views/Signup/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lnbnVwXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nisha/OneDrive/Documents/NETCORE/FOLDINFOCore/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

@@ -1,0 +1,85 @@
+@import "snackbar";
+
+@media (max-width: 959.95px) {
+  .gmailTopLeft,
+  .gmailTopRight,
+  .gmailBottomLeft,
+  .gmailBottomRight {
+    left: 73px;
+    right: 0;
+  }
+
+  .gmailTopLeft,
+  .gmailTopRight {
+    animation: gmailMaxTop 1s ease-in-out forwards;
+  }
+
+  .gmailBottomLeft,
+  .gmailBottomRight {
+    animation: gmailMaxBottom 1s ease-in-out forwards;
+  }
+}
+
+@media (min-width: 960px) {
+  .gmailTopLeft,
+  .gmailBottomLeft {
+    left: 97px;
+    right: auto;
+  }
+
+  .gmailTopRight,
+  .gmailBottomRight {
+    left: auto;
+    right: 24px;
+  }
+
+  .gmailBottomLeft,
+  .gmailBottomRight {
+    animation: minBottom 1s ease-in-out forwards;
+  }
+
+  .gmailTopLeft,
+  .gmailTopRight {
+    animation: minTop 1s ease-in-out forwards;
+  }
+}
+
+@keyframes gmailMaxTop {
+  from {
+    top: -65px;
+  }
+
+  to {
+    top: 65px;
+  }
+}
+
+@keyframes minTop {
+  from {
+    top: -65px;
+  }
+
+  to {
+    top: 88px;
+  }
+}
+
+@keyframes gmailMaxBottom {
+  from {
+    bottom: -65px;
+  }
+
+  to {
+    bottom: 0px;
+  }
+}
+
+@keyframes minBottom {
+  from {
+    bottom: -65px;
+  }
+
+  to {
+    bottom: 24px;
+  }
+}

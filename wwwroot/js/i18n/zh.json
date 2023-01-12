@@ -1,0 +1,557 @@
+[
+    {
+        "id": "Path.home",
+        "defaultMessage": "Home",
+        "message": "首頁"
+    },
+    {
+        "id": "Face.news",
+        "defaultMessage": "News",
+        "message": "新通知"
+    },
+    {
+        "id": "Face.creator",
+        "defaultMessage": "Creator",
+        "message": "建立"
+    },
+    {
+        "id": "Face.post",
+        "defaultMessage": "Post",
+        "message": "品異單"
+    },
+    {
+        "id": "Face.time",
+        "defaultMessage": "Time",
+        "message": "工廠內部通告"
+    },
+    {
+        "id": "Face.life",
+        "defaultMessage": "Life",
+        "message": "Iso 三階文件"
+    },
+    {
+        "id": "Face.fan",
+        "defaultMessage": "Fan",
+        "message": "生產注意事項"
+    },
+    {
+        "id": "Face.group",
+        "defaultMessage": "Group",
+        "message": "社團"
+    },
+    {
+        "id": "Face.activity",
+        "defaultMessage": "Activity",
+        "message": "活動"
+    },
+    {
+        "id": "Face.market",
+        "defaultMessage": "Market",
+        "message": "Marketplace 上架商品"
+    },
+    {
+        "id": "Face.history",
+        "defaultMessage": "History",
+        "message": "近期搜尋紀錄"
+    },
+    {
+        "id": "Face.profile",
+        "defaultMessage": "Profile",
+        "message": "查看您的個人檔案"
+    },
+    {
+        "id": "Face.feedback",
+        "defaultMessage": "Feedback",
+        "message": "提供意見回饋"
+    },
+    {
+        "id": "Face.improve",
+        "defaultMessage": "Improve",
+        "message": "幫助我們改善新版FaceBook"
+    },
+    {
+        "id": "Face.privacy",
+        "defaultMessage": "Privacy",
+        "message": "設定和隱私"
+    },
+    {
+        "id": "Face.setting",
+        "defaultMessage": "Setting",
+        "message": "隱私設定檢查"
+    },
+    {
+        "id": "Face.shortcut",
+        "defaultMessage": "Shortcut",
+        "message": "隱私捷徑"
+    },
+    {
+        "id": "Face.record",
+        "defaultMessage": "Record",
+        "message": "活動紀錄"
+    },
+    {
+        "id": "Face.news",
+        "defaultMessage": "News",
+        "message": "動態消息偏好設定"
+    },
+    {
+        "id": "Face.support",
+        "defaultMessage": "Support",
+        "message": "協助和支援"
+    },
+    {
+        "id": "Face.explanation",
+        "defaultMessage": "Explanation",
+        "message": "使用說明"
+    },
+    {
+        "id": "Face.forum",
+        "defaultMessage": "Forum",
+        "message": "互助論壇"
+    },
+    {
+        "id": "Face.inbox",
+        "defaultMessage": "Inbox",
+        "message": "支援收件匣"
+    },
+    {
+        "id": "Face.problem",
+        "defaultMessage": "Problem",
+        "message": "回報問題"
+    },
+    {
+        "id": "Face.night",
+        "defaultMessage": "Night",
+        "message": "夜間模式"
+    },
+    {
+        "id": "Tube.channel",
+        "defaultMessage": "Channel",
+        "message": "您的頻道"
+    },
+    {
+        "id": "Tube.purchase",
+        "defaultMessage": "Purchase",
+        "message": "付費會員"
+    },
+    {
+        "id": "Tube.workshop",
+        "defaultMessage": "Workshop",
+        "message": "Youtube 工作室"
+    },
+    {
+        "id": "Tube.switch",
+        "defaultMessage": "Switch",
+        "message": "切換帳戶"
+    },
+    {
+        "id": "Tube.dark",
+        "defaultMessage": "Dark",
+        "message": "深色主題：開啟"
+    },
+    {
+        "id": "Tube.language",
+        "defaultMessage": "Language",
+        "message": "語言：中文(台灣)"
+    },
+    {
+        "id": "Tube.position",
+        "defaultMessage": "Position",
+        "message": "位置：台灣"
+    },
+    {
+        "id": "Tube.info",
+        "defaultMessage": "Info",
+        "message": "你在Youtube中的資料"
+    },
+    {
+        "id": "Tube.advices",
+        "defaultMessage": "Advices",
+        "message": "提供意見"
+    },
+    {
+        "id": "Tube.keyboard",
+        "defaultMessage": "Keyboard",
+        "message": "鍵盤快速鍵"
+    },
+    {
+        "id": "Tube.strict",
+        "defaultMessage": "Strict",
+        "message": "嚴格篩選模式：停用"
+    },
+    {
+        "id": "Gram.track",
+        "defaultMessage": "Track",
+        "message": "追蹤要求"
+    },
+    {
+        "id": "Gram.require",
+        "defaultMessage": "Require",
+        "message": "批准或略過要求"
+    },
+    {
+        "id": "Gram.profile",
+        "defaultMessage": "Profile",
+        "message": "查看您的個人檔案"
+    },
+    {
+        "id": "Gram.saved",
+        "defaultMessage": "Saved",
+        "message": "查看您的收藏"
+    },
+    {
+        "id": "Gram.setting",
+        "defaultMessage": "Setting",
+        "message": "隱私設定檢查"
+    },
+    {
+        "id": "Gram.account",
+        "defaultMessage": "Account",
+        "message": "切換帳號"
+    },
+    {
+        "id": "Action.previous",
+        "defaultMessage": "Previous",
+        "message": "上一頁"
+    },
+    {
+        "id": "Action.next",
+        "defaultMessage": "Next",
+        "message": "下一頁"
+    },
+    {
+        "id": "Action.search",
+        "defaultMessage": "Search",
+        "message": "搜尋"
+    },
+    {
+        "id": "Action.network",
+        "defaultMessage": "NetWork",
+        "message": "網路狀態"
+    },
+    {
+        "id": "Action.color",
+        "defaultMessage": "Color",
+        "message": "顏色設定"
+    },
+    {
+        "id": "Action.notice",
+        "defaultMessage": "Notice",
+        "message": "通知"
+    },
+    {
+        "id": "Action.account",
+        "defaultMessage": "Account",
+        "message": "帳號"
+    },
+    {
+        "id": "Action.login",
+        "defaultMessage": "Login",
+        "message": "登入"
+    },
+    {
+        "id": "Action.logout",
+        "defaultMessage": "Logout",
+        "message": "登出"
+    },
+    {
+        "id": "Account.info",
+        "defaultMessage": "Info",
+        "message": "使用您的FLYTECH帳戶"
+    },
+    {
+        "id": "Account.back",
+        "defaultMessage": "Back",
+        "message": "返回和登入"
+    },
+    {
+        "id": "Account.forget",
+        "defaultMessage": "Forget",
+        "message": "忘記密碼"
+    },
+    {
+        "id": "Account.send",
+        "defaultMessage": "Send",
+        "message": "檢查和送出"
+    },
+    {
+        "id": "Login.email",
+        "defaultMessage": "Email",
+        "message": "員工編號"
+    },
+    {
+        "id": "Login.password",
+        "defaultMessage": "Password",
+        "message": "密碼"
+    },
+    {
+        "id": "Signup.name",
+        "defaultMessage": "Name",
+        "message": "姓名"
+    },
+    {
+        "id": "Signup.birthday",
+        "defaultMessage": "Birthday",
+        "message": "出生年月日"
+    },
+    {
+        "id": "Oauth.google",
+        "defaultMessage": "Google",
+        "message": "Google 帳號登入"
+    },
+    {
+        "id": "Oauth.facebook",
+        "defaultMessage": "Facebook",
+        "message": "Facebook 帳號登入"
+    },
+    {
+        "id": "Oauth.linkedln",
+        "defaultMessage": "Linkedln",
+        "message": "Linkedln 帳號登入"
+    },
+    {
+        "id": "Oauth.twitter",
+        "defaultMessage": "Twitter",
+        "message": "Twitter 帳號登入"
+    },
+    {
+        "id": "Forget.birth",
+        "defaultMessage": "Birth",
+        "message": "出生年月日"
+    },
+    {
+        "id": "Code.verification",
+        "defaultMessage": "Verification",
+        "message": "驗證碼"
+    },
+    {
+        "id": "Resend.first",
+        "defaultMessage": "First",
+        "message": "第一次密碼"
+    },
+    {
+        "id": "Resend.second",
+        "defaultMessage": "Second",
+        "message": "第二次密碼"
+    },
+    {
+        "id": "Toolbar.more",
+        "defaultMessage": "More",
+        "message": "更多設定"
+    },
+    {
+        "id": "Toolbar.upload",
+        "defaultMessage": "Upload",
+        "message": "上傳圖片"
+    },
+    {
+        "id": "Toolbar.remove",
+        "defaultMessage": "Remove",
+        "message": "移除格式"
+    },
+    {
+        "id": "Toolbar.strike",
+        "defaultMessage": "Strike",
+        "message": "刪除線"
+    },
+    {
+        "id": "Toolbar.increase",
+        "defaultMessage": "Increase",
+        "message": "增加縮排"
+    },
+    {
+        "id": "Toolbar.decrease",
+        "defaultMessage": "Decrease",
+        "message": "減少縮排"
+    },
+    {
+        "id": "Toolbar.bullist",
+        "defaultMessage": "Bullist",
+        "message": "項目符號清單"
+    },
+    {
+        "id": "Toolbar.ordlist",
+        "defaultMessage": "Ordlist",
+        "message": "編號清單"
+    },
+    {
+        "id": "Toolbar.align",
+        "defaultMessage": "Align",
+        "message": "對齊"
+    },
+    {
+        "id": "Toolbar.right",
+        "defaultMessage": "Right",
+        "message": "靠右對齊"
+    },
+    {
+        "id": "Toolbar.center",
+        "defaultMessage": "Center",
+        "message": "置中對齊"
+    },
+    {
+        "id": "Toolbar.left",
+        "defaultMessage": "Left",
+        "message": "靠左對齊"
+    },
+    {
+        "id": "Toolbar.color",
+        "defaultMessage": "Color",
+        "message": "文字顏色"
+    },
+    {
+        "id": "Toolbar.underline",
+        "defaultMessage": "Underline",
+        "message": "底線"
+    },
+    {
+        "id": "Toolbar.italic",
+        "defaultMessage": "Italic",
+        "message": "斜體"
+    },
+    {
+        "id": "Toolbar.bold",
+        "defaultMessage": "Bold",
+        "message": "粗體"
+    },
+    {
+        "id": "Toolbar.size",
+        "defaultMessage": "Size",
+        "message": "大小"
+    },
+    {
+        "id": "Toolbar.redo",
+        "defaultMessage": "Redo",
+        "message": "重做"
+    },
+    {
+        "id": "Toolbar.undo",
+        "defaultMessage": "Undo",
+        "message": "復原"
+    },
+    {
+        "id": "language",
+        "defaultMessage": "Language",
+        "message": "語言"
+    },
+    {
+        "id": "create",
+        "defaultMessage": "Create",
+        "message": "建立"
+    },
+    {
+        "id": "edit",
+        "defaultMessage": "Edit",
+        "message": "編輯"
+    },
+    {
+        "id": "save",
+        "defaultMessage": "Save",
+        "message": "儲存"
+    },
+    {
+        "id": "send",
+        "defaultMessage": "Send",
+        "message": "送出"
+    },
+    {
+        "id": "deleted",
+        "defaultMessage": "Deleted",
+        "message": "刪除"
+    },
+    {
+        "id": "refresh",
+        "defaultMessage": "Refresh",
+        "message": "恢復"
+    },
+    {
+        "id": "closed",
+        "defaultMessage": "Closed",
+        "message": "關閉"
+    },
+    {
+        "id": "setting",
+        "defaultMessage": "Setting",
+        "message": "設定"
+    },
+    {
+        "id": "add",
+        "defaultMessage": "Add",
+        "message": "新增"
+    },
+    {
+        "id": "copy",
+        "defaultMessage": "Copy",
+        "message": "複製"
+    },
+    {
+        "id": "desc",
+        "defaultMessage": "Desc",
+        "message": "說明"
+    },
+    {
+        "id": "more",
+        "defaultMessage": "More",
+        "message": "更多"
+    },
+    {
+        "id": "download",
+        "defaultMessage": "Download",
+        "message": "下載"
+    },
+    {
+        "id": "choose",
+        "defaultMessage": "Choose",
+        "message": "選擇"
+    },
+    {
+        "id": "export",
+        "defaultMessage": "Export",
+        "message": "匯出"
+    },
+    {
+        "id": "Default.close",
+        "defaultMessage": "Close",
+        "message": "是否結案？"
+    },
+    {
+        "id": "Default.firdate",
+        "defaultMessage": "Firdate",
+        "message": "區間日期1"
+    },
+    {
+        "id": "Default.secdate",
+        "defaultMessage": "Secdate",
+        "message": "區間日期2"
+    },
+    {
+        "id": "Default.addPass",
+        "defaultMessage": "AddPass",
+        "message": "增加要驗"
+    },
+    {
+        "id": "Default.removePass",
+        "defaultMessage": "RemovePass",
+        "message": "移除要驗"
+    },
+    {
+        "id": "Default.askMessage",
+        "defaultMessage": "AskMessage",
+        "message": "請問是否送給主管簽核？"
+    },
+    {
+        "id": "IsoFile.order",
+        "defaultMessage": "Order",
+        "message": "增訂"
+    },
+    {
+        "id": "Signlist.signin",
+        "defaultMessage": "Signin",
+        "message": "核准"
+    },
+    {
+        "id": "Signlist.signout",
+        "defaultMessage": "Signout",
+        "message": "簽退"
+    }
+]

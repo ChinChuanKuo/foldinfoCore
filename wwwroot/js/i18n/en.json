@@ -1,0 +1,557 @@
+[
+    {
+        "id": "Path.home",
+        "defaultMessage": "Home",
+        "message": ""
+    },
+    {
+        "id": "Face.news",
+        "defaultMessage": "News",
+        "message": ""
+    },
+    {
+        "id": "Face.creator",
+        "defaultMessage": "Creator",
+        "message": ""
+    },
+    {
+        "id": "Face.post",
+        "defaultMessage": "Post",
+        "message": "5C Report"
+    },
+    {
+        "id": "Face.time",
+        "defaultMessage": "Time",
+        "message": "Factory Notice"
+    },
+    {
+        "id": "Face.life",
+        "defaultMessage": "Life",
+        "message": "Iso File"
+    },
+    {
+        "id": "Face.fan",
+        "defaultMessage": "Fan",
+        "message": "Production"
+    },
+    {
+        "id": "Face.group",
+        "defaultMessage": "Group",
+        "message": ""
+    },
+    {
+        "id": "Face.activity",
+        "defaultMessage": "Activity",
+        "message": ""
+    },
+    {
+        "id": "Face.market",
+        "defaultMessage": "Market",
+        "message": "Put On The Market"
+    },
+    {
+        "id": "Face.history",
+        "defaultMessage": "History",
+        "message": ""
+    },
+    {
+        "id": "Face.profile",
+        "defaultMessage": "Profile",
+        "message": "View Your Profile"
+    },
+    {
+        "id": "Face.feedback",
+        "defaultMessage": "Feedback",
+        "message": "Provide Feedback"
+    },
+    {
+        "id": "Face.improve",
+        "defaultMessage": "Improve",
+        "message": "Help & Improve"
+    },
+    {
+        "id": "Face.privacy",
+        "defaultMessage": "Privacy",
+        "message": "Setting & Privacy"
+    },
+    {
+        "id": "Face.setting",
+        "defaultMessage": "Setting",
+        "message": "Privacy Setting"
+    },
+    {
+        "id": "Face.shortcut",
+        "defaultMessage": "Shortcut",
+        "message": "Privacy Shortcut"
+    },
+    {
+        "id": "Face.record",
+        "defaultMessage": "Record",
+        "message": "Activity Record"
+    },
+    {
+        "id": "Face.news",
+        "defaultMessage": "News",
+        "message": "News Setting"
+    },
+    {
+        "id": "Face.support",
+        "defaultMessage": "Support",
+        "message": "Assistance & Support"
+    },
+    {
+        "id": "Face.explanation",
+        "defaultMessage": "Explanation",
+        "message": "Use Explanation"
+    },
+    {
+        "id": "Face.forum",
+        "defaultMessage": "Forum",
+        "message": "Help Forum"
+    },
+    {
+        "id": "Face.inbox",
+        "defaultMessage": "Inbox",
+        "message": "Support Inbox"
+    },
+    {
+        "id": "Face.problem",
+        "defaultMessage": "Problem",
+        "message": "Return Problem"
+    },
+    {
+        "id": "Face.night",
+        "defaultMessage": "Night",
+        "message": "Night Mode"
+    },
+    {
+        "id": "Tube.channel",
+        "defaultMessage": "Channel",
+        "message": "Your Channel"
+    },
+    {
+        "id": "Tube.purchase",
+        "defaultMessage": "Purchase",
+        "message": "Purchase Member"
+    },
+    {
+        "id": "Tube.workshop",
+        "defaultMessage": "Workshop",
+        "message": "Youtube Workshop"
+    },
+    {
+        "id": "Tube.switch",
+        "defaultMessage": "Switch",
+        "message": "Switch Account"
+    },
+    {
+        "id": "Tube.dark",
+        "defaultMessage": "Dark",
+        "message": "Dark Theme：On"
+    },
+    {
+        "id": "Tube.language",
+        "defaultMessage": "Language",
+        "message": "Language：Chinese"
+    },
+    {
+        "id": "Tube.position",
+        "defaultMessage": "Position",
+        "message": "Position：Taiwan"
+    },
+    {
+        "id": "Tube.info",
+        "defaultMessage": "Info",
+        "message": "Youtube Info"
+    },
+    {
+        "id": "Tube.advices",
+        "defaultMessage": "Advices",
+        "message": "Provide Advices"
+    },
+    {
+        "id": "Tube.keyboard",
+        "defaultMessage": "Keyboard",
+        "message": ""
+    },
+    {
+        "id": "Tube.strict",
+        "defaultMessage": "Strict",
+        "message": "Strict Mode：Off"
+    },
+    {
+        "id": "Gram.track",
+        "defaultMessage": "Track",
+        "message": "Track Require"
+    },
+    {
+        "id": "Gram.require",
+        "defaultMessage": "Require",
+        "message": "Approve or Skip Require"
+    },
+    {
+        "id": "Gram.profile",
+        "defaultMessage": "Profile",
+        "message": "View Your Profile"
+    },
+    {
+        "id": "Gram.saved",
+        "defaultMessage": "Saved",
+        "message": "View Your Saved"
+    },
+    {
+        "id": "Gram.setting",
+        "defaultMessage": "Setting",
+        "message": "Privacy Setting"
+    },
+    {
+        "id": "Gram.account",
+        "defaultMessage": "Account",
+        "message": "Switch Account"
+    },
+    {
+        "id": "Action.previous",
+        "defaultMessage": "Previous",
+        "message": ""
+    },
+    {
+        "id": "Action.next",
+        "defaultMessage": "Next",
+        "message": ""
+    },
+    {
+        "id": "Action.search",
+        "defaultMessage": "Search",
+        "message": ""
+    },
+    {
+        "id": "Action.network",
+        "defaultMessage": "Network",
+        "message": ""
+    },
+    {
+        "id": "Action.color",
+        "defaultMessage": "Color",
+        "message": ""
+    },
+    {
+        "id": "Action.notice",
+        "defaultMessage": "Notice",
+        "message": ""
+    },
+    {
+        "id": "Action.account",
+        "defaultMessage": "Account",
+        "message": ""
+    },
+    {
+        "id": "Action.login",
+        "defaultMessage": "Login",
+        "message": ""
+    },
+    {
+        "id": "Action.logout",
+        "defaultMessage": "Logout",
+        "message": ""
+    },
+    {
+        "id": "Account.info",
+        "defaultMessage": "Info",
+        "message": "USE YOUR FLYTECH ACCOUNT"
+    },
+    {
+        "id": "Account.back",
+        "defaultMessage": "Back",
+        "message": "BACK & LOGIN"
+    },
+    {
+        "id": "Account.forget",
+        "defaultMessage": "Forget",
+        "message": "FORGET PWD"
+    },
+    {
+        "id": "Account.send",
+        "defaultMessage": "Send",
+        "message": "CHECK & SEND"
+    },
+    {
+        "id": "Login.email",
+        "defaultMessage": "Email",
+        "message": "USER ID"
+    },
+    {
+        "id": "Login.password",
+        "defaultMessage": "Password",
+        "message": "PASSWORD"
+    },
+    {
+        "id": "Signup.name",
+        "defaultMessage": "Name",
+        "message": "NAME"
+    },
+    {
+        "id": "Signup.birthday",
+        "defaultMessage": "Birthday",
+        "message": "BIRTHDAY"
+    },
+    {
+        "id": "Oauth.google",
+        "defaultMessage": "Google",
+        "message": "Sign in with Google"
+    },
+    {
+        "id": "Oauth.facebook",
+        "defaultMessage": "Facebook",
+        "message": "Sign in with Facebook"
+    },
+    {
+        "id": "Oauth.linkedln",
+        "defaultMessage": "Linkedln",
+        "message": "Sign in with Linkedln"
+    },
+    {
+        "id": "Oauth.twitter",
+        "defaultMessage": "Twitter",
+        "message": "Sign in with Twitter"
+    },
+    {
+        "id": "Forget.birthday",
+        "defaultMessage": "Birthday",
+        "message": "BIRTHDAY"
+    },
+    {
+        "id": "Code.verification",
+        "defaultMessage": "Verification",
+        "message": "VERIFICATION CODE"
+    },
+    {
+        "id": "Resend.first",
+        "defaultMessage": "First",
+        "message": "FIRST PASSWORD"
+    },
+    {
+        "id": "Resend.second",
+        "defaultMessage": "Second",
+        "message": "SECOND PASSWORD"
+    },
+    {
+        "id": "Toolbar.more",
+        "defaultMessage": "More",
+        "message": "More Setting"
+    },
+    {
+        "id": "Toolbar.upload",
+        "defaultMessage": "Upload",
+        "message": "Upload Image"
+    },
+    {
+        "id": "Toolbar.remove",
+        "defaultMessage": "Remove",
+        "message": "Remove Format"
+    },
+    {
+        "id": "Toolbar.strike",
+        "defaultMessage": "Strike",
+        "message": "strike Through"
+    },
+    {
+        "id": "Toolbar.increase",
+        "defaultMessage": "Increase",
+        "message": ""
+    },
+    {
+        "id": "Toolbar.decrease",
+        "defaultMessage": "Decrease",
+        "message": ""
+    },
+    {
+        "id": "Toolbar.bullist",
+        "defaultMessage": "Bullist",
+        "message": "Bulleted List"
+    },
+    {
+        "id": "Toolbar.ordlist",
+        "defaultMessage": "Ordlist",
+        "message": "Ordered List"
+    },
+    {
+        "id": "Toolbar.align",
+        "defaultMessage": "Align",
+        "message": ""
+    },
+    {
+        "id": "Toolbar.right",
+        "defaultMessage": "Right",
+        "message": "Align Right"
+    },
+    {
+        "id": "Toolbar.center",
+        "defaultMessage": "Center",
+        "message": "Align Center"
+    },
+    {
+        "id": "Toolbar.left",
+        "defaultMessage": "Left",
+        "message": "Align Left"
+    },
+    {
+        "id": "Toolbar.color",
+        "defaultMessage": "Color",
+        "message": "Font Color"
+    },
+    {
+        "id": "Toolbar.underline",
+        "defaultMessage": "Underline",
+        "message": ""
+    },
+    {
+        "id": "Toolbar.italic",
+        "defaultMessage": "Italic",
+        "message": ""
+    },
+    {
+        "id": "Toolbar.bold",
+        "defaultMessage": "Bold",
+        "message": ""
+    },
+    {
+        "id": "Toolbar.size",
+        "defaultMessage": "Size",
+        "message": ""
+    },
+    {
+        "id": "Toolbar.redo",
+        "defaultMessage": "Redo",
+        "message": ""
+    },
+    {
+        "id": "Toolbar.undo",
+        "defaultMessage": "Undo",
+        "message": ""
+    },
+    {
+        "id": "language",
+        "defaultMessage": "Language",
+        "message": ""
+    },
+    {
+        "id": "create",
+        "defaultMessage": "Create",
+        "message": ""
+    },
+    {
+        "id": "edit",
+        "defaultMessage": "Edit",
+        "message": ""
+    },
+    {
+        "id": "save",
+        "defaultMessage": "Save",
+        "message": ""
+    },
+    {
+        "id": "send",
+        "defaultMessage": "Send",
+        "message": ""
+    },
+    {
+        "id": "deleted",
+        "defaultMessage": "Deleted",
+        "message": ""
+    },
+    {
+        "id": "refresh",
+        "defaultMessage": "Refresh",
+        "message": ""
+    },
+    {
+        "id": "closed",
+        "defaultMessage": "Closed",
+        "message": ""
+    },
+    {
+        "id": "setting",
+        "defaultMessage": "Setting",
+        "message": ""
+    },
+    {
+        "id": "add",
+        "defaultMessage": "Add",
+        "message": ""
+    },
+    {
+        "id": "copy",
+        "defaultMessage": "Copy",
+        "message": ""
+    },
+    {
+        "id": "desc",
+        "defaultMessage": "Desc",
+        "message": ""
+    },
+    {
+        "id": "more",
+        "defaultMessage": "More",
+        "message": ""
+    },
+    {
+        "id": "download",
+        "defaultMessage": "Download",
+        "message": ""
+    },
+    {
+        "id": "choose",
+        "defaultMessage": "Choose",
+        "message": ""
+    },
+    {
+        "id": "export",
+        "defaultMessage": "Export",
+        "message": ""
+    },
+    {
+        "id": "Default.close",
+        "defaultMessage": "Close",
+        "message": "Close？"
+    },
+    {
+        "id": "Default.firdate",
+        "defaultMessage": "Firdate",
+        "message": "First Date"
+    },
+    {
+        "id": "Default.secdate",
+        "defaultMessage": "Secdate",
+        "message": "Second Date"
+    },
+    {
+        "id": "Default.addPass",
+        "defaultMessage": "AddPass",
+        "message": "Plus Passitem"
+    },
+    {
+        "id": "Default.removePass",
+        "defaultMessage": "RemovePass",
+        "message": "Remove Passitem"
+    },
+    {
+        "id": "Default.askMessage",
+        "defaultMessage": "AskMessage",
+        "message": "Will it be given to the supervisor for approval?"
+    },
+    {
+        "id": "IsoFile.order",
+        "defaultMessage": "Order",
+        "message": ""
+    },
+    {
+        "id": "Signlist.signin",
+        "defaultMessage": "Signin",
+        "message": "Sign In"
+    },
+    {
+        "id": "Signlist.signout",
+        "defaultMessage": "Signout",
+        "message": "Sign Out"
+    }
+]

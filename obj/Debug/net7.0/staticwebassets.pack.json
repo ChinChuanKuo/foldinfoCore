@@ -1,0 +1,2973 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\dist\\js\\bundle.js",
+      "PackagePath": "staticwebassets\\dist\\js\\bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\App.bs.js",
+      "PackagePath": "staticwebassets\\js\\App.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\App.re",
+      "PackagePath": "staticwebassets\\js\\App.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\Index.bs.js",
+      "PackagePath": "staticwebassets\\js\\Index.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\Index.re",
+      "PackagePath": "staticwebassets\\js\\Index.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\Route.bs.js",
+      "PackagePath": "staticwebassets\\js\\Route.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\Route.re",
+      "PackagePath": "staticwebassets\\js\\Route.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\controls\\AnswerColor.bs.js",
+      "PackagePath": "staticwebassets\\js\\controls\\AnswerColor.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\controls\\AnswerColor.re",
+      "PackagePath": "staticwebassets\\js\\controls\\AnswerColor.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\controls\\BoardColor.bs.js",
+      "PackagePath": "staticwebassets\\js\\controls\\BoardColor.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\controls\\BoardColor.re",
+      "PackagePath": "staticwebassets\\js\\controls\\BoardColor.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\controls\\IconAnimation.bs.js",
+      "PackagePath": "staticwebassets\\js\\controls\\IconAnimation.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\controls\\IconAnimation.re",
+      "PackagePath": "staticwebassets\\js\\controls\\IconAnimation.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\controls\\ObjectFormat.bs.js",
+      "PackagePath": "staticwebassets\\js\\controls\\ObjectFormat.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\controls\\ObjectFormat.re",
+      "PackagePath": "staticwebassets\\js\\controls\\ObjectFormat.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\controls\\SelectPosition.bs.js",
+      "PackagePath": "staticwebassets\\js\\controls\\SelectPosition.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\controls\\SelectPosition.re",
+      "PackagePath": "staticwebassets\\js\\controls\\SelectPosition.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\controls\\SwitchColor.bs.js",
+      "PackagePath": "staticwebassets\\js\\controls\\SwitchColor.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\controls\\SwitchColor.re",
+      "PackagePath": "staticwebassets\\js\\controls\\SwitchColor.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Account\\AccountBoard.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Account\\AccountBoard.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Account\\AccountBoard.re",
+      "PackagePath": "staticwebassets\\js\\example\\Account\\AccountBoard.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Account\\Code\\YoutubeCode.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Account\\Code\\YoutubeCode.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Account\\Code\\YoutubeCode.re",
+      "PackagePath": "staticwebassets\\js\\example\\Account\\Code\\YoutubeCode.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Account\\Forget\\YoutubeForget.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Account\\Forget\\YoutubeForget.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Account\\Forget\\YoutubeForget.re",
+      "PackagePath": "staticwebassets\\js\\example\\Account\\Forget\\YoutubeForget.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Account\\Login\\YoutubeLogin.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Account\\Login\\YoutubeLogin.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Account\\Login\\YoutubeLogin.re",
+      "PackagePath": "staticwebassets\\js\\example\\Account\\Login\\YoutubeLogin.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Account\\Oauth\\YoutubeOauth.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Account\\Oauth\\YoutubeOauth.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Account\\Oauth\\YoutubeOauth.re",
+      "PackagePath": "staticwebassets\\js\\example\\Account\\Oauth\\YoutubeOauth.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Account\\Resend\\YoutubeResend.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Account\\Resend\\YoutubeResend.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Account\\Resend\\YoutubeResend.re",
+      "PackagePath": "staticwebassets\\js\\example\\Account\\Resend\\YoutubeResend.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Account\\Signup\\YoutubeSignup.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Account\\Signup\\YoutubeSignup.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Account\\Signup\\YoutubeSignup.re",
+      "PackagePath": "staticwebassets\\js\\example\\Account\\Signup\\YoutubeSignup.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Boards\\BackgroundBoard.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Boards\\BackgroundBoard.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Boards\\BackgroundBoard.re",
+      "PackagePath": "staticwebassets\\js\\example\\Boards\\BackgroundBoard.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Boards\\CardOrPaperBoard.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Boards\\CardOrPaperBoard.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Boards\\CardOrPaperBoard.re",
+      "PackagePath": "staticwebassets\\js\\example\\Boards\\CardOrPaperBoard.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\BottomNavigation\\BottomNavigation.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\BottomNavigation\\BottomNavigation.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\BottomNavigation\\BottomNavigation.re",
+      "PackagePath": "staticwebassets\\js\\example\\BottomNavigation\\BottomNavigation.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\BottomNavigation\\IconNavigation.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\BottomNavigation\\IconNavigation.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\BottomNavigation\\IconNavigation.re",
+      "PackagePath": "staticwebassets\\js\\example\\BottomNavigation\\IconNavigation.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\BottomNavigation\\InputNavigation.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\BottomNavigation\\InputNavigation.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\BottomNavigation\\InputNavigation.re",
+      "PackagePath": "staticwebassets\\js\\example\\BottomNavigation\\InputNavigation.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Cameras\\Camera.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Cameras\\Camera.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Cameras\\Camera.re",
+      "PackagePath": "staticwebassets\\js\\example\\Cameras\\Camera.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Cameras\\Recorder.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Cameras\\Recorder.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Cameras\\Recorder.re",
+      "PackagePath": "staticwebassets\\js\\example\\Cameras\\Recorder.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Cameras\\UserMedia.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Cameras\\UserMedia.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Cameras\\UserMedia.re",
+      "PackagePath": "staticwebassets\\js\\example\\Cameras\\UserMedia.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Chart\\BarChart.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Chart\\BarChart.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Chart\\BarChart.re",
+      "PackagePath": "staticwebassets\\js\\example\\Chart\\BarChart.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Chart\\PieChart.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Chart\\PieChart.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Chart\\PieChart.re",
+      "PackagePath": "staticwebassets\\js\\example\\Chart\\PieChart.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Dialogs\\Dialogs.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Dialogs\\Dialogs.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Dialogs\\Dialogs.re",
+      "PackagePath": "staticwebassets\\js\\example\\Dialogs\\Dialogs.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Expansion\\Expansion.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Expansion\\Expansion.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Expansion\\Expansion.re",
+      "PackagePath": "staticwebassets\\js\\example\\Expansion\\Expansion.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Facebook\\NewBookBadge.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Facebook\\NewBookBadge.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Facebook\\NewBookBadge.re",
+      "PackagePath": "staticwebassets\\js\\example\\Facebook\\NewBookBadge.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Facebook\\NewBookBoard.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Facebook\\NewBookBoard.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Facebook\\NewBookBoard.re",
+      "PackagePath": "staticwebassets\\js\\example\\Facebook\\NewBookBoard.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Facebook\\NewBookCreate.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Facebook\\NewBookCreate.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Facebook\\NewBookCreate.re",
+      "PackagePath": "staticwebassets\\js\\example\\Facebook\\NewBookCreate.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Facebook\\NewBookRecord.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Facebook\\NewBookRecord.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Facebook\\NewBookRecord.re",
+      "PackagePath": "staticwebassets\\js\\example\\Facebook\\NewBookRecord.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Facebook\\NewBookUser.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Facebook\\NewBookUser.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Facebook\\NewBookUser.re",
+      "PackagePath": "staticwebassets\\js\\example\\Facebook\\NewBookUser.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Facebook\\NewFacebook.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Facebook\\NewFacebook.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Facebook\\NewFacebook.re",
+      "PackagePath": "staticwebassets\\js\\example\\Facebook\\NewFacebook.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Facebook\\NewFacetube.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Facebook\\NewFacetube.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Facebook\\NewFacetube.re",
+      "PackagePath": "staticwebassets\\js\\example\\Facebook\\NewFacetube.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Forms\\IconForm.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Forms\\IconForm.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Forms\\IconForm.re",
+      "PackagePath": "staticwebassets\\js\\example\\Forms\\IconForm.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Instagram\\NewGramBadge.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Instagram\\NewGramBadge.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Instagram\\NewGramBadge.re",
+      "PackagePath": "staticwebassets\\js\\example\\Instagram\\NewGramBadge.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Instagram\\NewGramBoard.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Instagram\\NewGramBoard.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Instagram\\NewGramBoard.re",
+      "PackagePath": "staticwebassets\\js\\example\\Instagram\\NewGramBoard.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Instagram\\NewGramUser.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Instagram\\NewGramUser.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Instagram\\NewGramUser.re",
+      "PackagePath": "staticwebassets\\js\\example\\Instagram\\NewGramUser.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Instagram\\NewInstagram.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Instagram\\NewInstagram.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Instagram\\NewInstagram.re",
+      "PackagePath": "staticwebassets\\js\\example\\Instagram\\NewInstagram.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\ListSecondary\\IconText.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\ListSecondary\\IconText.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\ListSecondary\\IconText.re",
+      "PackagePath": "staticwebassets\\js\\example\\ListSecondary\\IconText.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\ListSecondary\\Text.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\ListSecondary\\Text.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\ListSecondary\\Text.re",
+      "PackagePath": "staticwebassets\\js\\example\\ListSecondary\\Text.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Medias\\Image.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Medias\\Image.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Medias\\Image.re",
+      "PackagePath": "staticwebassets\\js\\example\\Medias\\Image.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Medias\\Media.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Medias\\Media.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Medias\\Media.re",
+      "PackagePath": "staticwebassets\\js\\example\\Medias\\Media.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Medias\\MediaBoard.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Medias\\MediaBoard.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Medias\\MediaBoard.re",
+      "PackagePath": "staticwebassets\\js\\example\\Medias\\MediaBoard.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Medias\\MediaImage.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Medias\\MediaImage.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Medias\\MediaImage.re",
+      "PackagePath": "staticwebassets\\js\\example\\Medias\\MediaImage.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Progress\\Progress.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Progress\\Progress.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Progress\\Progress.re",
+      "PackagePath": "staticwebassets\\js\\example\\Progress\\Progress.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\ScrollBar\\BottomScroll.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\ScrollBar\\BottomScroll.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\ScrollBar\\BottomScroll.re",
+      "PackagePath": "staticwebassets\\js\\example\\ScrollBar\\BottomScroll.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Selects\\SelectIconOption.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Selects\\SelectIconOption.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Selects\\SelectIconOption.re",
+      "PackagePath": "staticwebassets\\js\\example\\Selects\\SelectIconOption.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Selects\\SelectOptgroup.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Selects\\SelectOptgroup.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Selects\\SelectOptgroup.re",
+      "PackagePath": "staticwebassets\\js\\example\\Selects\\SelectOptgroup.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Selects\\SelectOption.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Selects\\SelectOption.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Selects\\SelectOption.re",
+      "PackagePath": "staticwebassets\\js\\example\\Selects\\SelectOption.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Shape\\Triangle.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Shape\\Triangle.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Shape\\Triangle.re",
+      "PackagePath": "staticwebassets\\js\\example\\Shape\\Triangle.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Snackbar\\Snackbar.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Snackbar\\Snackbar.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Snackbar\\Snackbar.re",
+      "PackagePath": "staticwebassets\\js\\example\\Snackbar\\Snackbar.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Splits\\SplitBoard.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Splits\\SplitBoard.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Splits\\SplitBoard.re",
+      "PackagePath": "staticwebassets\\js\\example\\Splits\\SplitBoard.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Splits\\SplitHeader.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Splits\\SplitHeader.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Splits\\SplitHeader.re",
+      "PackagePath": "staticwebassets\\js\\example\\Splits\\SplitHeader.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Tables\\ExpansionTables.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Tables\\ExpansionTables.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Tables\\ExpansionTables.re",
+      "PackagePath": "staticwebassets\\js\\example\\Tables\\ExpansionTables.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Tables\\TableSelects.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Tables\\TableSelects.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Tables\\TableSelects.re",
+      "PackagePath": "staticwebassets\\js\\example\\Tables\\TableSelects.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Tables\\Tables.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Tables\\Tables.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Tables\\Tables.re",
+      "PackagePath": "staticwebassets\\js\\example\\Tables\\Tables.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Tables\\YoutubeTables.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Tables\\YoutubeTables.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Tables\\YoutubeTables.re",
+      "PackagePath": "staticwebassets\\js\\example\\Tables\\YoutubeTables.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\TextFields\\TextFields.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\TextFields\\TextFields.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\TextFields\\TextFields.re",
+      "PackagePath": "staticwebassets\\js\\example\\TextFields\\TextFields.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\ToolBar\\ToolBar.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\ToolBar\\ToolBar.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\ToolBar\\ToolBar.re",
+      "PackagePath": "staticwebassets\\js\\example\\ToolBar\\ToolBar.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Uploads\\CollectionUpload.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Uploads\\CollectionUpload.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Uploads\\CollectionUpload.re",
+      "PackagePath": "staticwebassets\\js\\example\\Uploads\\CollectionUpload.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Uploads\\GeneralUpload.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Uploads\\GeneralUpload.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Uploads\\GeneralUpload.re",
+      "PackagePath": "staticwebassets\\js\\example\\Uploads\\GeneralUpload.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Uploads\\ImageUpload.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Uploads\\ImageUpload.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Uploads\\ImageUpload.re",
+      "PackagePath": "staticwebassets\\js\\example\\Uploads\\ImageUpload.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Uploads\\OtherUpload.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Uploads\\OtherUpload.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Uploads\\OtherUpload.re",
+      "PackagePath": "staticwebassets\\js\\example\\Uploads\\OtherUpload.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Uploads\\Uploads.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Uploads\\Uploads.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Uploads\\Uploads.re",
+      "PackagePath": "staticwebassets\\js\\example\\Uploads\\Uploads.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Youtube\\Gmail.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Youtube\\Gmail.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Youtube\\Gmail.re",
+      "PackagePath": "staticwebassets\\js\\example\\Youtube\\Gmail.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Youtube\\NewYouBadge.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Youtube\\NewYouBadge.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Youtube\\NewYouBadge.re",
+      "PackagePath": "staticwebassets\\js\\example\\Youtube\\NewYouBadge.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Youtube\\NewYouFace.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Youtube\\NewYouFace.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Youtube\\NewYouFace.re",
+      "PackagePath": "staticwebassets\\js\\example\\Youtube\\NewYouFace.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Youtube\\NewYouUser.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Youtube\\NewYouUser.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Youtube\\NewYouUser.re",
+      "PackagePath": "staticwebassets\\js\\example\\Youtube\\NewYouUser.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Youtube\\NewYoutube.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Youtube\\NewYoutube.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Youtube\\NewYoutube.re",
+      "PackagePath": "staticwebassets\\js\\example\\Youtube\\NewYoutube.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Youtube\\YouFace.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Youtube\\YouFace.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Youtube\\YouFace.re",
+      "PackagePath": "staticwebassets\\js\\example\\Youtube\\YouFace.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Youtube\\Youtube.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Youtube\\Youtube.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Youtube\\Youtube.re",
+      "PackagePath": "staticwebassets\\js\\example\\Youtube\\Youtube.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Youtube\\YoutubeBoard.bs.js",
+      "PackagePath": "staticwebassets\\js\\example\\Youtube\\YoutubeBoard.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\example\\Youtube\\YoutubeBoard.re",
+      "PackagePath": "staticwebassets\\js\\example\\Youtube\\YoutubeBoard.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\features\\Axiosapi.bs.js",
+      "PackagePath": "staticwebassets\\js\\features\\Axiosapi.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\features\\Axiosapi.re",
+      "PackagePath": "staticwebassets\\js\\features\\Axiosapi.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\features\\Data.bs.js",
+      "PackagePath": "staticwebassets\\js\\features\\Data.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\features\\Data.re",
+      "PackagePath": "staticwebassets\\js\\features\\Data.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\features\\Items.bs.js",
+      "PackagePath": "staticwebassets\\js\\features\\Items.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\features\\Items.re",
+      "PackagePath": "staticwebassets\\js\\features\\Items.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\features\\Path.bs.js",
+      "PackagePath": "staticwebassets\\js\\features\\Path.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\features\\Path.re",
+      "PackagePath": "staticwebassets\\js\\features\\Path.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\features\\Status.bs.js",
+      "PackagePath": "staticwebassets\\js\\features\\Status.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\features\\Status.re",
+      "PackagePath": "staticwebassets\\js\\features\\Status.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\i18n\\en.json",
+      "PackagePath": "staticwebassets\\js\\i18n\\en.json"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\i18n\\zh.json",
+      "PackagePath": "staticwebassets\\js\\i18n\\zh.json"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\locales\\Locale.bs.js",
+      "PackagePath": "staticwebassets\\js\\locales\\Locale.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\locales\\Locale.re",
+      "PackagePath": "staticwebassets\\js\\locales\\Locale.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\locales\\Translation.bs.js",
+      "PackagePath": "staticwebassets\\js\\locales\\Translation.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\locales\\Translation.re",
+      "PackagePath": "staticwebassets\\js\\locales\\Translation.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Animate\\Animate.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Animate\\Animate.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Animate\\Animate.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Animate\\Animate.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\AppBar\\AppBar.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\AppBar\\AppBar.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\AppBar\\AppBar.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\AppBar\\AppBar.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Avatar\\Avatar.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Avatar\\Avatar.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Avatar\\Avatar.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Avatar\\Avatar.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Badge\\Badge.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Badge\\Badge.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Badge\\Badge.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Badge\\Badge.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\BarChart\\BarBoard.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\BarChart\\BarBoard.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\BarChart\\BarBoard.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\BarChart\\BarBoard.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\BarChart\\BarLine.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\BarChart\\BarLine.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\BarChart\\BarLine.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\BarChart\\BarLine.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\BarChart\\BarPillar.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\BarChart\\BarPillar.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\BarChart\\BarPillar.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\BarChart\\BarPillar.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\BarChart\\BarText.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\BarChart\\BarText.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\BarChart\\BarText.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\BarChart\\BarText.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Breadcrumb\\Breadcrumb.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Breadcrumb\\Breadcrumb.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Breadcrumb\\Breadcrumb.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Breadcrumb\\Breadcrumb.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Breadcrumb\\BreadcrumbLine.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Breadcrumb\\BreadcrumbLine.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Breadcrumb\\BreadcrumbLine.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Breadcrumb\\BreadcrumbLine.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Breadcrumb\\MuiBreadcrumb.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Breadcrumb\\MuiBreadcrumb.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Breadcrumb\\MuiBreadcrumb.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Breadcrumb\\MuiBreadcrumb.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Button\\Button.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Button\\Button.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Button\\Button.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Button\\Button.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Button\\CircleButton.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Button\\CircleButton.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Button\\CircleButton.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Button\\CircleButton.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Card\\Card.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Card\\Card.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Card\\Card.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Card\\Card.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Card\\CardBottom.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Card\\CardBottom.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Card\\CardBottom.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Card\\CardBottom.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Card\\CardHeader.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Card\\CardHeader.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Card\\CardHeader.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Card\\CardHeader.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Chip\\Chip.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Chip\\Chip.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Chip\\Chip.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Chip\\Chip.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Dialog\\Dialog.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Dialog\\Dialog.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Dialog\\Dialog.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Dialog\\Dialog.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Dialog\\DialogActions.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Dialog\\DialogActions.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Dialog\\DialogActions.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Dialog\\DialogActions.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Dialog\\DialogAnimationBottom.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Dialog\\DialogAnimationBottom.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Dialog\\DialogAnimationBottom.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Dialog\\DialogAnimationBottom.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Dialog\\DialogAnimationRight.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Dialog\\DialogAnimationRight.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Dialog\\DialogAnimationRight.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Dialog\\DialogAnimationRight.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Dialog\\DialogContent.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Dialog\\DialogContent.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Dialog\\DialogContent.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Dialog\\DialogContent.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Dialog\\DialogContentText.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Dialog\\DialogContentText.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Dialog\\DialogContentText.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Dialog\\DialogContentText.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Dialog\\DialogFull.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Dialog\\DialogFull.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Dialog\\DialogFull.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Dialog\\DialogFull.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Dialog\\DialogTitle.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Dialog\\DialogTitle.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Dialog\\DialogTitle.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Dialog\\DialogTitle.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Divider\\Divider.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Divider\\Divider.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Divider\\Divider.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Divider\\Divider.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Drawer\\Drawer.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Drawer\\Drawer.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Drawer\\Drawer.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Drawer\\Drawer.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\ExpansionPanel\\ExpansionBasis.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\ExpansionPanel\\ExpansionBasis.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\ExpansionPanel\\ExpansionBasis.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\ExpansionPanel\\ExpansionBasis.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\ExpansionPanel\\ExpansionPanel.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\ExpansionPanel\\ExpansionPanel.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\ExpansionPanel\\ExpansionPanel.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\ExpansionPanel\\ExpansionPanel.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\ExpansionPanel\\ExpansionSummary.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\ExpansionPanel\\ExpansionSummary.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\ExpansionPanel\\ExpansionSummary.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\ExpansionPanel\\ExpansionSummary.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Grid\\GridContainer.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Grid\\GridContainer.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Grid\\GridContainer.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Grid\\GridContainer.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Grid\\GridItem.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Grid\\GridItem.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Grid\\GridItem.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Grid\\GridItem.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\IconButton\\IconButton.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\IconButton\\IconButton.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\IconButton\\IconButton.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\IconButton\\IconButton.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\IconStyle\\IconAction.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\IconStyle\\IconAction.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\IconStyle\\IconAction.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\IconStyle\\IconAction.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\IconStyle\\IconGeneral.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\IconStyle\\IconGeneral.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\IconStyle\\IconGeneral.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\IconStyle\\IconGeneral.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Iframe\\Iframe.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Iframe\\Iframe.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Iframe\\Iframe.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Iframe\\Iframe.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\ListItem\\ListIcon.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\ListItem\\ListIcon.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\ListItem\\ListIcon.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\ListItem\\ListIcon.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\ListItem\\ListItem.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\ListItem\\ListItem.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\ListItem\\ListItem.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\ListItem\\ListItem.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\ListSecondary\\ListSecondary.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\ListSecondary\\ListSecondary.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\ListSecondary\\ListSecondary.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\ListSecondary\\ListSecondary.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\ListSecondary\\ListSecondaryIcon.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\ListSecondary\\ListSecondaryIcon.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\ListSecondary\\ListSecondaryIcon.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\ListSecondary\\ListSecondaryIcon.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\ListSecondary\\SecondaryIconText.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\ListSecondary\\SecondaryIconText.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\ListSecondary\\SecondaryIconText.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\ListSecondary\\SecondaryIconText.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\List_\\List_.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\List_\\List_.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\List_\\List_.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\List_\\List_.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\MenuItem\\MenuIcon.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\MenuItem\\MenuIcon.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\MenuItem\\MenuIcon.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\MenuItem\\MenuIcon.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\MenuItem\\MenuItem.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\MenuItem\\MenuItem.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\MenuItem\\MenuItem.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\MenuItem\\MenuItem.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Menu\\Menu.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Menu\\Menu.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Menu\\Menu.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Menu\\Menu.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Menu\\SelectMenu.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Menu\\SelectMenu.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Menu\\SelectMenu.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Menu\\SelectMenu.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Navigation\\Navigation.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Navigation\\Navigation.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Navigation\\Navigation.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Navigation\\Navigation.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Navigation\\NavigationAction.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Navigation\\NavigationAction.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Navigation\\NavigationAction.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Navigation\\NavigationAction.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Paper\\Paper.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Paper\\Paper.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Paper\\Paper.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Paper\\Paper.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\PasteBoard\\PasteBoard.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\PasteBoard\\PasteBoard.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\PasteBoard\\PasteBoard.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\PasteBoard\\PasteBoard.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\PasteBoard\\PasteInformation.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\PasteBoard\\PasteInformation.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\PasteBoard\\PasteInformation.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\PasteBoard\\PasteInformation.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\PieChart\\PieBoard.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\PieChart\\PieBoard.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\PieChart\\PieBoard.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\PieChart\\PieBoard.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\PieChart\\PieCircle.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\PieChart\\PieCircle.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\PieChart\\PieCircle.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\PieChart\\PieCircle.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\PieChart\\PiePath.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\PieChart\\PiePath.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\PieChart\\PiePath.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\PieChart\\PiePath.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Progress\\ProgressCircular.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Progress\\ProgressCircular.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Progress\\ProgressCircular.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Progress\\ProgressCircular.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Progress\\ProgressLinear.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Progress\\ProgressLinear.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Progress\\ProgressLinear.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Progress\\ProgressLinear.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Progress\\ProgressLoading.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Progress\\ProgressLoading.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Progress\\ProgressLoading.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Progress\\ProgressLoading.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Progress\\ProgressWaiting.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Progress\\ProgressWaiting.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Progress\\ProgressWaiting.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Progress\\ProgressWaiting.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Select\\SelectOutline.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Select\\SelectOutline.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Select\\SelectOutline.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Select\\SelectOutline.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Select\\SelectStandard.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Select\\SelectStandard.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Select\\SelectStandard.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Select\\SelectStandard.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Slider\\Slider.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Slider\\Slider.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Slider\\Slider.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Slider\\Slider.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Snackbar\\SnackbarGmail.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Snackbar\\SnackbarGmail.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Snackbar\\SnackbarGmail.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Snackbar\\SnackbarGmail.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Snackbar\\SnackbarYoutube.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Snackbar\\SnackbarYoutube.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Snackbar\\SnackbarYoutube.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Snackbar\\SnackbarYoutube.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Switch\\Switch.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Switch\\Switch.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Switch\\Switch.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Switch\\Switch.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Table\\Table.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Table\\Table.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Table\\Table.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Table\\Table.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Table\\TableBody.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Table\\TableBody.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Table\\TableBody.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Table\\TableBody.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Table\\TableCell.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Table\\TableCell.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Table\\TableCell.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Table\\TableCell.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Table\\TableHead.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Table\\TableHead.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Table\\TableHead.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Table\\TableHead.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Table\\TableRow.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Table\\TableRow.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Table\\TableRow.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Table\\TableRow.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Tabs\\Tab.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Tabs\\Tab.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Tabs\\Tab.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Tabs\\Tab.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Tabs\\Tabs.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Tabs\\Tabs.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Tabs\\Tabs.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Tabs\\Tabs.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\TextField\\TextFieldArticle.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\TextField\\TextFieldArticle.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\TextField\\TextFieldArticle.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\TextField\\TextFieldArticle.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\TextField\\TextFieldMultiline.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\TextField\\TextFieldMultiline.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\TextField\\TextFieldMultiline.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\TextField\\TextFieldMultiline.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\TextField\\TextFieldOutline.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\TextField\\TextFieldOutline.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\TextField\\TextFieldOutline.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\TextField\\TextFieldOutline.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\TextField\\TextFieldStandard.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\TextField\\TextFieldStandard.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\TextField\\TextFieldStandard.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\TextField\\TextFieldStandard.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Tooltip\\Tooltip.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Tooltip\\Tooltip.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Tooltip\\Tooltip.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Tooltip\\Tooltip.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Typography\\Typography.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Typography\\Typography.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\Typography\\Typography.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\Typography\\Typography.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\UploadBoard\\UploadBoard.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\UploadBoard\\UploadBoard.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\UploadBoard\\UploadBoard.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\UploadBoard\\UploadBoard.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\UploadBoard\\UploadInformation.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\UploadBoard\\UploadInformation.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\UploadBoard\\UploadInformation.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\UploadBoard\\UploadInformation.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\UploadBoard\\UploadSVG.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\UploadBoard\\UploadSVG.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\core\\UploadBoard\\UploadSVG.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\core\\UploadBoard\\UploadSVG.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\Icons.bs.js",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\Icons.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\Icons.re",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\Icons.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\access_time\\access_timeblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\access_time\\access_timeblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\access_time\\access_timewhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\access_time\\access_timewhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\account_box\\account_boxblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\account_box\\account_boxblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\account_box\\account_boxwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\account_box\\account_boxwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\account_circle\\account_circleblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\account_circle\\account_circleblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\account_circle\\account_circlewhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\account_circle\\account_circlewhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\account_tree\\account_treeblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\account_tree\\account_treeblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\account_tree\\account_treewhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\account_tree\\account_treewhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\add\\addblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\add\\addblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\add\\addwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\add\\addwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\announcement\\announcementblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\announcement\\announcementblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\announcement\\announcementwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\announcement\\announcementwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\arrow_back_ios\\arrow_back_iosblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\arrow_back_ios\\arrow_back_iosblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\arrow_back_ios\\arrow_back_ioswhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\arrow_back_ios\\arrow_back_ioswhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\arrow_down\\arrow_downblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\arrow_down\\arrow_downblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\arrow_down\\arrow_downwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\arrow_down\\arrow_downwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\arrow_forward_ios\\arrow_forward_iosblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\arrow_forward_ios\\arrow_forward_iosblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\arrow_forward_ios\\arrow_forward_ioswhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\arrow_forward_ios\\arrow_forward_ioswhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\arrow_up\\arrow_upblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\arrow_up\\arrow_upblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\arrow_up\\arrow_upwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\arrow_up\\arrow_upwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\assignment_ind\\assignment_indblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\assignment_ind\\assignment_indblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\assignment_ind\\assignment_indwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\assignment_ind\\assignment_indwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\assistant\\assistantblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\assistant\\assistantblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\assistant\\assistantwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\assistant\\assistantwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\attach_file\\attach_fileblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\attach_file\\attach_fileblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\attach_file\\attach_filewhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\attach_file\\attach_filewhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\bar_chart\\bar_chartblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\bar_chart\\bar_chartblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\bar_chart\\bar_chartwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\bar_chart\\bar_chartwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\book\\bookblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\book\\bookblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\book\\bookwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\book\\bookwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\bookmark_border\\bookmark_borderblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\bookmark_border\\bookmark_borderblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\bookmark_border\\bookmark_borderwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\bookmark_border\\bookmark_borderwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\brightness_4\\brightness_4black.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\brightness_4\\brightness_4black.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\brightness_4\\brightness_4white.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\brightness_4\\brightness_4white.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\brightness_high\\brightness_highblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\brightness_high\\brightness_highblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\brightness_high\\brightness_highwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\brightness_high\\brightness_highwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\brightness_low\\brightness_lowblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\brightness_low\\brightness_lowblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\brightness_low\\brightness_lowwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\brightness_low\\brightness_lowwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\cached\\cachedblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\cached\\cachedblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\cached\\cachedwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\cached\\cachedwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\cancel\\cancelblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\cancel\\cancelblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\cancel\\cancelwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\cancel\\cancelwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\card_travel\\card_travelblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\card_travel\\card_travelblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\card_travel\\card_travelwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\card_travel\\card_travelwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\chat_bubble\\chat_bubbleblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\chat_bubble\\chat_bubbleblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\chat_bubble\\chat_bubblewhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\chat_bubble\\chat_bubblewhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\check_box\\check_boxblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\check_box\\check_boxblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\check_box\\check_boxwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\check_box\\check_boxwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\check_box_outline_blank\\check_box_outline_blankblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\check_box_outline_blank\\check_box_outline_blankblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\check_box_outline_blank\\check_box_outline_blankwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\check_box_outline_blank\\check_box_outline_blankwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\clear\\clearblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\clear\\clearblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\clear\\clearwarn.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\clear\\clearwarn.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\clear\\clearwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\clear\\clearwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\cloud_download\\cloud_downloadblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\cloud_download\\cloud_downloadblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\cloud_download\\cloud_downloadwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\cloud_download\\cloud_downloadwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\collections\\collectionsblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\collections\\collectionsblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\collections\\collectionswhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\collections\\collectionswhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\color_lens\\color_lensblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\color_lens\\color_lensblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\color_lens\\color_lenswhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\color_lens\\color_lenswhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\create\\createblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\create\\createblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\create\\createwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\create\\createwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\date_range\\date_rangeblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\date_range\\date_rangeblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\date_range\\date_rangewhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\date_range\\date_rangewhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\delete\\deleteblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\delete\\deleteblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\delete\\deletewhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\delete\\deletewhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\description\\descriptionblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\description\\descriptionblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\description\\descriptionwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\description\\descriptionwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\done\\doneblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\done\\doneblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\done\\donesuccessful.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\done\\donesuccessful.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\done\\donewhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\done\\donewhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\edit\\editblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\edit\\editblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\edit\\editwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\edit\\editwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\email\\emailblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\email\\emailblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\email\\emailwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\email\\emailwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\error\\errorblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\error\\errorblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\error\\errorwarn.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\error\\errorwarn.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\error\\errorwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\error\\errorwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\event\\eventblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\event\\eventblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\event\\eventwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\event\\eventwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\explore\\exploreblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\explore\\exploreblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\explore\\explorewhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\explore\\explorewhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\factory\\factoryblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\factory\\factoryblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\factory\\factorywhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\factory\\factorywhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\favorite_border\\favorite_borderblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\favorite_border\\favorite_borderblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\favorite_border\\favorite_borderwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\favorite_border\\favorite_borderwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\file_copy\\file_copyblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\file_copy\\file_copyblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\file_copy\\file_copywhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\file_copy\\file_copywhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\flag\\flagblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\flag\\flagblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\flag\\flagwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\flag\\flagwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\format_align_center\\format_align_centerblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\format_align_center\\format_align_centerblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\format_align_center\\format_align_centerwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\format_align_center\\format_align_centerwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\format_align_left\\format_align_leftblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\format_align_left\\format_align_leftblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\format_align_left\\format_align_leftwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\format_align_left\\format_align_leftwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\format_align_right\\format_align_rightblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\format_align_right\\format_align_rightblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\format_align_right\\format_align_rightwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\format_align_right\\format_align_rightwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\format_bold\\format_boldblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\format_bold\\format_boldblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\format_bold\\format_boldwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\format_bold\\format_boldwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\format_clear\\format_clearblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\format_clear\\format_clearblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\format_clear\\format_clearwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\format_clear\\format_clearwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\format_indent_decrease\\format_indent_decreaseblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\format_indent_decrease\\format_indent_decreaseblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\format_indent_decrease\\format_indent_decreasewhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\format_indent_decrease\\format_indent_decreasewhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\format_indent_increase\\format_indent_increaseblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\format_indent_increase\\format_indent_increaseblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\format_indent_increase\\format_indent_increasewhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\format_indent_increase\\format_indent_increasewhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\format_italic\\format_italicblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\format_italic\\format_italicblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\format_italic\\format_italicwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\format_italic\\format_italicwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\format_list_bulleted\\format_list_bulletedblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\format_list_bulleted\\format_list_bulletedblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\format_list_bulleted\\format_list_bulletedwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\format_list_bulleted\\format_list_bulletedwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\format_list_numbered\\format_list_numberedblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\format_list_numbered\\format_list_numberedblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\format_list_numbered\\format_list_numberedwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\format_list_numbered\\format_list_numberedwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\format_size\\format_sizeblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\format_size\\format_sizeblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\format_size\\format_sizewhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\format_size\\format_sizewhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\format_underlined\\format_underlinedblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\format_underlined\\format_underlinedblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\format_underlined\\format_underlinedwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\format_underlined\\format_underlinedwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\group\\groupblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\group\\groupblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\group\\groupwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\group\\groupwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\help\\helpblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\help\\helpblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\help\\helpwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\help\\helpwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\help_outline\\help_outlineblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\help_outline\\help_outlineblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\help_outline\\help_outlinewhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\help_outline\\help_outlinewhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\home\\homeblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\home\\homeblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\home\\homewhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\home\\homewhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\image\\imageblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\image\\imageblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\image\\imagewhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\image\\imagewhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\import_contacts\\import_contactsblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\import_contacts\\import_contactsblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\import_contacts\\import_contactswhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\import_contacts\\import_contactswhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\import_export\\import_exportblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\import_export\\import_exportblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\import_export\\import_exportwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\import_export\\import_exportwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\input\\inputblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\input\\inputblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\input\\inputwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\input\\inputwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\insert_invitation\\insert_invitationblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\insert_invitation\\insert_invitationblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\insert_invitation\\insert_invitationwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\insert_invitation\\insert_invitationwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\keyboard\\keyboardblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\keyboard\\keyboardblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\keyboard\\keyboardwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\keyboard\\keyboardwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\keyboard_arrow_right\\keyboard_arrow_rightblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\keyboard_arrow_right\\keyboard_arrow_rightblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\keyboard_arrow_right\\keyboard_arrow_rightwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\keyboard_arrow_right\\keyboard_arrow_rightwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\keyboard_backspace\\keyboard_backspaceblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\keyboard_backspace\\keyboard_backspaceblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\keyboard_backspace\\keyboard_backspacewhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\keyboard_backspace\\keyboard_backspacewhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\language\\languageblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\language\\languageblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\language\\languagewhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\language\\languagewhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\library_books\\library_booksblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\library_books\\library_booksblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\library_books\\library_bookswhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\library_books\\library_bookswhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\list\\listblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\list\\listblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\list\\listwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\list\\listwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\local_activity\\local_activityblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\local_activity\\local_activityblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\local_activity\\local_activitywhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\local_activity\\local_activitywhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\lock\\lockblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\lock\\lockblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\lock\\lockwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\lock\\lockwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\logo\\flytech.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\logo\\flytech.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\logo\\flytechlogo.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\logo\\flytechlogo.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\mail\\mailblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\mail\\mailblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\mail\\mailwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\mail\\mailwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\map\\mapblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\map\\mapblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\map\\mapwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\map\\mapwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\menu\\menublack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\menu\\menublack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\menu\\menuwarn.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\menu\\menuwarn.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\menu\\menuwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\menu\\menuwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\menu_book\\menu_bookblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\menu_book\\menu_bookblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\menu_book\\menu_bookwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\menu_book\\menu_bookwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\monetization_on\\monetization_onblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\monetization_on\\monetization_onblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\monetization_on\\monetization_onwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\monetization_on\\monetization_onwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\more_vert\\more_vertblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\more_vert\\more_vertblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\more_vert\\more_vertwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\more_vert\\more_vertwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\nights_stay\\nights_stayblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\nights_stay\\nights_stayblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\nights_stay\\nights_staywhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\nights_stay\\nights_staywhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\note\\noteblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\note\\noteblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\note\\notewhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\note\\notewhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\notes\\notesblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\notes\\notesblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\notes\\noteswhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\notes\\noteswhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\notification_important\\notification_importantblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\notification_important\\notification_importantblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\notification_important\\notification_importantwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\notification_important\\notification_importantwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\notifications\\notificationsblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\notifications\\notificationsblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\notifications\\notificationswhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\notifications\\notificationswhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\notifications_active\\notifications_activeblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\notifications_active\\notifications_activeblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\notifications_active\\notifications_activewhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\notifications_active\\notifications_activewhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\other_icon\\left_hand.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\other_icon\\left_hand.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\other_icon\\person_body.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\other_icon\\person_body.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\other_icon\\right_hand.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\other_icon\\right_hand.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\people\\peopleblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\people\\peopleblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\people\\peoplewhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\people\\peoplewhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\person\\personblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\person\\personblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\person\\personwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\person\\personwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\person_add\\person_addblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\person_add\\person_addblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\person_add\\person_addwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\person_add\\person_addwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\photo\\photoblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\photo\\photoblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\photo\\photowhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\photo\\photowhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\privacy_tip\\privacy_tipblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\privacy_tip\\privacy_tipblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\privacy_tip\\privacy_tipwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\privacy_tip\\privacy_tipwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\question_answer\\question_answerblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\question_answer\\question_answerblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\question_answer\\question_answerwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\question_answer\\question_answerwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\radio_button_checked\\radio_button_checkedblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\radio_button_checked\\radio_button_checkedblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\radio_button_checked\\radio_button_checkedwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\radio_button_checked\\radio_button_checkedwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\radio_button_unchecked\\radio_button_uncheckedblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\radio_button_unchecked\\radio_button_uncheckedblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\radio_button_unchecked\\radio_button_uncheckedwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\radio_button_unchecked\\radio_button_uncheckedwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\redo\\redoblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\redo\\redoblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\redo\\redowhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\redo\\redowhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\refresh\\refreshblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\refresh\\refreshblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\refresh\\refreshwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\refresh\\refreshwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\restore\\restoreblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\restore\\restoreblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\restore\\restorewhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\restore\\restorewhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\save\\saveblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\save\\saveblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\save\\savewhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\save\\savewhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\search\\searchblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\search\\searchblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\search\\searchwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\search\\searchwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\security\\securityblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\security\\securityblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\security\\securitycaveat.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\security\\securitycaveat.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\security\\securitysuccessful.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\security\\securitysuccessful.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\security\\securitywarn.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\security\\securitywarn.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\security\\securitywhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\security\\securitywhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\send\\sendblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\send\\sendblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\send\\sendwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\send\\sendwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\settings\\settingsblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\settings\\settingsblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\settings\\settingswhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\settings\\settingswhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\settings_applications\\settings_applicationsblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\settings_applications\\settings_applicationsblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\settings_applications\\settings_applicationswhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\settings_applications\\settings_applicationswhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\share\\shareblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\share\\shareblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\share\\sharewhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\share\\sharewhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\short_text\\short_textblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\short_text\\short_textblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\short_text\\short_textwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\short_text\\short_textwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\store\\storeblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\store\\storeblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\store\\storewhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\store\\storewhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\storefront\\storefrontblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\storefront\\storefrontblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\storefront\\storefrontwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\storefront\\storefrontwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\strikethrough_s\\strikethrough_sblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\strikethrough_s\\strikethrough_sblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\strikethrough_s\\strikethrough_swhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\strikethrough_s\\strikethrough_swhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\text_fields\\text_fieldsblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\text_fields\\text_fieldsblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\text_fields\\text_fieldswhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\text_fields\\text_fieldswhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\text_format\\text_formatblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\text_format\\text_formatblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\text_format\\text_formatwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\text_format\\text_formatwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\today\\todayblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\today\\todayblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\today\\todaywhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\today\\todaywhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\tour\\tourblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\tour\\tourblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\tour\\tourwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\tour\\tourwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\translate\\translateblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\translate\\translateblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\translate\\translatewhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\translate\\translatewhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\transmission\\transmissionblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\transmission\\transmissionblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\transmission\\transmissionwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\transmission\\transmissionwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\undo\\undoblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\undo\\undoblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\undo\\undowhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\undo\\undowhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\visibility\\visibilityblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\visibility\\visibilityblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\visibility\\visibilitywhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\visibility\\visibilitywhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\wifi\\wifiblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\wifi\\wifiblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\wifi\\wifiwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\wifi\\wifiwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\wifi_off\\wifi_offblack.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\wifi_off\\wifi_offblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\icon\\wifi_off\\wifi_offwhite.svg",
+      "PackagePath": "staticwebassets\\js\\material-ui\\icon\\wifi_off\\wifi_offwhite.svg"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\AppBar\\appBar.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\AppBar\\appBar.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\Avatar\\avatar.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\Avatar\\avatar.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\Badge\\badge.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\Badge\\badge.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\Button\\button.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\Button\\button.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\Button\\circleButton.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\Button\\circleButton.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\Card\\card.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\Card\\card.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\Card\\cardBottom.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\Card\\cardBottom.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\Chip\\chip.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\Chip\\chip.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\Dialog\\dialog.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\Dialog\\dialog.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\Dialog\\dialogActions.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\Dialog\\dialogActions.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\Dialog\\dialogAnimationBottom.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\Dialog\\dialogAnimationBottom.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\Dialog\\dialogAnimationRight.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\Dialog\\dialogAnimationRight.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\Dialog\\dialogContent.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\Dialog\\dialogContent.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\Dialog\\dialogContentText.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\Dialog\\dialogContentText.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\Dialog\\dialogFull.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\Dialog\\dialogFull.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\Dialog\\dialogTitle.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\Dialog\\dialogTitle.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\Divider\\divider.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\Divider\\divider.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\Drawer\\drawer.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\Drawer\\drawer.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\ExpansionPanel\\expansionBasis.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\ExpansionPanel\\expansionBasis.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\ExpansionPanel\\expansionPanel.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\ExpansionPanel\\expansionPanel.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\ExpansionPanel\\expansionSummary.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\ExpansionPanel\\expansionSummary.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\Grid\\gridContainer.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\Grid\\gridContainer.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\IconButton\\iconButton.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\IconButton\\iconButton.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\IconStyle\\animation.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\IconStyle\\animation.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\IconStyle\\iconStyle.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\IconStyle\\iconStyle.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\ListItem\\listItem.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\ListItem\\listItem.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\ListSecondary\\listSecondary.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\ListSecondary\\listSecondary.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\List_\\list.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\List_\\list.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\MenuItem\\menuItem.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\MenuItem\\menuItem.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\Menu\\menu.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\Menu\\menu.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\Navigation\\navigation.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\Navigation\\navigation.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\Navigation\\navigationAction.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\Navigation\\navigationAction.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\Paper\\paper.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\Paper\\paper.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\PasteBoard\\pasteBoard.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\PasteBoard\\pasteBoard.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\PasteBoard\\pasteInformation.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\PasteBoard\\pasteInformation.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\Progress\\progress.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\Progress\\progress.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\Progress\\progressCircular.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\Progress\\progressCircular.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\Progress\\progressLinear.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\Progress\\progressLinear.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\Progress\\progressLoading.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\Progress\\progressLoading.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\Progress\\progressWaiting.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\Progress\\progressWaiting.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\Select\\select.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\Select\\select.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\Select\\selectOutline.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\Select\\selectOutline.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\Select\\selectStandard.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\Select\\selectStandard.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\Slider\\slider.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\Slider\\slider.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\Snackbar\\snackbar.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\Snackbar\\snackbar.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\Snackbar\\snackbarGmail.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\Snackbar\\snackbarGmail.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\Snackbar\\snackbarYoutube.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\Snackbar\\snackbarYoutube.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\Switch\\switch.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\Switch\\switch.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\Table\\table.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\Table\\table.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\Table\\tableBody.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\Table\\tableBody.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\Table\\tableCell.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\Table\\tableCell.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\Table\\tableHead.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\Table\\tableHead.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\Table\\tableRow.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\Table\\tableRow.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\Tabs\\tab.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\Tabs\\tab.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\Tabs\\tabs.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\Tabs\\tabs.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\TextField\\textField.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\TextField\\textField.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\TextField\\textFieldArticle.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\TextField\\textFieldArticle.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\TextField\\textFieldMultiline.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\TextField\\textFieldMultiline.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\TextField\\textFieldOutline.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\TextField\\textFieldOutline.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\TextField\\textFieldStandard.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\TextField\\textFieldStandard.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\Tooltip\\tooltip.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\Tooltip\\tooltip.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\Typography\\typography.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\Typography\\typography.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\UploadBoard\\uploadBoard.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\UploadBoard\\uploadBoard.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\UploadBoard\\uploadSVG.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\UploadBoard\\uploadSVG.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\animation.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\animation.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\material-ui\\scss\\parameter.scss",
+      "PackagePath": "staticwebassets\\js\\material-ui\\scss\\parameter.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\modules\\Document.bs.js",
+      "PackagePath": "staticwebassets\\js\\modules\\Document.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\modules\\Document.re",
+      "PackagePath": "staticwebassets\\js\\modules\\Document.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\modules\\Math.bs.js",
+      "PackagePath": "staticwebassets\\js\\modules\\Math.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\modules\\Math.re",
+      "PackagePath": "staticwebassets\\js\\modules\\Math.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\modules\\Navigator.bs.js",
+      "PackagePath": "staticwebassets\\js\\modules\\Navigator.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\modules\\Navigator.re",
+      "PackagePath": "staticwebassets\\js\\modules\\Navigator.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\modules\\Notifications.bs.js",
+      "PackagePath": "staticwebassets\\js\\modules\\Notifications.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\modules\\Notifications.re",
+      "PackagePath": "staticwebassets\\js\\modules\\Notifications.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\modules\\Storage.bs.js",
+      "PackagePath": "staticwebassets\\js\\modules\\Storage.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\modules\\Storage.re",
+      "PackagePath": "staticwebassets\\js\\modules\\Storage.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\modules\\Window.bs.js",
+      "PackagePath": "staticwebassets\\js\\modules\\Window.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\modules\\Window.re",
+      "PackagePath": "staticwebassets\\js\\modules\\Window.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\operates\\Action.bs.js",
+      "PackagePath": "staticwebassets\\js\\operates\\Action.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\operates\\Action.re",
+      "PackagePath": "staticwebassets\\js\\operates\\Action.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\operates\\FormData.bs.js",
+      "PackagePath": "staticwebassets\\js\\operates\\FormData.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\operates\\FormData.re",
+      "PackagePath": "staticwebassets\\js\\operates\\FormData.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\Bookmarks\\Bookmarks.bs.js",
+      "PackagePath": "staticwebassets\\js\\pages\\Bookmarks\\Bookmarks.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\Bookmarks\\Bookmarks.re",
+      "PackagePath": "staticwebassets\\js\\pages\\Bookmarks\\Bookmarks.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\Code\\Code.bs.js",
+      "PackagePath": "staticwebassets\\js\\pages\\Code\\Code.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\Code\\Code.re",
+      "PackagePath": "staticwebassets\\js\\pages\\Code\\Code.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\CreateF\\CreateF.bs.js",
+      "PackagePath": "staticwebassets\\js\\pages\\CreateF\\CreateF.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\CreateF\\CreateF.re",
+      "PackagePath": "staticwebassets\\js\\pages\\CreateF\\CreateF.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\CreateI\\CreateI.bs.js",
+      "PackagePath": "staticwebassets\\js\\pages\\CreateI\\CreateI.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\CreateI\\CreateI.re",
+      "PackagePath": "staticwebassets\\js\\pages\\CreateI\\CreateI.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\CreateP\\CreateP.bs.js",
+      "PackagePath": "staticwebassets\\js\\pages\\CreateP\\CreateP.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\CreateP\\CreateP.re",
+      "PackagePath": "staticwebassets\\js\\pages\\CreateP\\CreateP.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\CreateR\\CreateR.bs.js",
+      "PackagePath": "staticwebassets\\js\\pages\\CreateR\\CreateR.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\CreateR\\CreateR.re",
+      "PackagePath": "staticwebassets\\js\\pages\\CreateR\\CreateR.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\Forget\\Forget.bs.js",
+      "PackagePath": "staticwebassets\\js\\pages\\Forget\\Forget.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\Forget\\Forget.re",
+      "PackagePath": "staticwebassets\\js\\pages\\Forget\\Forget.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\Home\\Home.bs.js",
+      "PackagePath": "staticwebassets\\js\\pages\\Home\\Home.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\Home\\Home.re",
+      "PackagePath": "staticwebassets\\js\\pages\\Home\\Home.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\Home\\TableRows.bs.js",
+      "PackagePath": "staticwebassets\\js\\pages\\Home\\TableRows.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\Home\\TableRows.re",
+      "PackagePath": "staticwebassets\\js\\pages\\Home\\TableRows.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\Icon\\Icon.bs.js",
+      "PackagePath": "staticwebassets\\js\\pages\\Icon\\Icon.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\Icon\\Icon.re",
+      "PackagePath": "staticwebassets\\js\\pages\\Icon\\Icon.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\Inside\\Inside.bs.js",
+      "PackagePath": "staticwebassets\\js\\pages\\Inside\\Inside.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\Inside\\Inside.re",
+      "PackagePath": "staticwebassets\\js\\pages\\Inside\\Inside.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\IsoFile\\IsoFile.bs.js",
+      "PackagePath": "staticwebassets\\js\\pages\\IsoFile\\IsoFile.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\IsoFile\\IsoFile.re",
+      "PackagePath": "staticwebassets\\js\\pages\\IsoFile\\IsoFile.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\Login\\Login.bs.js",
+      "PackagePath": "staticwebassets\\js\\pages\\Login\\Login.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\Login\\Login.re",
+      "PackagePath": "staticwebassets\\js\\pages\\Login\\Login.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\MailistF\\MailistF.bs.js",
+      "PackagePath": "staticwebassets\\js\\pages\\MailistF\\MailistF.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\MailistF\\MailistF.re",
+      "PackagePath": "staticwebassets\\js\\pages\\MailistF\\MailistF.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\MailistI\\MailistI.bs.js",
+      "PackagePath": "staticwebassets\\js\\pages\\MailistI\\MailistI.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\MailistI\\MailistI.re",
+      "PackagePath": "staticwebassets\\js\\pages\\MailistI\\MailistI.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\MailistR\\MailistR.bs.js",
+      "PackagePath": "staticwebassets\\js\\pages\\MailistR\\MailistR.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\MailistR\\MailistR.re",
+      "PackagePath": "staticwebassets\\js\\pages\\MailistR\\MailistR.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\ModifyF\\ModifyF.bs.js",
+      "PackagePath": "staticwebassets\\js\\pages\\ModifyF\\ModifyF.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\ModifyF\\ModifyF.re",
+      "PackagePath": "staticwebassets\\js\\pages\\ModifyF\\ModifyF.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\ModifyI\\ModifyI.bs.js",
+      "PackagePath": "staticwebassets\\js\\pages\\ModifyI\\ModifyI.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\ModifyI\\ModifyI.re",
+      "PackagePath": "staticwebassets\\js\\pages\\ModifyI\\ModifyI.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\ModifyR\\ModifyR.bs.js",
+      "PackagePath": "staticwebassets\\js\\pages\\ModifyR\\ModifyR.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\ModifyR\\ModifyR.re",
+      "PackagePath": "staticwebassets\\js\\pages\\ModifyR\\ModifyR.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\Oauth\\Oauth.bs.js",
+      "PackagePath": "staticwebassets\\js\\pages\\Oauth\\Oauth.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\Oauth\\Oauth.re",
+      "PackagePath": "staticwebassets\\js\\pages\\Oauth\\Oauth.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\Product\\Product.bs.js",
+      "PackagePath": "staticwebassets\\js\\pages\\Product\\Product.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\Product\\Product.re",
+      "PackagePath": "staticwebassets\\js\\pages\\Product\\Product.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\Resend\\Resend.bs.js",
+      "PackagePath": "staticwebassets\\js\\pages\\Resend\\Resend.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\Resend\\Resend.re",
+      "PackagePath": "staticwebassets\\js\\pages\\Resend\\Resend.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\SendistF\\SendistF.bs.js",
+      "PackagePath": "staticwebassets\\js\\pages\\SendistF\\SendistF.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\SendistF\\SendistF.re",
+      "PackagePath": "staticwebassets\\js\\pages\\SendistF\\SendistF.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\SendistR\\SendistR.bs.js",
+      "PackagePath": "staticwebassets\\js\\pages\\SendistR\\SendistR.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\SendistR\\SendistR.re",
+      "PackagePath": "staticwebassets\\js\\pages\\SendistR\\SendistR.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\SignlistF\\SignlistF.bs.js",
+      "PackagePath": "staticwebassets\\js\\pages\\SignlistF\\SignlistF.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\SignlistF\\SignlistF.re",
+      "PackagePath": "staticwebassets\\js\\pages\\SignlistF\\SignlistF.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\SignlistI\\SignlistI.bs.js",
+      "PackagePath": "staticwebassets\\js\\pages\\SignlistI\\SignlistI.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\SignlistI\\SignlistI.re",
+      "PackagePath": "staticwebassets\\js\\pages\\SignlistI\\SignlistI.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\SignlistR\\SignlistR.bs.js",
+      "PackagePath": "staticwebassets\\js\\pages\\SignlistR\\SignlistR.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\SignlistR\\SignlistR.re",
+      "PackagePath": "staticwebassets\\js\\pages\\SignlistR\\SignlistR.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\Signlist\\Signlist.bs.js",
+      "PackagePath": "staticwebassets\\js\\pages\\Signlist\\Signlist.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\Signlist\\Signlist.re",
+      "PackagePath": "staticwebassets\\js\\pages\\Signlist\\Signlist.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\Signup\\Signup.bs.js",
+      "PackagePath": "staticwebassets\\js\\pages\\Signup\\Signup.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\pages\\Signup\\Signup.re",
+      "PackagePath": "staticwebassets\\js\\pages\\Signup\\Signup.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\setting\\Basic.bs.js",
+      "PackagePath": "staticwebassets\\js\\setting\\Basic.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\setting\\Basic.re",
+      "PackagePath": "staticwebassets\\js\\setting\\Basic.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\setting\\Setting.bs.js",
+      "PackagePath": "staticwebassets\\js\\setting\\Setting.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\setting\\Setting.re",
+      "PackagePath": "staticwebassets\\js\\setting\\Setting.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\styles\\OutSide\\OutSide.bs.js",
+      "PackagePath": "staticwebassets\\js\\styles\\OutSide\\OutSide.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\styles\\OutSide\\OutSide.re",
+      "PackagePath": "staticwebassets\\js\\styles\\OutSide\\OutSide.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\styles\\Together\\Together.bs.js",
+      "PackagePath": "staticwebassets\\js\\styles\\Together\\Together.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\js\\styles\\Together\\Together.re",
+      "PackagePath": "staticwebassets\\js\\styles\\Together\\Together.re"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\scss\\common.scss",
+      "PackagePath": "staticwebassets\\scss\\common.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\scss\\example\\Account\\accountBoard.scss",
+      "PackagePath": "staticwebassets\\scss\\example\\Account\\accountBoard.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\scss\\example\\Boards\\backGroundBoard.scss",
+      "PackagePath": "staticwebassets\\scss\\example\\Boards\\backGroundBoard.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\scss\\example\\Facebook\\newBookBoard.scss",
+      "PackagePath": "staticwebassets\\scss\\example\\Facebook\\newBookBoard.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\scss\\example\\Facebook\\newFacebook.scss",
+      "PackagePath": "staticwebassets\\scss\\example\\Facebook\\newFacebook.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\scss\\example\\Facebook\\newFacetube.scss",
+      "PackagePath": "staticwebassets\\scss\\example\\Facebook\\newFacetube.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\scss\\example\\Instagram\\instagram.scss",
+      "PackagePath": "staticwebassets\\scss\\example\\Instagram\\instagram.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\scss\\example\\Medias\\mediaImage.scss",
+      "PackagePath": "staticwebassets\\scss\\example\\Medias\\mediaImage.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\scss\\example\\OutSide\\board.scss",
+      "PackagePath": "staticwebassets\\scss\\example\\OutSide\\board.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\scss\\example\\OutSide\\error.scss",
+      "PackagePath": "staticwebassets\\scss\\example\\OutSide\\error.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\scss\\example\\OutSide\\outside.scss",
+      "PackagePath": "staticwebassets\\scss\\example\\OutSide\\outside.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\scss\\example\\OutSide\\scrollBar.scss",
+      "PackagePath": "staticwebassets\\scss\\example\\OutSide\\scrollBar.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\scss\\example\\Youtube\\newYouFace.scss",
+      "PackagePath": "staticwebassets\\scss\\example\\Youtube\\newYouFace.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\scss\\example\\Youtube\\newYoutube.scss",
+      "PackagePath": "staticwebassets\\scss\\example\\Youtube\\newYoutube.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\scss\\example\\Youtube\\youFace.scss",
+      "PackagePath": "staticwebassets\\scss\\example\\Youtube\\youFace.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\scss\\example\\Youtube\\youtubeBoard.scss",
+      "PackagePath": "staticwebassets\\scss\\example\\Youtube\\youtubeBoard.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\scss\\pages\\Color\\color.scss",
+      "PackagePath": "staticwebassets\\scss\\pages\\Color\\color.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\scss\\pages\\Together\\screen.scss",
+      "PackagePath": "staticwebassets\\scss\\pages\\Together\\screen.scss"
+    },
+    {
+      "Id": "C:\\Users\\nisha\\OneDrive\\Documents\\NETCORE\\FOLDINFOCore\\wwwroot\\scss\\pages\\Together\\together.scss",
+      "PackagePath": "staticwebassets\\scss\\pages\\Together\\together.scss"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.FOLDINFOCore.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.FOLDINFOCore.props",
+      "PackagePath": "build\\FOLDINFOCore.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.FOLDINFOCore.props",
+      "PackagePath": "buildMultiTargeting\\FOLDINFOCore.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.FOLDINFOCore.props",
+      "PackagePath": "buildTransitive\\FOLDINFOCore.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
