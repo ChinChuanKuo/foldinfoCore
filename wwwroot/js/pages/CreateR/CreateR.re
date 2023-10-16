@@ -35,8 +35,6 @@ type item = {
   showXps: bool,
   homepage1: string,
   pnumber: string,
-  showMomoMenu: bool,
-  momoitems: array(optionitem),
   homepageMomo: string,
   showMbMenu: bool,
   mbitems: array(optionitem),
@@ -163,7 +161,6 @@ type action =
       string,
       string,
       string,
-      array(optionitem),
       string,
       array(optionitem),
       string,
@@ -172,8 +169,7 @@ type action =
   | ChangePage1(string, int)
   | ChangePnumber(string, int)
   | ChangeMB(string, int)
-  | ShowMomoMenu(int)
-  | ClickMomoMenu(string, int)
+  | ChangePageMomo(string, int)
   | ShowObjMenu(int)
   | ClickObjMenu(string, int)
   | ShowPn(bool, int)
@@ -301,7 +297,6 @@ let reducer = (state, action) =>
       homepage1,
       pnumber,
       homepageMomo,
-      momoitems,
       mb,
       mbitems,
       amount,
@@ -319,7 +314,6 @@ let reducer = (state, action) =>
                 homepage1,
                 pnumber,
                 homepageMomo,
-                momoitems,
                 mb,
                 mbitems,
                 amount,
@@ -352,30 +346,14 @@ let reducer = (state, action) =>
           state.items,
         ),
     }
-  | ShowMomoMenu(index) => {
-      ...state,
+  | ChangePageMomo(value, index) => {
+    ...state,
       items:
         Array.mapi(
-          (i, item) =>
-            index == i ? {...item, showMomoMenu: !item.showMomoMenu} : item,
+          (i, item) => index == i ? {...item, homepageMomo: value} : item,
           state.items,
         ),
-    }
-  | ClickMomoMenu(value, index) => {
-      ...state,
-      items:
-        Array.mapi(
-          (i, item) =>
-            index == i
-              ? {
-                ...item,
-                homepageMomo: value,
-                showMomoMenu: !item.showMomoMenu,
-              }
-              : item,
-          state.items,
-        ),
-    }
+  }
   | ShowObjMenu(index) => {
       ...state,
       items:
@@ -1050,7 +1028,6 @@ let make = _ => {
              response##data##items[0]##custname,
              response##data##items[0]##pnumber,
              response##data##items[0]##mbname,
-             response##data##items[0]##momoitems,
              response##data##items[0]##mb,
              response##data##items[0]##mbitems,
              response##data##items[0]##amount,
@@ -1113,10 +1090,8 @@ let make = _ => {
   let changeMB =
     useCallback((value, i) => ChangeMB(value, i) |> dispatch);
 
-  let showMomoMenu = useCallback(i => ShowMomoMenu(i) |> dispatch);
-
-  let clickMomoMenu =
-    useCallback((value, i) => ClickMomoMenu(value, i) |> dispatch);
+  let changePageMomo =
+    useCallback((value, i) => ChangePageMomo(value, i) |> dispatch);
 
   let showObjMenu = useCallback(i => ShowObjMenu(i) |> dispatch);
 
@@ -1647,71 +1622,24 @@ let make = _ => {
                         </GridItem>
                         <GridItem
                           top="0" right="0" bottom="0" left="0" xs="auto">
-                          <SelectStandard
+                          <TextFieldStandard
                             top="12"
                             right="0"
                             left="0"
-                            tile={js|機種|js}
                             labelColor="rgba(255,0,0,0.8)"
                             enterBorderColor="rgba(255,0,0,0.8)"
                             downBorderColor="rgba(255,0,0,0.6)"
                             borderColor="rgba(0,0,0,0.2)"
                             value={item.homepageMomo}
                             disabled={state.showProgress}
-                            onClick={_ => i |> showMomoMenu}>
-                            ...(
-                                 item.showMomoMenu
-                                   ? <SelectMenu
-                                       top="0"
-                                       transform="translate(0, 0)"
-                                       maxHeight="280"
-                                       minHeight="0"
-                                       topLeft="12"
-                                       topRight="12"
-                                       bottomRight="12"
-                                       bottomLeft="12"
-                                       paddingRight="8"
-                                       paddingLeft="8">
-                                       {item.momoitems
-                                        |> Array.map(momoitem =>
-                                             <MenuItem
-                                               top="0"
-                                               right="8"
-                                               bottom="0"
-                                               left="8"
-                                               disablePadding={
-                                                                momoitem.
-                                                                  optionPadding
-                                                              }
-                                               topLeft="12"
-                                               topRight="12"
-                                               bottomRight="12"
-                                               bottomLeft="12"
-                                               onClick={_ =>
-                                                 i
-                                                 |> clickMomoMenu(
-                                                      momoitem.value,
-                                                    )
-                                               }>
-                                               {momoitem.value |> string}
-                                             </MenuItem>
-                                           )
-                                        |> array}
-                                     </SelectMenu>
-                                   : null,
-                                 <IconGeneral
-                                   animation={
-                                     item.showMomoMenu |> topDownRorate
-                                   }
-                                   src=arrowDownBlack
-                                 />,
-                               )
-                          </SelectStandard>
-                          <BackgroundBoard
-                            showBackground={item.showMomoMenu}
-                            backgroundColor="transparent"
-                            onClick={_ => i |> showMomoMenu}
-                          />
+                            onChange={event =>
+                              i
+                              |> changePageMomo(
+                                   ReactEvent.Form.target(event)##value,
+                                 )
+                            }>
+                            {{js|機種|js} |> string}
+                          </TextFieldStandard>
                         </GridItem>
                       </GridContainer>
                     </GridItem>

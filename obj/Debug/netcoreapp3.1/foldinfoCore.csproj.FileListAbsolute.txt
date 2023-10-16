@@ -92,14 +92,12 @@
 /Users/chinchuankuo/Documents/core/foldinfoCore/obj/Debug/netcoreapp3.1/foldinfoCore.Views.pdb
 /Users/chinchuankuo/Documents/core/foldinfoCore/obj/Debug/netcoreapp3.1/foldinfoCore.csproj.CopyComplete
 /Users/chinchuankuo/Documents/core/foldinfoCore/obj/Debug/netcoreapp3.1/staticwebassets/foldinfoCore.StaticWebAssets.Manifest.cache
-/Users/chinchuankuo/Documents/core/foldinfoCore/obj/Debug/netcoreapp3.1/staticwebassets/foldinfoCore.StaticWebAssets.xml
 /Users/chinchuankuo/Documents/core/foldinfoCore/obj/Debug/netcoreapp3.1/foldinfoCore.dll
 /Users/chinchuankuo/Documents/core/foldinfoCore/obj/Debug/netcoreapp3.1/foldinfoCore.pdb
 /Users/chinchuankuo/Documents/core/foldinfoCore/obj/Debug/netcoreapp3.1/foldinfoCore.genruntimeconfig.cache
 /Users/chinchuankuo/Documents/core/foldinfoCore/obj/Debug/netcoreapp3.1/Razor/Views/SendistR/Index.cshtml.g.cs
 /Users/chinchuankuo/Documents/core/foldinfoCore/obj/Debug/netcoreapp3.1/foldinfoCore.csproj.AssemblyReference.cache
 /Users/chinchuankuo/Documents/core/foldinfoCore/obj/Debug/netcoreapp3.1/foldinfoCore.GeneratedMSBuildEditorConfig.editorconfig
-/Users/chinchuankuo/Documents/core/foldinfoCore/obj/Debug/netcoreapp3.1/scopedcss/bundle/foldinfoCore.styles.css
 /Users/chinchuankuo/Documents/foldinfoCore/bin/Debug/netcoreapp3.1/appsettings.Development.json
 /Users/chinchuankuo/Documents/foldinfoCore/bin/Debug/netcoreapp3.1/appsettings.json
 /Users/chinchuankuo/Documents/foldinfoCore/bin/Debug/netcoreapp3.1/bsconfig.json
@@ -202,3 +200,10 @@
 /Users/chinchuankuo/Documents/foldinfoCore/obj/Debug/netcoreapp3.1/foldinfoCore.dll
 /Users/chinchuankuo/Documents/foldinfoCore/obj/Debug/netcoreapp3.1/foldinfoCore.pdb
 /Users/chinchuankuo/Documents/foldinfoCore/obj/Debug/netcoreapp3.1/foldinfoCore.genruntimeconfig.cache
+/Users/chinchuankuo/Documents/core/foldinfoCore/bin/Debug/netcoreapp3.1/foldinfoCore.StaticWebAssets.xml
+/Users/chinchuankuo/Documents/core/foldinfoCore/bin/Debug/netcoreapp3.1/foldinfoCore
+/Users/chinchuankuo/Documents/core/foldinfoCore/obj/Debug/netcoreapp3.1/staticwebassets/foldinfoCore.StaticWebAssets.Pack.cache
+/Users/chinchuankuo/Documents/core/foldinfoCore/obj/Debug/netcoreapp3.1/staticwebassets/msbuild.foldinfoCore.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/chinchuankuo/Documents/core/foldinfoCore/obj/Debug/netcoreapp3.1/staticwebassets/msbuild.build.foldinfoCore.props
+/Users/chinchuankuo/Documents/core/foldinfoCore/obj/Debug/netcoreapp3.1/staticwebassets/msbuild.buildMultiTargeting.foldinfoCore.props
+/Users/chinchuankuo/Documents/core/foldinfoCore/obj/Debug/netcoreapp3.1/staticwebassets/msbuild.buildTransitive.foldinfoCore.props
